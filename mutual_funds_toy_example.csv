@@ -1,0 +1,7 @@
+fund_symbol,fund_extended_name,fund_family,inception_date,risk_rating,size_type,net_asset_value,fund_return_2019,fund_return_2018,fund_return_2017,fund_return_2016,fund_return_2015,fund_return_2014,fund_return_2013,fund_return_2012,fund_return_2011,fund_return_2010,fees_2019,fees_2018,fees_2017,fees_2016,fees_2015,fees_2014,fees_2013,fees_2012,fees_2011,fees_2010
+APECX,Columbia High Yield Bond Fund Class C,Columbia,6/25/2000,3,Small,1420000000,15.9,-5.18,5.45,10.36,-2.32,3.01,5.22,14.82,3.93,12.99,1.1,1.2,1.2,1.5,1.5,1.6,1.6,1.85,1.75,1.75
+GATCX,Gabelli Asset Fund Class C,Gabelli,12/30/2003,3,Large,1820000000,21.53,-8.38,19.27,10.75,-6.59,4.11,31.41,15.12,-1.15,22.14,1.4,1.6,1.6,1.75,1.75,1.85,1.5,1.85,2,2.11
+HCVRX,Hartford Conservative Allocation Fund Class R3,Hartford Mutual Funds,12/21/2006,2,Large,128800000,13.4,-4.03,9.74,3.81,-3.56,-0.59,0.78,8.99,1.47,10.1,1.2,1.4,1.6,1.35,1.3,1.2,1.2,1.5,1.44,1.44
+IOCZX,ICON Risk-Managed Balanced Fund Class S,ICON Funds,05/05/2004,5,Large,24520000,24.33,-11.49,10.37,4.17,0.17,6.96,14.46,8.24,-1.69,6.47,1,1,1.2,1.2,1.1,1.15,1.2,1.3,1.3,1.3
+JTLGX,John Hancock Funds II Multimanager Lifestyle Growth Portfolio Class R5,John Hancock,10/17/2005,3,Large,9870000000,22.28,-8.35,19.22,7.05,-1.1,4.71,22.29,15.43,-4.92,15.06,1.05,1,1.1,1.1,1.1,1,1,1.1,1,1.02
+VTIVX,Vanguard Target Retirement 2045 Fund Investor Shares,Vanguard,10/26/2003,3,Large,29290000000,24.94,-7.9,21.42,8.87,-1.57,7.16,24.37,15.58,-2.51,15.19,0.8,0.8,1,1,0.9,0.7,0.8,0.8,0.45,0.15
