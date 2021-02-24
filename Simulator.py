@@ -5,55 +5,39 @@ from Investor import Investor
 from HumanInvestor import HumanInvestor
 from AdminFeeInvestor import AdminFeeInvestor
 
+NUM_OF_TURNS = 43
+
 
 def sample10Funds(df):
     funds = df['fund_symbol'].unique().tolist()
     selected_funds = random.sample(funds, 10)
-    filtered_df = df[df['fund_symbol'].isin(selected_funds)]
-    filtered_df.to_csv('sampled_funds.csv', index=False)
     return selected_funds
 
 
 def createFunds():
-    # df = pd.read_csv('tmp_res_with_rolling.csv')
     df = pd.read_csv('funds_after_processing.csv')
     funds = []
-    fund_symbols = sample10Funds(df)
-    # fund_symbols = ['NBHIX', 'ACFCX', 'IAAAX', 'QBNAX', 'WESCX', 'MDVYX', 'RCMFX', 'MSXAX', 'HRCPX', 'FLRLX']
-    num_of_cols = df.shape[1]
-
-    for fund_symbol in fund_symbols:
-        fund_df = df.loc[df['fund_symbol'] == fund_symbol]
-        fund_details = []
-        for col_num in range(num_of_cols):
-            col = fund_df.iloc[:, col_num]
-            if len(col.unique()) == 1 and col_num < 8:   # col_num < 8 because first 8 columns are properties of the fund, not properties of a queater, so they dont have to be represented as a list
-                fund_details.append(col.iloc[0])
-            else:
-                fund_details.append(col.tolist())
+    selected_funds = sample10Funds(df)
+    # selected_funds = ['AAAAX', 'AAAGX', 'AAAIX', 'AAAPX', 'AAARX', 'AAASX', 'AAATX', 'AAAZX', 'AABCX', 'AABFX'] # RL funds
+    # selected_funds = ['NBHIX', 'ACFCX', 'IAAAX', 'QBNAX', 'WESCX', 'MDVYX', 'RCMFX', 'MSXAX', 'HRCPX', 'FLRLX']
+    for fund_symbol in selected_funds:
+        fund_df = df[df['fund_symbol'] == fund_symbol]
+        fund_details = fund_df.to_dict('list')
         fund = Fund(fund_details)
         funds.append(fund)
-
     return funds
 
 
-def makeInvestor(initial_money):
-    # Here we choose the kind of agent
-    return AdminFeeInvestor(initial_money)
-    # return HumanInvestor(initial_money)
-    # return Investor(initial_money)
-
-
 class Simulator:
-    def __init__(self, num_of_turns, initial_money):
-        self.num_of_turns = num_of_turns
-        self.investor = makeInvestor(initial_money)
+    def __init__(self, initial_money, investor):
+        # self.num_of_turns = num_of_turns
+        self.investor = investor(initial_money)
         self.funds = createFunds()
         self.current_fund = None
 
     def runSimulator(self):
         turn = 0
-        while turn < self.num_of_turns:
+        while turn < NUM_OF_TURNS:
             self.current_fund = self.investor.choose_fund(self.funds, turn)
             turn += 1
             self.investor.update_money(self.current_fund, turn - 1)  # Updating money according to last quarter's performances
@@ -81,8 +65,8 @@ class Simulator:
 
 
 if __name__ == '__main__':
-    sim = Simulator(num_of_turns=43, initial_money=100000)
-    sim.printFunds()
-    # sim.printFundSymbols()
+    sim = Simulator(initial_money=100000, investor=AdminFeeInvestor)
+    # sim.printFunds()
+    sim.printFundSymbols()
     sim.runSimulator()
     sim.printResults()
