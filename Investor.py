@@ -15,12 +15,11 @@ class Investor:
     # Base class: choosing a fund randomly
     def choose_fund(self, funds, year):
         next_fund = random.choice(funds)
-        print('Investor: choose_fund:\t', next_fund.getSymbol())
+        print('Investor: choose_fund:\t', next_fund.get_symbol())
         return next_fund
         # return random.choice(funds)
 
     def update_money(self, fund, quarter):
-        # print('admin fee = {},   return = {}'.format(fund.getAdminFees()[quarter], fund.getReturns()[quarter]))
-        rate = 1 + fund.getReturns()[quarter] / 100.0 - fund.getAdminFees()[quarter] / 100.0
-        print('Quarter {}: {}'.format(quarter + 1, self.current_money * rate))  # 'quarter + 1' cuz money is calculated according to previous [quarter]
+        rate = 1 + fund.get_returns()[quarter] / 100.0 - fund.get_admin_fees()[quarter] / 100.0
+        # print('Quarter {}: {}'.format(quarter + 1, self.current_money * rate))  # 'quarter + 1' cuz money is calculated according to previous [quarter]
         self.current_money *= rate
