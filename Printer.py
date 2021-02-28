@@ -17,10 +17,10 @@ class Printer:
 
     @staticmethod
     def print_final_results(simulator):
-        print('\n\n*** --------', type(simulator.investor).__name__, '-------- ***')
-        print('\tInitial money:\t', simulator.investor.get_initial_money())
-        print('\tFinal money:\t', simulator.investor.get_money())
-        print('\tPROFIT = ', simulator.investor.get_money() - simulator.investor.get_initial_money())
+        print('\n\n*** --------', type(simulator.get_investor()).__name__, '-------- ***')
+        print('\tInitial money:\t', simulator.get_investor().get_initial_money())
+        print('\tFinal money:\t', simulator.get_investor().get_money())
+        print('\tPROFIT = ', simulator.get_investor().get_money() - simulator.get_investor().get_initial_money())
         print('*** ---------------------------------- ***')
 
     @staticmethod

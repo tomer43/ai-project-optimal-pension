@@ -4,33 +4,40 @@ from Investor import Investor
 from HumanInvestor import HumanInvestor
 from AdminFeeInvestor import AdminFeeInvestor
 import time
+from datetime import datetime
+
+from tqdm import tqdm
 
 INITIAL_MONEY = 100000
 
 
 def get_columns_names():
-    cols = []
-    cols.append('funds_this_run')
-    for i in range(43):
-        cols.append('fund_q' + str(i + 1))
-    for i in range(43):
-        cols.append('money_q' + str(i + 1))
-    return cols
+    return ['funds_this_run'] + [f'fund_q{i+1}' for i in range(43)] + [f'money_q{i+1}' for i in range(43)]
 
 
-def run_tests(n, investor_type):
-    print('Running {} tests for {}...\n'.format(n, investor_type.__name__))
+def get_results_file_name(investor_type):
+    file_name = investor_type.__name__ + '_results '
+    now = datetime.now()
+    date_time = now.strftime("%d.%m.%Y %H-%M-%S")
+    file_name += date_time + '.csv'
+    return file_name
+
+
+def run_tests(n, investor_type, debug_mode=False):
+    print(f'Running {n} tests for {investor_type.__name__}...')
     start_time = time.time()
+    df = pd.read_csv('funds_after_processing.csv')
     results = []
-    for i in range(n):
-        sim = Simulator(INITIAL_MONEY, investor_type)
+    for i in tqdm(range(n), desc="\tProgress"):
+        sim = Simulator(df, INITIAL_MONEY, investor_type, debug_mode)
         result = sim.run_simulator()
         results.append(result)
     df = pd.DataFrame(results, columns=get_columns_names())
-    df.to_csv('test_results.csv')
+    results_file_name = get_results_file_name(investor_type)
+    df.to_csv(results_file_name)
     end_time = time.time()
-    print('Finished after {} seconds.\nResults can be found in \'test_results.csv\''.format(end_time - start_time))
+    print(f'\nFinished after {end_time - start_time} seconds.\nResults can be found in \'{results_file_name}\'')
 
 
 if __name__ == '__main__':
-    run_tests(100, AdminFeeInvestor)
+    run_tests(100, AdminFeeInvestor, debug_mode=True)
