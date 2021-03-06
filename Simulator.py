@@ -4,85 +4,60 @@ from Fund import Fund
 from Investor import Investor
 from HumanInvestor import HumanInvestor
 from AdminFeeInvestor import AdminFeeInvestor
+from Printer import *
+import time
+
+NUM_OF_TURNS = 43
 
 
-def sample10Funds(df):
+def sample_10_funds(df):
     funds = df['fund_symbol'].unique().tolist()
     selected_funds = random.sample(funds, 10)
-    filtered_df = df[df['fund_symbol'].isin(selected_funds)]
-    filtered_df.to_csv('sampled_funds.csv', index=False)
     return selected_funds
 
 
-def createFunds():
-    # df = pd.read_csv('tmp_res_with_rolling.csv')
-    df = pd.read_csv('funds_after_processing.csv')
+def create_funds(df, debug_mode):
     funds = []
-    fund_symbols = sample10Funds(df)
-    # fund_symbols = ['NBHIX', 'ACFCX', 'IAAAX', 'QBNAX', 'WESCX', 'MDVYX', 'RCMFX', 'MSXAX', 'HRCPX', 'FLRLX']
-    num_of_cols = df.shape[1]
-
-    for fund_symbol in fund_symbols:
-        fund_df = df.loc[df['fund_symbol'] == fund_symbol]
-        fund_details = []
-        for col_num in range(num_of_cols):
-            col = fund_df.iloc[:, col_num]
-            if len(col.unique()) == 1 and col_num < 8:   # col_num < 8 because first 8 columns are properties of the fund, not properties of a queater, so they dont have to be represented as a list
-                fund_details.append(col.iloc[0])
-            else:
-                fund_details.append(col.tolist())
+    if debug_mode:
+        selected_funds = ['AAAAX', 'AAAGX', 'AAAIX', 'AAAPX', 'AAARX', 'AAASX', 'AAATX', 'AAAZX', 'AABCX', 'AABFX']
+    else:
+        selected_funds = sample_10_funds(df)
+    for fund_symbol in selected_funds:
+        fund_df = df[df['fund_symbol'] == fund_symbol]
+        fund_details = fund_df.to_dict('list')
         fund = Fund(fund_details)
         funds.append(fund)
-
     return funds
 
 
-def makeInvestor(initial_money):
-    # Here we choose the kind of agent
-    return AdminFeeInvestor(initial_money)
-    # return HumanInvestor(initial_money)
-    # return Investor(initial_money)
-
-
 class Simulator:
-    def __init__(self, num_of_turns, initial_money):
-        self.num_of_turns = num_of_turns
-        self.investor = makeInvestor(initial_money)
-        self.funds = createFunds()
-        self.current_fund = None
+    def __init__(self, df, initial_money, investor, debug_mode=False):
+        self._investor = investor(initial_money)
+        self._funds = create_funds(df, debug_mode)
+        self._current_fund = None
 
-    def runSimulator(self):
+    def get_investor(self):
+        return self._investor
+
+    def run_simulator(self):
         turn = 0
-        while turn < self.num_of_turns:
-            self.current_fund = self.investor.choose_fund(self.funds, turn)
+        funds_in_this_run = ', '.join([fund.get_symbol() for fund in self._funds])
+        funds_by_quarters , money_by_quarter = [], []
+        while turn < NUM_OF_TURNS:
+            self._current_fund = self._investor.choose_fund(self._funds, turn)
+            funds_by_quarters.append(self._current_fund.get_symbol())
             turn += 1
-            self.investor.update_money(self.current_fund, turn - 1)  # Updating money according to last quarter's performances
-
-    def printFunds(self):
-        print('*** ---------------------------------- Funds in current run ---------------------------------- ***\n')
-        for f in self.funds:
-            print(f)
-        print('*** ------------------------------------------------------------------------------------------ ***')
-        print('\n')
-
-    def printFundSymbols(self):
-        fund_symbols = [fund.getSymbol() for fund in self.funds]
-        print('*** ------------------------------------ Funds in current run ------------------------------------ ***')
-        print('\t', fund_symbols)
-        print('*** ---------------------------------------------------------------------------------------------- ***')
-        print('\n')
-
-    def printResults(self):
-        print('\n\n*** --------', type(self.investor).__name__, '-------- ***')
-        print('\tInitial money:\t', self.investor.get_initial_money())
-        print('\tFinal money:\t', self.investor.get_money())
-        print('\tPROFIT = ', self.investor.get_money() - self.investor.get_initial_money())
-        print('*** ---------------------------------- ***')
+            self._investor.update_money(self._current_fund, turn - 1)  # Updating money according to last quarter's performances
+            money_by_quarter.append(self._investor.get_money())
+        res = [funds_in_this_run] + funds_by_quarters + money_by_quarter
+        return res
 
 
 if __name__ == '__main__':
-    sim = Simulator(num_of_turns=43, initial_money=100000)
-    sim.printFunds()
-    # sim.printFundSymbols()
-    sim.runSimulator()
-    sim.printResults()
+    df = pd.read_csv('funds_after_processing.csv')
+    sim = Simulator(df, initial_money=100000, investor=AdminFeeInvestor, debug_mode=True)
+    # Printer.print_funds(sim)
+    # Printer.print_fund_symbols(sim)
+    results_line = sim.run_simulator()
+    Printer.print_results_path(results_line, sim.get_investor().get_initial_money())
+    Printer.print_final_results(sim)
