@@ -1,11 +1,8 @@
 import pandas as pd
 import random
 from Fund import Fund
-from Investor import Investor
-from HumanInvestor import HumanInvestor
-from AdminFeeInvestor import AdminFeeInvestor
+from investors_types.HumanHeuristicsInvestors import *
 from Printer import *
-import time
 
 NUM_OF_TURNS = 43
 
@@ -42,20 +39,22 @@ class Simulator:
     def run_simulator(self):
         turn = 0
         funds_in_this_run = ', '.join([fund.get_symbol() for fund in self._funds])
-        funds_by_quarters , money_by_quarter = [], []
+        funds_by_quarters, money_by_quarter = [], []
         while turn < NUM_OF_TURNS:
             self._current_fund = self._investor.choose_fund(self._funds, turn)
             funds_by_quarters.append(self._current_fund.get_symbol())
             turn += 1
-            self._investor.update_money(self._current_fund, turn - 1)  # Updating money according to last quarter's performances
+
+            # Updating money according to last quarter's performances
+            self._investor.update_money(self._current_fund, turn - 1)
             money_by_quarter.append(self._investor.get_money())
         res = [funds_in_this_run] + funds_by_quarters + money_by_quarter
         return res
 
 
 if __name__ == '__main__':
-    df = pd.read_csv('funds_after_processing.csv')
-    sim = Simulator(df, initial_money=100000, investor=AdminFeeInvestor, debug_mode=True)
+    funds_csv = pd.read_csv('funds_after_processing.csv')
+    sim = Simulator(funds_csv, initial_money=100000, investor=LargestFundInvestor, debug_mode=True)
     # Printer.print_funds(sim)
     # Printer.print_fund_symbols(sim)
     results_line = sim.run_simulator()

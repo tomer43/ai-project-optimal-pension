@@ -1,8 +1,6 @@
 import pandas as pd
 from Simulator import Simulator
-from Investor import Investor
-from HumanInvestor import HumanInvestor
-from AdminFeeInvestor import AdminFeeInvestor
+from investors_types.HumanHeuristicsInvestors import *
 import time
 from datetime import datetime
 
@@ -40,4 +38,4 @@ def run_tests(n, investor_type, debug_mode=False):
 
 
 if __name__ == '__main__':
-    run_tests(100, AdminFeeInvestor, debug_mode=True)
+    run_tests(100, LowestFeeInvestor, debug_mode=True)
