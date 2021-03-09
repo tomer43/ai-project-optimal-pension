@@ -21,5 +21,6 @@ class Investor:
 
     def update_money(self, fund, quarter):
         rate = 1 + fund.get_returns()[quarter] / 100.0 - fund.get_admin_fees()[quarter] / 100.0
-        # print('Quarter {}: {}'.format(quarter + 1, self.current_money * rate))  # 'quarter + 1' cuz money is calculated according to previous [quarter]
+        # 'quarter + 1' cuz money is calculated according to previous [quarter]
+        # print('Quarter {}: {}'.format(quarter + 1, self._current_money * rate))
         self._current_money *= rate

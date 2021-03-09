@@ -2,6 +2,7 @@ import pandas as pd
 import random
 from Fund import Fund
 from investors_types.HumanHeuristicsInvestors import *
+from investors_types.PseudoAgents import *
 from Printer import *
 
 NUM_OF_TURNS = 43

@@ -1,4 +1,4 @@
-from Investor import Investor
+from investors_types.Investor import Investor
 
 
 class HumanInvestor(Investor):

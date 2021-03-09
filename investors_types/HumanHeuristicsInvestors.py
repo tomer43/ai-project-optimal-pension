@@ -102,8 +102,7 @@ class ExpertAdviceInvestor(Investor):
     def choose_fund(self, funds, quarter):
         all_funds_rating = []
         for fund in funds:
-            fund_return = fund.get_fund_param("general_rating", quarter)
-            all_funds_rating.append(fund_return)
+            all_funds_rating.append(fund.get_fund_param("general_rating", quarter))
         best_recommendation_fund_index = find_best_result_arg_with_tie_breaker(all_funds_rating, "max")
         return funds[best_recommendation_fund_index]
 
