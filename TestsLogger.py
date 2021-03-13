@@ -12,7 +12,7 @@ INITIAL_MONEY = 100000
 
 
 def get_columns_names():
-    return ['funds_this_run'] + [f'fund_q{i+1}' for i in range(43)] + [f'money_q{i+1}' for i in range(43)]
+    return ['funds_this_run'] + [f'fund_q{i+1}' for i in range(43)] + [f'money_q{i}' for i in range(44)]
 
 
 def get_results_file_name(investor_type):

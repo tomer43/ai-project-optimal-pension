@@ -42,7 +42,7 @@ class Simulator:
     def run_simulator(self):
         turn = 0
         funds_in_this_run = ', '.join([fund.get_symbol() for fund in self._funds])
-        funds_by_quarters , money_by_quarter = [], []
+        funds_by_quarters , money_by_quarter = [], [self._investor.get_initial_money()]
         while turn < NUM_OF_TURNS:
             self._current_fund = self._investor.choose_fund(self._funds, turn)
             funds_by_quarters.append(self._current_fund.get_symbol())
