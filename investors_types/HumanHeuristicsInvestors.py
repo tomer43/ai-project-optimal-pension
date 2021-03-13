@@ -34,7 +34,7 @@ class BestReturnInvestor(Investor):
             fund_return = fund.get_fund_param(self._return_param_name, quarter)
             fund_return -= fund.get_admin_fees_by_quarter(quarter)
             all_funds_returns.append(fund_return)
-        best_returns_fund_index = find_best_result_arg_with_tie_breaker(all_funds_returns, "min")
+        best_returns_fund_index = find_best_result_arg_with_tie_breaker(all_funds_returns, "max")
         return funds[best_returns_fund_index]
 
 
@@ -60,7 +60,7 @@ class BestReturnLastFiveYearsInvestor(BestReturnInvestor):
 
 class SectorialInvestor(Investor):
     def __init__(self, initial_money, sector_name):
-        super().__init__(initial_money)
+        super(SectorialInvestor, self).__init__(initial_money)
         self._csv_param_name = f"sector_{sector_name}"
 
     def choose_fund(self, funds, quarter):
@@ -84,20 +84,20 @@ class RealEstateInvestor(SectorialInvestor):
 
 class LargestFundInvestor(Investor):
     def __init__(self, initial_money):
-        super().__init__(initial_money)
+        super(LargestFundInvestor, self).__init__(initial_money)
 
     def choose_fund(self, funds, quarter):
         all_funds_asset_values = []
         for fund in funds:
-            fund_return = fund.get_fund_param("net_asset_value", quarter)
-            all_funds_asset_values.append(fund_return)
+            largest_fund = fund.get_fund_param("net_asset_value", quarter)
+            all_funds_asset_values.append(largest_fund)
         largest_fund_index = find_best_result_arg_with_tie_breaker(all_funds_asset_values, "max")
         return funds[largest_fund_index]
 
 
 class ExpertAdviceInvestor(Investor):
     def __init__(self, initial_money):
-        super().__init__(initial_money)
+        super(ExpertAdviceInvestor, self).__init__(initial_money)
 
     def choose_fund(self, funds, quarter):
         all_funds_rating = []
@@ -109,7 +109,7 @@ class ExpertAdviceInvestor(Investor):
 
 class LowestFeeInvestor(Investor):
     def __init__(self, initial_money):
-        super().__init__(initial_money)
+        super(LowestFeeInvestor, self).__init__(initial_money)
 
     def choose_fund(self, funds, quarter):
         fees_this_quarter = []
