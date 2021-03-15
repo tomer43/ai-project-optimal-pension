@@ -1,8 +1,6 @@
 import pandas as pd
 from Simulator import Simulator
-from Investor import Investor
-from HumanInvestor import HumanInvestor
-from AdminFeeInvestor import AdminFeeInvestor
+from investors_types.HumanHeuristicsInvestors import *
 import time
 from datetime import datetime
 
@@ -28,7 +26,7 @@ def run_tests(n, investor_type, debug_mode=False):
     start_time = time.time()
     df = pd.read_csv('funds_after_processing.csv')
     results = []
-    for i in tqdm(range(n), desc="\tProgress"):
+    for _ in tqdm(range(n), desc="\tProgress"):
         sim = Simulator(df, INITIAL_MONEY, investor_type, debug_mode)
         result = sim.run_simulator()
         results.append(result)
@@ -40,4 +38,4 @@ def run_tests(n, investor_type, debug_mode=False):
 
 
 if __name__ == '__main__':
-    run_tests(100, AdminFeeInvestor, debug_mode=True)
+    run_tests(100, LowestFeeInvestor, debug_mode=True)
