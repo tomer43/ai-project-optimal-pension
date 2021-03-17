@@ -8,30 +8,31 @@ from Printer import *
 NUM_OF_TURNS = 43
 
 
-def sample_10_funds(df):
-    funds = df['fund_symbol'].unique().tolist()
+def sample_10_funds(funds):
     selected_funds = random.sample(funds, 10)
     return selected_funds
 
 
-def create_funds(df, debug_mode):
+def create_funds(df, debug_mode, funds_names):
     funds = []
     if debug_mode:
         selected_funds = ['AAAAX', 'AAAGX', 'AAAIX', 'AAAPX', 'AAARX', 'AAASX', 'AAATX', 'AAAZX', 'AABCX', 'AABFX']
     else:
-        selected_funds = sample_10_funds(df)
+        selected_funds = sample_10_funds(funds_names)
+    selected_fund_df = df.loc[df['fund_symbol'].isin(selected_funds)]
     for fund_symbol in selected_funds:
-        fund_df = df[df['fund_symbol'] == fund_symbol]
-        fund_details = fund_df.to_dict('list')
+        fund_details = selected_fund_df.loc[selected_fund_df['fund_symbol'] == fund_symbol].to_dict('list')
         fund = Fund(fund_details)
         funds.append(fund)
     return funds
 
 
 class Simulator:
-    def __init__(self, df, initial_money, investor, debug_mode=False):
+    def __init__(self, df, initial_money, investor, debug_mode=False, funds_names=None):
         self._investor = investor(initial_money)
-        self._funds = create_funds(df, debug_mode)
+        if funds_names is None:
+            funds_names = df['fund_symbol'].unique()
+        self._funds = create_funds(df, debug_mode, funds_names)
         self._current_fund = None
 
     def get_investor(self):
