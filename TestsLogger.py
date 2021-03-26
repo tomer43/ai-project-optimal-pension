@@ -26,8 +26,9 @@ def run_tests(n, investor_type, debug_mode=False):
     start_time = time.time()
     df = pd.read_csv('funds_after_processing.csv')
     results = []
+    funds_names = df['fund_symbol'].unique().tolist()
     for _ in tqdm(range(n), desc="\tProgress"):
-        sim = Simulator(df, INITIAL_MONEY, investor_type, debug_mode)
+        sim = Simulator(df, INITIAL_MONEY, investor_type, debug_mode, funds_names)
         result = sim.run_simulator()
         results.append(result)
     df = pd.DataFrame(results, columns=get_columns_names())
