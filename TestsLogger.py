@@ -1,6 +1,7 @@
 import pandas as pd
 from Simulator import Simulator
 from investors_types.HumanHeuristicsInvestors import *
+from investors_types.PseudoAgents import *
 import time
 from datetime import datetime
 
