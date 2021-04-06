@@ -40,4 +40,4 @@ def run_tests(n, investor_type, debug_mode=False):
 
 
 if __name__ == '__main__':
-    run_tests(100, LowestFeeInvestor, debug_mode=True)
+    run_tests(10000, LowestFeeInvestor, debug_mode=True)

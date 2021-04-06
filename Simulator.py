@@ -1,15 +1,19 @@
 import pandas as pd
 import random
 from Fund import Fund
-from investors_types.HumanHeuristicsInvestors import *
-from investors_types.PseudoAgents import *
 from Printer import *
+from investors_types.HumanHeuristicsInvestors import *
+from investors_types.HumanInvestor import HumanInvestor
+from investors_types.PseudoAgents import *
+from investors_types.RLInvestor import RLInvestor
 
+
+INITIAL_MONEY = 100000
 NUM_OF_TURNS = 43
 
 
 def sample_10_funds(funds):
-    selected_funds = random.sample(funds, 10)
+    selected_funds = random.sample(funds.tolist(), 10)
     return selected_funds
 
 
@@ -56,9 +60,9 @@ class Simulator:
 
 if __name__ == '__main__':
     funds_csv = pd.read_csv('funds_after_processing.csv')
-    sim = Simulator(funds_csv, initial_money=100000, investor=LargestFundInvestor, debug_mode=True)
+    sim = Simulator(funds_csv, initial_money=INITIAL_MONEY, investor=RLInvestor, debug_mode=True)
     # Printer.print_funds(sim)
     # Printer.print_fund_symbols(sim)
     results_line = sim.run_simulator()
-    Printer.print_results_path(results_line, sim.get_investor().get_initial_money())
+    Printer.print_results_path(results_line)
     Printer.print_final_results(sim)
