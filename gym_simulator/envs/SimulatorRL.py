@@ -18,7 +18,7 @@ actions = [BestReturnLastQuarterInvestor, BestReturnLastYearInvestor, BestReturn
 
 
 def sample_10_funds(funds):
-    selected_funds = random.sample(funds.tolist(), 10)
+    selected_funds = random.sample(funds, 10)
     return selected_funds
 
 

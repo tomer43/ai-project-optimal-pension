@@ -10,7 +10,7 @@ from gym_simulator.envs.TrainerRL import TrainerRL
 class RLInvestor(Investor):
     def __init__(self, initial_money):
         super().__init__(initial_money)
-        self._q_table = TrainerRL(max_episodes=20000).train()
+        self._q_table = TrainerRL(max_episodes=100).train()
         # self._q_table = TrainerRL(max_episodes=100).train() # Final result too big- check how many random choices were there
         # self._q_table = QTable(pickle.load(open("Q-Table.pkl", "rb")))
 
