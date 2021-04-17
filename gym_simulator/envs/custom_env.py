@@ -9,8 +9,9 @@ from gym_simulator.envs.SimulatorRL import SimulatorRL
 
 NUM_OF_HUMAN_HEURISTICS = 6
 INITIAL_MONEY = 100000
-funds_csv = pd.read_csv('../../funds_after_processing.csv')
-funds_names = funds_csv['fund_symbol'].unique().tolist()
+funds_csv = pd.read_csv(r'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo/funds_after_processing.csv').set_index('fund_symbol')
+# funds_names = funds_csv['fund_symbol'].unique().tolist()
+funds_names = funds_csv.index.unique().tolist()
 DEBUG_MODE = False
 
 

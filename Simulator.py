@@ -10,10 +10,15 @@ from investors_types.RLInvestor import RLInvestor
 
 INITIAL_MONEY = 100000
 NUM_OF_TURNS = 43
+cached_funds = {}
 
 
 def sample_10_funds(funds):
-    selected_funds = random.sample(funds.tolist(), 10)
+    # sometimes might be needed funds.tolist()
+    if isinstance(funds, list):
+        selected_funds = random.sample(funds, 10)
+    else:
+        selected_funds = random.sample(funds.tolist(), 10)
     return selected_funds
 
 
@@ -23,17 +28,27 @@ def create_funds(df, debug_mode, funds_names):
         selected_funds = ['AAAAX', 'AAAGX', 'AAAIX', 'AAAPX', 'AAARX', 'AAASX', 'AAATX', 'AAAZX', 'AABCX', 'AABFX']
     else:
         selected_funds = sample_10_funds(funds_names)
-    selected_fund_df = df.loc[df['fund_symbol'].isin(selected_funds)]
+
+    uncached_funds = list(set(selected_funds) - set(cached_funds.keys()))
+    if uncached_funds:
+        selected_fund_df = df.loc[uncached_funds]
+        for fund_symbol in uncached_funds:
+            fund_details = selected_fund_df.loc[fund_symbol].to_dict('list')
+            fund_details['fund_symbol'] = [fund_symbol] * len(fund_details['ts'])
+            fund = Fund(fund_details)
+            cached_funds[fund_symbol] = fund
+
     for fund_symbol in selected_funds:
-        fund_details = selected_fund_df.loc[selected_fund_df['fund_symbol'] == fund_symbol].to_dict('list')
-        fund = Fund(fund_details)
-        funds.append(fund)
+        funds.append(cached_funds[fund_symbol])
+
     return funds
 
 
 class Simulator:
-    def __init__(self, df, initial_money, investor, debug_mode=False, funds_names=None):
-        self._investor = investor(initial_money)
+    def __init__(self, df, initial_money, investor, debug_mode=False, funds_names=None, investor_kwargs=None):
+        if investor_kwargs is None:
+            investor_kwargs = {}
+        self._investor = investor(initial_money, **investor_kwargs)
         if funds_names is None:
             funds_names = df['fund_symbol'].unique()
         self._funds = create_funds(df, debug_mode, funds_names)
@@ -60,7 +75,9 @@ class Simulator:
 
 if __name__ == '__main__':
     funds_csv = pd.read_csv('funds_after_processing.csv')
-    sim = Simulator(funds_csv, initial_money=INITIAL_MONEY, investor=RLInvestor, debug_mode=True)
+    rl_investor_args = {
+        'existing_weights': r'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo\approximate_q_learning_weights\res_1.pkl'}
+    sim = Simulator(funds_csv, initial_money=INITIAL_MONEY, investor=RLInvestor, debug_mode=True, investor_kwargs=rl_investor_args)
     # Printer.print_funds(sim)
     # Printer.print_fund_symbols(sim)
     results_line = sim.run_simulator()

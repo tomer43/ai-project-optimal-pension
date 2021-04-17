@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import random
 from tqdm import tqdm
 import sys
-
+import pickle
 
 def print_episodes_results(sums):
     i = 1
@@ -29,16 +29,18 @@ def plot_smoothed_graph(episodes, sums, max_episodes):
 
 
 class TrainerRL:
-    def __init__(self, max_episodes, max_try=1000, epsilon=1, epsilon_decay=0.999, learning_rate=0.1,
-                 gamma=0.6):
+    def __init__(self, max_episodes, max_try=1000, learning_constant=10,
+                 gamma=0.6, weights_to_start_dir=None):
         self._env = CustomEnv()
         self._max_episodes = max_episodes
         self._max_try = max_try
-        self._epsilon = epsilon
-        self._epsilon_decay = epsilon_decay
-        self._learning_rate = learning_rate
-        self._gamma = gamma
-        self._estimator = Estimator(alpha=self._learning_rate, gamma=self._gamma)
+        if weights_to_start_dir is None:
+            trainer_starting_weights=None
+        else:
+            with open(weights_to_start_dir, 'rb') as f:
+                trainer_starting_weights = pickle.load(f)
+        self._estimator = Estimator(alpha=1 / learning_constant, gamma=gamma, starting_weights=trainer_starting_weights,
+                                    pickle_file_dir=r'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo\approximate_q_learning_weights')
 
     def train(self):
         # global epsilon, epsilon_decay
@@ -46,46 +48,43 @@ class TrainerRL:
         episodes, sums = [], []
 
         for episode in tqdm(range(self._max_episodes), desc="\tProgress"):
-        # for episode in range(self._max_episodes):
 
             # Init environment
             state = self._env.reset()
-            total_reward = 0
+            total_reward = 100000
 
             # AI tries up to MAX_TRY times
             for t in range(self._max_try):
 
                 # In the beginning, do random action to learn
-                # if random.uniform(0, 1) < self._epsilon:
-                #     action = random.randint(0, 9)
-                # else:
-                #     action = self._estimator.get_state_argmax(state)
                 action = self._estimator.get_state_argmax(state)
 
                 # Do action and get result
                 next_state, reward, done, _ = self._env.step(action)
+                relative_reward = reward / total_reward if total_reward > 0 else reward
                 total_reward += reward
 
                 # Q(state, action) <- (1 - a)Q(state, action) + a(reward + rmaxQ(next state, all actions))
-                self._estimator.update(state=state, action=action, reward=reward, state_prime=next_state)
+                self._estimator.update(state=state, action=action, reward=relative_reward, next_state=next_state)
 
                 # Set up for the next iteration
                 state = next_state
 
-                # When episode is done, print reward
+                # When episode is done
                 if done or t >= self._max_try - 1:
-                    print("\nEpisode %d finished after %i time steps with total reward = %f." % (episode, t, total_reward))
-                    print(f'weights: {self._estimator.get_weights()}')
-                    print()
+                    # once in 50,000 episodes: print some stats and save to pickle
+                    if episode % 50000 == 0:
+                        self._estimator.export_to_pickle(f'agent_v1_e{episode}.pkl')
+                        print("\nEpisode %d finished after %i time steps with total reward = %f." % (episode, t,
+                                                                                                     total_reward))
+                        print(f'weights: {self._estimator.get_weights()}')
+                        print()
+
                     episodes.append(episode)
                     sums.append(total_reward)
                     break
 
-            # exploring rate decay
-            if self._epsilon >= 0.005:
-                self._epsilon *= self._epsilon_decay
-
-        # self._q_table.export_to_pickle()
+        self._estimator.export_to_pickle('final_weights.pkl')
         print_episodes_results(sums)
 
         # plotting RL algorithm learning curve
@@ -95,7 +94,9 @@ class TrainerRL:
 
 
 if __name__ == '__main__':
-    trainer = TrainerRL(max_episodes=1000, epsilon=0, learning_rate=0.0001, gamma=0.5)
+    # starting_weights = r'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo\approximate_q_learning_weights\res_4.pkl'
+    starting_weights = None
+    trainer = TrainerRL(max_episodes=1000000, learning_constant=100000, gamma=0, weights_to_start_dir=starting_weights)
     trainer.train()
 
 # # env = gym.make("Pysim-v0")

@@ -11,10 +11,7 @@ from Printer import *
 
 NUM_OF_TURNS = 43
 
-# actions = [LowestFeeInvestor]
-actions = [BestReturnLastQuarterInvestor, BestReturnLastYearInvestor, BestReturnLastThreeYearsInvestor,
-           BestReturnLastFiveYearsInvestor, TechnologyInvestor, RealEstateInvestor,
-           LargestFundInvestor, ExpertAdviceInvestor, LowestFeeInvestor]
+cached_funds = {}
 
 
 def sample_10_funds(funds):
@@ -28,11 +25,19 @@ def create_funds(df, debug_mode, funds_names):
         selected_funds = ['AAAAX', 'AAAGX', 'AAAIX', 'AAAPX', 'AAARX', 'AAASX', 'AAATX', 'AAAZX', 'AABCX', 'AABFX']
     else:
         selected_funds = sample_10_funds(funds_names)
-    selected_fund_df = df.loc[df['fund_symbol'].isin(selected_funds)]
+
+    uncached_funds = list(set(selected_funds) - set(cached_funds.keys()))
+    if uncached_funds:
+        selected_fund_df = df.loc[uncached_funds]
+        for fund_symbol in uncached_funds:
+            fund_details = selected_fund_df.loc[fund_symbol].to_dict('list')
+            fund_details['fund_symbol'] = [fund_symbol] * len(fund_details['ts'])
+            fund = Fund(fund_details)
+            cached_funds[fund_symbol] = fund
+
     for fund_symbol in selected_funds:
-        fund_details = selected_fund_df.loc[selected_fund_df['fund_symbol'] == fund_symbol].to_dict('list')
-        fund = Fund(fund_details)
-        funds.append(fund)
+        funds.append(cached_funds[fund_symbol])
+
     return funds
 
 
@@ -66,8 +71,9 @@ class SimulatorRL:
         self._turn += 1
 
     def observe(self):
-        s = State(self._funds, self._turn)
-        return s.get_state()
+        # s = State(self._funds, self._turn)
+        # return s.get_state()
+        return State.get_state_with_no_object_creation(self._funds, self._turn)
 
     def evaluate(self):
         return self._investor.get_money() - self._investor.get_previous_money()
@@ -80,85 +86,3 @@ class SimulatorRL:
 
     def view(self):
         pass
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-
-# -------------------------------------------------------------------------------
-
-# import pandas as pd
-# import random
-# from Fund import Fund
-# from gym_simulator.envs.InvestorRL import InvestorRL
-#
-#
-# def sample10Funds(df):
-#     funds = df['fund_symbol'].unique().tolist()
-#     selected_funds = random.sample(funds, 10)
-#     filtered_df = df[df['fund_symbol'].isin(selected_funds)]
-#     filtered_df.to_csv('sampled_funds.csv', index=False)
-#     return selected_funds
-#
-#
-# def createFunds():
-#     # df = pd.read_csv('tmp_res_with_rolling.csv')
-#     df = pd.read_csv('funds_after_processing.csv')
-#     funds = []
-#     # fund_symbols = sample10Funds(df)
-#     fund_symbols = ['AAAAX', 'AAAGX', 'AAAIX', 'AAAPX', 'AAARX', 'AAASX', 'AAATX', 'AAAZX', 'AABCX', 'AABFX']
-#     num_of_cols = df.shape[1]
-#
-#     for fund_symbol in fund_symbols:
-#         fund_df = df.loc[df['fund_symbol'] == fund_symbol]
-#         fund_details = []
-#         for col_num in range(num_of_cols):
-#             col = fund_df.iloc[:, col_num]
-#             if len(
-#                     col.unique()) == 1 and col_num < 8:  # col_num < 8 because first 8 columns are properties of the fund, not properties of a queater, so they dont have to be represented as a list
-#                 fund_details.append(col.iloc[0])
-#             else:
-#                 fund_details.append(col.tolist())
-#         fund = Fund(fund_details)
-#         funds.append(fund)
-#
-#     print('*** ------------------------------------ Funds in current run ------------------------------------ ***')
-#     print('\t', fund_symbols)
-#     print('*** ---------------------------------------------------------------------------------------------- ***')
-#     return funds
-#
-#
-# def makeInvestor(initial_money):
-#     return InvestorRL(initial_money)
-#
-#
-# class SimulatorRL:
-#     def __init__(self, num_of_turns, initial_money):
-#         self._num_of_turns = num_of_turns
-#         self._investor = makeInvestor(initial_money)
-#         self._funds = createFunds()
-#         self._current_fund = None
-#
-#
-# # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Q-learning stuff ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#     def action(self, action):
-#             # self.investor.update_money(self.funds, action)
-#         self._investor.update_money(self._current_fund, self._investor.get_turn() - 1)
-#         self.current_fund = action
-#
-#     def observe(self):
-#         return int(self._investor.get_money())
-#         # return int(self.investor.get_money()) - (int(self.investor.get_money()) % 10)
-#
-#     def evaluate(self):
-#         return self._investor.get_money() - self._investor.get_previous_money()
-#
-#     def is_done(self):
-#         if self._investor.turn == 43:
-#             return True
-#         else:
-#             return False
-#
-#     def view(self):
-#         pass
-# # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
