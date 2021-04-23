@@ -1,12 +1,10 @@
 import pandas as pd
-import random
-from Fund import Fund
 from Printer import *
+from gym_simulator.envs.custom_env import CustomEnv
 from investors_types.HumanHeuristicsInvestors import *
 from investors_types.HumanInvestor import HumanInvestor
 from investors_types.PseudoAgents import *
 from investors_types.RLInvestor import RLInvestor
-from gym_simulator.envs.custom_env import CustomEnv
 
 
 class Simulator:
@@ -35,19 +33,17 @@ if __name__ == '__main__':
     # funds_csv = pd.read_csv('funds_after_processing.csv')
     # rl_investor_args = {
     #     'existing_weights': r'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo\approximate_q_learning_weights\res_1.pkl'}
-    funds_csv = pd.read_csv(
-        r'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo/funds_after_processing.csv').set_index(
-        'fund_symbol')
-    funds_names = funds_csv.index.unique().tolist()
+    funds_df = pd.read_csv('funds_after_processing.csv').set_index('fund_symbol')
+    funds_names = funds_df.index.unique().tolist()
 
-    sim = Simulator(funds_csv=funds_csv, funds_list_names=funds_names, investor=LowestFeeInvestor)
+    sim = Simulator(funds_csv=funds_df, funds_list_names=funds_names, investor=MonkeyInvestor)
     # Printer.print_funds(sim)
     # Printer.print_fund_symbols(sim)
 
     results_line = sim.run_simulator()
     print(results_line)
     # todo: change prints
-    # todo: change states to dataframe
-    # todo: edit all investors (to work with df)
+    # todo: add rl q learning trainer
+    # todo: make sure approx q learning works correctly after refactoring
     # Printer.print_results_path(results_line)
     # Printer.print_final_results(sim)

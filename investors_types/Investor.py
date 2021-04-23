@@ -1,11 +1,12 @@
 import random
-
+from gym_simulator.envs.State import get_state_features_to_idx
 
 class Investor:
     def __init__(self, initial_money, **kwargs):
         self._initial_money = initial_money
         self._previous_money = initial_money
         self._current_money = initial_money
+        self._features_idx = get_state_features_to_idx()
 
     def get_initial_money(self):
         return self._initial_money

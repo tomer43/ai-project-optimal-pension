@@ -4,7 +4,7 @@
 import pandas as pd
 import random
 from Fund import Fund
-from gym_simulator.envs.State import State
+from gym_simulator.envs.State import State, get_state
 from Printer import *
 
 cached_funds = {}
@@ -72,7 +72,8 @@ class SimulatorCore:
     def observe(self):
         # s = State(self._funds, self._turn)
         # return s.get_state()
-        return State.get_state_with_no_object_creation(self._funds, self._turn)
+        # return State.get_state_with_no_object_creation(self._funds, self._turn)
+        return get_state(self._funds, self._turn)
 
     def evaluate(self):
         return self._investor.get_money() - self._investor.get_previous_money()

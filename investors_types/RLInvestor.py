@@ -4,7 +4,7 @@ import pickle
 from gym_simulator.envs.QTable import QTable
 from numpy import loadtxt
 from investors_types.HumanHeuristicsInvestors import *
-from gym_simulator.envs.TrainerRLApproximate import TrainerRL
+from gym_simulator.envs.TrainerRL import TrainerApproximateRL
 from gym_simulator.envs.FunctionApproximation import Estimator
 
 
@@ -12,7 +12,7 @@ class RLInvestor(Investor):
     def __init__(self, initial_money, existing_weights=None):
         super().__init__(initial_money)
         if existing_weights is None:
-            self._estimator = TrainerRL(max_episodes=100).train()
+            self._estimator = TrainerApproximateRL(max_episodes=100).train()
         else:
             self._estimator = Estimator()
             self._estimator.load_existing_weights(file_dir=existing_weights)

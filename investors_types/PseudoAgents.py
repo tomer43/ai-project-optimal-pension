@@ -7,33 +7,25 @@ class BestInvestor(Investor):
     def __init__(self, initial_money):
         super().__init__(initial_money)
 
-    def choose_fund(self, funds, quarter):
-        all_fund_returns = []
-        for fund in funds:
-            fund_return = fund.get_fund_param("fund_returns", quarter)
-            fund_return -= fund.get_admin_fees_by_quarter(quarter)
-            all_fund_returns.append(fund_return)
-        best_fund_index = np.argmax(all_fund_returns)
-        return funds[best_fund_index]
+    def choose_fund(self, state):
+        fund_returns = state[:, self._features_idx['fund_returns']]
+        funds_expense_ratio = state[:, self._features_idx['fund_quarterly_expense_ratio']]
+        return np.argmax(fund_returns - funds_expense_ratio)
 
 
 class WorstInvestor(Investor):
     def __init__(self, initial_money):
         super().__init__(initial_money)
 
-    def choose_fund(self, funds, quarter):
-        all_fund_returns = []
-        for fund in funds:
-            fund_return = fund.get_fund_param("fund_returns", quarter)
-            fund_return -= fund.get_admin_fees_by_quarter(quarter)
-            all_fund_returns.append(fund_return)
-        best_fund_index = np.argmin(all_fund_returns)
-        return funds[best_fund_index]
+    def choose_fund(self, state):
+        fund_returns = state[:, self._features_idx['fund_returns']]
+        funds_expense_ratio = state[:, self._features_idx['fund_quarterly_expense_ratio']]
+        return np.argmin(fund_returns - funds_expense_ratio)
 
 
 class MonkeyInvestor(Investor):
     def __init__(self, initial_money):
         super().__init__(initial_money)
 
-    def choose_fund(self, funds, quarter):
-        return random.sample(funds, 1)[0]
+    def choose_fund(self, state):
+        return random.randint(0, 9)
