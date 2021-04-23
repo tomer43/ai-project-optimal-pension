@@ -2,6 +2,7 @@ import pandas as pd
 from Simulator import Simulator
 from investors_types.HumanHeuristicsInvestors import *
 from investors_types.PseudoAgents import *
+from investors_types.RLInvestor import RLInvestor
 import time
 from datetime import datetime
 
@@ -22,14 +23,15 @@ def get_results_file_name(investor_type):
     return file_name
 
 
-def run_tests(n, investor_type, debug_mode=False):
+def run_tests(n, investor_type, investor_kwargs=None):
     print(f'Running {n} tests for {investor_type.__name__}...')
     start_time = time.time()
-    df = pd.read_csv('funds_after_processing.csv')
+    df = pd.read_csv('funds_after_processing.csv').set_index('fund_symbol')
     results = []
-    funds_names = df['fund_symbol'].unique().tolist()
+    funds_names = df.index.unique().tolist()
     for _ in tqdm(range(n), desc="\tProgress"):
-        sim = Simulator(df, INITIAL_MONEY, investor_type, debug_mode, funds_names)
+        sim = Simulator(funds_csv=df, investor=investor_type, funds_list_names=funds_names,
+                        investor_kwargs=investor_kwargs)
         result = sim.run_simulator()
         results.append(result)
     df = pd.DataFrame(results, columns=get_columns_names())
@@ -40,4 +42,16 @@ def run_tests(n, investor_type, debug_mode=False):
 
 
 if __name__ == '__main__':
-    run_tests(100, LowestFeeInvestor, debug_mode=True)
+    # pass
+    # rl_investor_args = {
+    #     'existing_weights': r'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo\approximate_q_learning_weights\res_4.pkl'}
+    # run_tests(25000, RLInvestor, debug_mode=False, investor_kwargs=rl_investor_args)
+
+    # run RLInvestor after different training times
+    # for i in range(0, 21):
+    #     episode_length = i * 50000
+    #     rl_investor_args = {
+    #         'existing_weights': fr'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo\approximate_q_learning_weights\agent_v1_e{episode_length}.pkl'}
+    #     run_tests(25000, RLInvestor, debug_mode=False, investor_kwargs=rl_investor_args)
+
+    run_tests(n=100, investor_type=LowestFeeInvestor)

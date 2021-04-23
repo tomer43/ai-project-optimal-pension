@@ -16,18 +16,19 @@ class Printer:
         print('\n')
 
     @staticmethod
-    def print_final_results(simulator):
-        print('\n\n*** --------', type(simulator.get_investor()).__name__, '-------- ***')
-        print('\tInitial money:\t', simulator.get_investor().get_initial_money())
-        print('\tFinal money:\t', simulator.get_investor().get_money())
-        print('\tPROFIT = ', simulator.get_investor().get_money() - simulator.get_investor().get_initial_money())
-        print('*** ---------------------------------- ***')
+    def print_final_results(investor):
+        print(f'\n\n*** ----------- {type(investor).__name__} ----------- ***')
+        print(f'\n\tInitial money:\t{investor.get_initial_money()}')
+        print(f'\tFinal money:\t{investor.get_money()}')
+        # print(f'\tPROFIT = ', {investor.get_money() - investor.get_initial_money()})
+        print(f'\n\tProfit = {round(((investor.get_money() / investor.get_initial_money()) * 100), 2)}% ({investor.get_money() - investor.get_initial_money()})')
+        print('\n*** ----------------------------------------- ***')
 
     @staticmethod
-    def print_results_path(results_line, initial_money):
+    def print_results_path(results_line):
         funds_in_run = results_line[0]
-        funds = results_line[1:43]
-        sums = [str(initial_money)] + [str(x) for x in results_line[44:86]]
-        print('Funds in current run:  ', funds_in_run + '\n')
+        funds = results_line[1:44]
+        sums = [str(x) for x in results_line[44:88]]
+        print('\nFunds in current run:  ', funds_in_run + '\n')
         print('\t' + ' --> '.join(funds))
         print('\t' + ' --> '.join(sums))

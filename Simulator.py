@@ -1,64 +1,61 @@
 import pandas as pd
 import random
 from Fund import Fund
-from investors_types.HumanHeuristicsInvestors import *
-from investors_types.PseudoAgents import *
 from Printer import *
-
-NUM_OF_TURNS = 43
-
-
-def sample_10_funds(funds):
-    selected_funds = random.sample(funds, 10)
-    return selected_funds
-
-
-def create_funds(df, debug_mode, funds_names):
-    funds = []
-    if debug_mode:
-        selected_funds = ['AAAAX', 'AAAGX', 'AAAIX', 'AAAPX', 'AAARX', 'AAASX', 'AAATX', 'AAAZX', 'AABCX', 'AABFX']
-    else:
-        selected_funds = sample_10_funds(funds_names)
-    selected_fund_df = df.loc[df['fund_symbol'].isin(selected_funds)]
-    for fund_symbol in selected_funds:
-        fund_details = selected_fund_df.loc[selected_fund_df['fund_symbol'] == fund_symbol].to_dict('list')
-        fund = Fund(fund_details)
-        funds.append(fund)
-    return funds
+from investors_types.HumanHeuristicsInvestors import *
+from investors_types.HumanInvestor import HumanInvestor
+from investors_types.PseudoAgents import *
+from investors_types.RLInvestor import RLInvestor
+from gym_simulator.envs.custom_env import CustomEnv
 
 
 class Simulator:
-    def __init__(self, df, initial_money, investor, debug_mode=False, funds_names=None):
-        self._investor = investor(initial_money)
-        if funds_names is None:
-            funds_names = df['fund_symbol'].unique()
-        self._funds = create_funds(df, debug_mode, funds_names)
-        self._current_fund = None
+    def __init__(self, funds_csv, funds_list_names, investor, investor_kwargs=None):
+        self._env = CustomEnv(funds_csv, funds_list_names, investor, investor_kwargs)
 
     def get_investor(self):
-        return self._investor
+        return self._env.get_investor()
 
     def run_simulator(self):
-        turn = 0
-        funds_in_this_run = ', '.join([fund.get_symbol() for fund in self._funds])
-        funds_by_quarters , money_by_quarter = [], [self._investor.get_initial_money()]
-        while turn < NUM_OF_TURNS:
-            self._current_fund = self._investor.choose_fund(self._funds, turn)
-            funds_by_quarters.append(self._current_fund.get_symbol())
-            turn += 1
+        funds_in_this_run = self._env.get_funds_symbols_in_this_run()
+        funds_symbols_str = self._env.get_funds_in_this_run_str()
+        funds_by_quarters, money_by_quarter = [], [self._env.get_investor_money()]
 
-            # Updating money according to last quarter's performances
-            self._investor.update_money(self._current_fund, turn - 1)
-            money_by_quarter.append(self._investor.get_money())
-        res = [funds_in_this_run] + funds_by_quarters + money_by_quarter
+        done = False
+        initial_state = self._env.reset()
+        curr_state = initial_state
+        while not done:
+            action = self._env.investor_action(curr_state)
+            next_state, reward, done, _ = self._env.step(action)
+            curr_state = next_state
+            # funds_by_quarters.append(action)
+            funds_by_quarters.append(funds_in_this_run[action])
+            money_by_quarter.append(self._env.get_investor_money())
+
+        res = [funds_symbols_str] + funds_by_quarters + money_by_quarter
         return res
 
 
 if __name__ == '__main__':
-    funds_csv = pd.read_csv('funds_after_processing.csv')
-    sim = Simulator(funds_csv, initial_money=100000, investor=LargestFundInvestor, debug_mode=True)
+    # funds_csv = pd.read_csv('funds_after_processing.csv')
+    # rl_investor_args = {
+    #     'existing_weights': r'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo\approximate_q_learning_weights\res_1.pkl'}
+    # funds_csv = pd.read_csv(
+    #     r'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo/funds_after_processing.csv').set_index(
+    #     'fund_symbol')
+    funds_csv = pd.read_csv(
+        r'funds_after_processing.csv').set_index(
+        'fund_symbol')
+    funds_names = funds_csv.index.unique().tolist()
+
+    sim = Simulator(funds_csv=funds_csv, funds_list_names=funds_names, investor=LowestFeeInvestor)
     # Printer.print_funds(sim)
     # Printer.print_fund_symbols(sim)
+
     results_line = sim.run_simulator()
-    Printer.print_results_path(results_line, sim.get_investor().get_initial_money())
-    Printer.print_final_results(sim)
+    # print(results_line)
+    # todo: change prints
+    # todo: change states to dataframe
+    # todo: edit all investors (to work with df)
+    Printer.print_results_path(results_line)
+    Printer.print_final_results(sim.get_investor())
