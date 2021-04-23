@@ -16,12 +16,13 @@ class Printer:
         print('\n')
 
     @staticmethod
-    def print_final_results(simulator):
-        print('\n\n*** --------', type(simulator.get_investor()).__name__, '-------- ***')
-        print('\tInitial money:\t', simulator.get_investor().get_initial_money())
-        print('\tFinal money:\t', simulator.get_investor().get_money())
-        print('\tPROFIT = ', simulator.get_investor().get_money() - simulator.get_investor().get_initial_money())
-        print('*** ---------------------------------- ***')
+    def print_final_results(investor):
+        print(f'\n\n*** ----------- {type(investor).__name__} ----------- ***')
+        print(f'\n\tInitial money:\t{investor.get_initial_money()}')
+        print(f'\tFinal money:\t{investor.get_money()}')
+        # print(f'\tPROFIT = ', {investor.get_money() - investor.get_initial_money()})
+        print(f'\n\tProfit = {round(((investor.get_money() / investor.get_initial_money()) * 100), 2)}% ({investor.get_money() - investor.get_initial_money()})')
+        print('\n*** ----------------------------------------- ***')
 
     @staticmethod
     def print_results_path(results_line):

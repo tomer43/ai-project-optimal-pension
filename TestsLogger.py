@@ -2,7 +2,7 @@ import pandas as pd
 from Simulator import Simulator
 from investors_types.HumanHeuristicsInvestors import *
 from investors_types.PseudoAgents import *
-from investors_types.RLInvestor import RLInvestor
+from investors_types.RLInvestor import RLApproximateQInvestor
 import time
 from datetime import datetime
 
@@ -54,4 +54,4 @@ if __name__ == '__main__':
     #         'existing_weights': fr'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo\approximate_q_learning_weights\agent_v1_e{episode_length}.pkl'}
     #     run_tests(25000, RLInvestor, debug_mode=False, investor_kwargs=rl_investor_args)
 
-    # run_tests(n=100, investor_type=LowestFeeInvestor)
+    run_tests(n=100, investor_type=LowestFeeInvestor)

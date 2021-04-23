@@ -55,6 +55,9 @@ class SimulatorCore:
             funds_params_by_quarter.append(fund.get_fund_param(param_name, quarter_idx))
         return funds_params_by_quarter
 
+    def get_funds(self):
+        return self._funds
+
     def get_funds_symbol(self):
         funds_in_this_run = ', '.join([fund.get_symbol() for fund in self._funds])
         return funds_in_this_run

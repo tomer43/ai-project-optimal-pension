@@ -7,6 +7,9 @@ from tqdm import tqdm
 import sys
 import pickle
 
+from investors_types.RLInvestor import RLApproximateQInvestor
+
+
 def print_episodes_results(sums):
     i = 1
     for s in sums:
@@ -29,18 +32,32 @@ def plot_smoothed_graph(episodes, sums, max_episodes):
 
 
 class TrainerApproximateRL:
-    def __init__(self, max_episodes, max_try=1000, learning_constant=10,
+    def __init__(self, funds_csv, funds_names_list, max_episodes, max_try=1000, learning_constant=10,
                  gamma=0.6, weights_to_start_dir=None):
-        self._env = CustomEnv()
+        rl_kwargs = {}
+        estimator_args = {
+            "alpha": 1 / learning_constant,
+            "gamma": gamma,
+            "pickle_file_dir": "../approximate_q_learning_weights",
+        }
+        if weights_to_start_dir is not None:
+            rl_kwargs['existing_weights'] = weights_to_start_dir
+        rl_kwargs['estimator_kwargs'] = estimator_args
+
+        self._env = CustomEnv(funds_csv=funds_csv, funds_names=funds_names_list, investor=RLApproximateQInvestor,
+                              investor_kwargs=rl_kwargs)
         self._max_episodes = max_episodes
         self._max_try = max_try
-        if weights_to_start_dir is None:
-            trainer_starting_weights=None
-        else:
-            with open(weights_to_start_dir, 'rb') as f:
-                trainer_starting_weights = pickle.load(f)
-        self._estimator = Estimator(alpha=1 / learning_constant, gamma=gamma, starting_weights=trainer_starting_weights,
-                                    pickle_file_dir=r'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo\approximate_q_learning_weights')
+
+        self._estimator = self._env.get_investor().get_inner_estimator()
+        # if weights_to_start_dir is None:
+        #     trainer_starting_weights=None
+        # else:
+        #     with open(weights_to_start_dir, 'rb') as f:
+        #         trainer_starting_weights = pickle.load(f)
+        #
+        # self._estimator = Estimator(alpha=1 / learning_constant, gamma=gamma, starting_weights=trainer_starting_weights,
+        #                             pickle_file_dir=r'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo\approximate_q_learning_weights')
 
     def train(self):
         # global epsilon, epsilon_decay
@@ -74,7 +91,7 @@ class TrainerApproximateRL:
                 if done or t >= self._max_try - 1:
                     # once in 50,000 episodes: print some stats and save to pickle
                     if episode % 50000 == 0:
-                        self._estimator.export_to_pickle(f'agent_v1_e{episode}.pkl')
+                        # self._estimator.export_to_pickle(f'agent_v1_e{episode}.pkl')
                         print("\nEpisode %d finished after %i time steps with total reward = %f." % (episode, t,
                                                                                                      total_reward))
                         print(f'weights: {self._estimator.get_weights()}')
@@ -84,7 +101,7 @@ class TrainerApproximateRL:
                     sums.append(total_reward)
                     break
 
-        self._estimator.export_to_pickle('final_weights.pkl')
+        # self._estimator.export_to_pickle('final_weights.pkl')
         print_episodes_results(sums)
 
         # plotting RL algorithm learning curve
@@ -94,9 +111,13 @@ class TrainerApproximateRL:
 
 
 if __name__ == '__main__':
-    # starting_weights = r'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo\approximate_q_learning_weights\res_4.pkl'
-    starting_weights = None
-    trainer = TrainerApproximateRL(max_episodes=1000000, learning_constant=100000, gamma=0, weights_to_start_dir=starting_weights)
+    funds_df = pd.read_csv('../../funds_after_processing.csv').set_index('fund_symbol')
+    funds_names = funds_df.index.unique().tolist()
+
+    starting_weights = r'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo\approximate_q_learning_weights\res_4.pkl'
+    # starting_weights = None
+    trainer = TrainerApproximateRL(funds_csv=funds_df, funds_names_list=funds_names, max_episodes=1000,
+                                   learning_constant=100000, gamma=0, weights_to_start_dir=starting_weights)
     trainer.train()
 
 # # env = gym.make("Pysim-v0")
