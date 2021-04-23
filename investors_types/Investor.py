@@ -2,7 +2,7 @@ import random
 
 
 class Investor:
-    def __init__(self, initial_money):
+    def __init__(self, initial_money, **kwargs):
         self._initial_money = initial_money
         self._previous_money = initial_money
         self._current_money = initial_money
@@ -17,11 +17,9 @@ class Investor:
         return self._previous_money
 
     # Base class: choosing a fund randomly
-    def choose_fund(self, funds, year):
-        next_fund = random.choice(funds)
-        # print('Investor: choose_fund:\t', next_fund.get_symbol())
-        return next_fund
-        # return random.choice(funds)
+    def choose_fund(self, state):
+        next_fund_idx = random.randint(0, 9)
+        return next_fund_idx
 
     def update_money(self, fund, quarter):
         self._previous_money = self._current_money
@@ -29,3 +27,7 @@ class Investor:
         self._current_money *= rate
         # print(f"{quarter}: {type(self).__name__}: {self._previous_money} --> {self._current_money}")
         # print(f"{quarter}: {self._previous_money} ---{fund.get_symbol()}---> {self._current_money}")
+
+    def reset_money(self):
+        self._previous_money = self._initial_money
+        self._current_money = self._initial_money

@@ -28,7 +28,10 @@ class BestReturnInvestor(Investor):
         }
         self._return_param_name = param_name_dict[period_backward]
 
-    def choose_fund(self, funds, quarter):
+    def choose_fund(self, state):
+        if self._return_param_name == 'fund_last_quarter_returns':
+            return np.argmax(state[:, 3])
+        return 0
         all_funds_returns = []
         for fund in funds:
             fund_return = fund.get_fund_param(self._return_param_name, quarter)
@@ -111,7 +114,9 @@ class LowestFeeInvestor(Investor):
     def __init__(self, initial_money):
         super(LowestFeeInvestor, self).__init__(initial_money)
 
-    def choose_fund(self, funds, quarter):
+    def choose_fund(self, state):
+        # print(state[:, 4])
+        return np.argmin(state[:, 4])
         fees_this_quarter = []
         for fund in funds:
             fees_this_quarter.append(fund.get_admin_fees_by_quarter(quarter))

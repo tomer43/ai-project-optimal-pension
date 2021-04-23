@@ -15,14 +15,14 @@ def get_funds_param_by_quarter(funds, param_name, quarter_idx):
 class State:
     def __init__(self, funds, turn):
         state_info = ['fund_total_last_5_years_returns',
-                  'fund_total_last_3_years_returns',
-                  'fund_total_last_year_returns',
-                  'fund_last_quarter_returns',
-                  'fund_quarterly_expense_ratio',
-                  'asset_stocks',
-                  'asset_bonds',
-                  'asset_cash',
-                  'asset_others']
+                      'fund_total_last_3_years_returns',
+                      'fund_total_last_year_returns',
+                      'fund_last_quarter_returns',
+                      'fund_quarterly_expense_ratio',
+                      'asset_stocks',
+                      'asset_bonds',
+                      'asset_cash',
+                      'asset_others']
         self._state_parameters = np.ndarray((10, 9))
         for i, param in enumerate(state_info, start=0):
             self._state_parameters[:, i] = get_funds_param_by_quarter(funds, param, turn)
@@ -45,7 +45,3 @@ class State:
         for i, param in enumerate(state_info, start=0):
             state_parameters[:, i] = get_funds_param_by_quarter(funds, param, turn)
         return state_parameters
-
-
-
-

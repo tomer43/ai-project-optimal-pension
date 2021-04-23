@@ -28,7 +28,7 @@ def plot_smoothed_graph(episodes, sums, max_episodes):
     plt.show()
 
 
-class TrainerRL:
+class TrainerApproximateRL:
     def __init__(self, max_episodes, max_try=1000, learning_constant=10,
                  gamma=0.6, weights_to_start_dir=None):
         self._env = CustomEnv()
@@ -96,7 +96,7 @@ class TrainerRL:
 if __name__ == '__main__':
     # starting_weights = r'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo\approximate_q_learning_weights\res_4.pkl'
     starting_weights = None
-    trainer = TrainerRL(max_episodes=1000000, learning_constant=100000, gamma=0, weights_to_start_dir=starting_weights)
+    trainer = TrainerApproximateRL(max_episodes=1000000, learning_constant=100000, gamma=0, weights_to_start_dir=starting_weights)
     trainer.train()
 
 # # env = gym.make("Pysim-v0")
