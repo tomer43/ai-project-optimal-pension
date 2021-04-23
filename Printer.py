@@ -24,10 +24,10 @@ class Printer:
         print('*** ---------------------------------- ***')
 
     @staticmethod
-    def print_results_path(results_line, initial_money):
+    def print_results_path(results_line):
         funds_in_run = results_line[0]
-        funds = results_line[1:43]
-        sums = [str(initial_money)] + [str(x) for x in results_line[44:86]]
-        print('Funds in current run:  ', funds_in_run + '\n')
+        funds = results_line[1:44]
+        sums = [str(x) for x in results_line[44:88]]
+        print('\nFunds in current run:  ', funds_in_run + '\n')
         print('\t' + ' --> '.join(funds))
         print('\t' + ' --> '.join(sums))

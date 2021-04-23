@@ -1,6 +1,6 @@
 class Fund:
     def __init__(self, fund_info):
-        self._fund_info = fund_info       # fund_info = A dictionary containing all details of a fund (from CSV)
+        self._fund_info = fund_info       # _fund_info = A dictionary containing all details of a fund (from CSV)
 
     def get_symbol(self):
         return self._fund_info['fund_symbol'][0]
