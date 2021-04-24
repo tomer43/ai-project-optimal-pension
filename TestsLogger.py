@@ -1,11 +1,14 @@
+import pathlib
 import pandas as pd
-from Simulator import Simulator
-from investors_types.HumanHeuristicsInvestors import *
-from investors_types.PseudoAgents import *
+from tqdm import tqdm
 import time
 from datetime import datetime
 
-from tqdm import tqdm
+from Simulator import Simulator
+from investors_types.HumanHeuristicsInvestors import *
+from investors_types.PseudoAgents import *
+from investors_types.RLInvestor import RLApproximateQInvestor
+
 
 INITIAL_MONEY = 100000
 
@@ -22,14 +25,15 @@ def get_results_file_name(investor_type):
     return file_name
 
 
-def run_tests(n, investor_type, debug_mode=False):
+def run_tests(n, investor_type, investor_kwargs=None):
     print(f'Running {n} tests for {investor_type.__name__}...')
     start_time = time.time()
-    df = pd.read_csv('funds_after_processing.csv')
+    df = pd.read_csv('funds_after_processing.csv').set_index('fund_symbol')
     results = []
-    funds_names = df['fund_symbol'].unique().tolist()
+    funds_names = df.index.unique().tolist()
     for _ in tqdm(range(n), desc="\tProgress"):
-        sim = Simulator(df, INITIAL_MONEY, investor_type, debug_mode, funds_names)
+        sim = Simulator(funds_csv=df, investor=investor_type, funds_list_names=funds_names,
+                        investor_kwargs=investor_kwargs)
         result = sim.run_simulator()
         results.append(result)
     df = pd.DataFrame(results, columns=get_columns_names())
@@ -40,4 +44,13 @@ def run_tests(n, investor_type, debug_mode=False):
 
 
 if __name__ == '__main__':
-    run_tests(100, LowestFeeInvestor, debug_mode=True)
+    pass
+
+    # Heuristic Agents
+    # run_tests(n=1000, investor_type=LowestFeeInvestor)
+
+    # RL Agents
+    rl_investor_args = {
+        'existing_weights': pathlib.Path.cwd() / 'approximate_q_learning_weights' / 'agent_debugging_end.pkl'
+    }
+    run_tests(n=1000, investor_type=RLApproximateQInvestor, investor_kwargs=rl_investor_args)
