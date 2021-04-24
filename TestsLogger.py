@@ -1,12 +1,14 @@
+import pathlib
 import pandas as pd
+from tqdm import tqdm
+import time
+from datetime import datetime
+
 from Simulator import Simulator
 from investors_types.HumanHeuristicsInvestors import *
 from investors_types.PseudoAgents import *
 from investors_types.RLInvestor import RLApproximateQInvestor
-import time
-from datetime import datetime
 
-from tqdm import tqdm
 
 INITIAL_MONEY = 100000
 
@@ -43,15 +45,12 @@ def run_tests(n, investor_type, investor_kwargs=None):
 
 if __name__ == '__main__':
     pass
-    # rl_investor_args = {
-    #     'existing_weights': r'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo\approximate_q_learning_weights\res_4.pkl'}
-    # run_tests(25000, RLInvestor, debug_mode=False, investor_kwargs=rl_investor_args)
 
-    # run RLInvestor after different training times
-    # for i in range(0, 21):
-    #     episode_length = i * 50000
-    #     rl_investor_args = {
-    #         'existing_weights': fr'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo\approximate_q_learning_weights\agent_v1_e{episode_length}.pkl'}
-    #     run_tests(25000, RLInvestor, debug_mode=False, investor_kwargs=rl_investor_args)
+    # Heuristic Agents
+    # run_tests(n=1000, investor_type=LowestFeeInvestor)
 
-    run_tests(n=100, investor_type=LowestFeeInvestor)
+    # RL Agents
+    rl_investor_args = {
+        'existing_weights': pathlib.Path.cwd() / 'approximate_q_learning_weights' / 'agent_debugging_end.pkl'
+    }
+    run_tests(n=1000, investor_type=RLApproximateQInvestor, investor_kwargs=rl_investor_args)

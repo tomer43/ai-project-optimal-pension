@@ -1,13 +1,12 @@
 import gym
-import pandas as pd
-from investors_types.HumanHeuristicsInvestors import *
-# from investors_types.RLInvestor import RLApproximateQInvestor
+
 from gym_simulator.envs.SimulatorCore import SimulatorCore
+from investors_types.Investor import Investor
 
 
 NUM_OF_HUMAN_HEURISTICS = 6
 INITIAL_MONEY = 100000
-DEBUG_MODE = True
+DEBUG_MODE = False
 
 
 class CustomEnv(gym.Env):
@@ -57,12 +56,6 @@ class CustomEnv(gym.Env):
 
     def get_investor_money(self):
         return self._investor.get_money()
-
-    # def get_investor_estimator(self):
-    #     if isinstance(self._investor, RLApproximateQInvestor):
-    #         return self._investor.get_inner_estimator()
-    #     else:
-    #         raise RuntimeError("Can't call to get_investor_estimator method for non RL investors")
 
     def get_investor(self):
         return self._investor

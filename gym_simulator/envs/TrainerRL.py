@@ -1,11 +1,15 @@
-from gym_simulator.envs.custom_env import CustomEnv
-from gym_simulator.envs.FunctionApproximation import Estimator
-import pandas as pd
-import matplotlib.pyplot as plt
 import random
 from tqdm import tqdm
 import sys
 import pickle
+import pathlib
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+from gym_simulator.envs.custom_env import CustomEnv
+from gym_simulator.envs.FunctionApproximation import Estimator
+
 
 from investors_types.RLInvestor import RLApproximateQInvestor
 
@@ -38,7 +42,7 @@ class TrainerApproximateRL:
         estimator_args = {
             "alpha": 1 / learning_constant,
             "gamma": gamma,
-            "pickle_file_dir": "../approximate_q_learning_weights",
+            "pickle_file_dir": pathlib.Path("../../approximate_q_learning_weights"),
         }
         if weights_to_start_dir is not None:
             rl_kwargs['existing_weights'] = weights_to_start_dir
@@ -91,7 +95,7 @@ class TrainerApproximateRL:
                 if done or t >= self._max_try - 1:
                     # once in 50,000 episodes: print some stats and save to pickle
                     if episode % 50000 == 0:
-                        # self._estimator.export_to_pickle(f'agent_v1_e{episode}.pkl')
+                        self._estimator.export_to_pickle(f'agent_v1_e{episode}.pkl')
                         print("\nEpisode %d finished after %i time steps with total reward = %f." % (episode, t,
                                                                                                      total_reward))
                         print(f'weights: {self._estimator.get_weights()}')
@@ -101,7 +105,7 @@ class TrainerApproximateRL:
                     sums.append(total_reward)
                     break
 
-        # self._estimator.export_to_pickle('final_weights.pkl')
+        self._estimator.export_to_pickle('final_weights.pkl')
         print_episodes_results(sums)
 
         # plotting RL algorithm learning curve
@@ -114,9 +118,10 @@ if __name__ == '__main__':
     funds_df = pd.read_csv('../../funds_after_processing.csv').set_index('fund_symbol')
     funds_names = funds_df.index.unique().tolist()
 
-    starting_weights = r'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo\approximate_q_learning_weights\res_4.pkl'
-    # starting_weights = None
-    trainer = TrainerApproximateRL(funds_csv=funds_df, funds_names_list=funds_names, max_episodes=1000,
+    # starting_weights = pathlib.Path('../../approximate_q_learning_weights/agent_debugging_mid.pkl')
+    starting_weights = None
+    
+    trainer = TrainerApproximateRL(funds_csv=funds_df, funds_names_list=funds_names, max_episodes=60000,
                                    learning_constant=100000, gamma=0, weights_to_start_dir=starting_weights)
     trainer.train()
 

@@ -1,33 +1,35 @@
 import pathlib
 
 import numpy as np
-import pandas as pd
-import random
 import pickle
-from numba import njit, jit
+from numba import jit
+
+from gym_simulator.envs.State import get_state_features_to_idx
 
 ACTIONS_NUMBER = 10
 FEATURES_NUMBER = 6
+FEATURES_IDX = get_state_features_to_idx()
 
 
 @jit(nopython=True)
-def fill_features(state_values, feaures_arr):
+def fill_features(state_values, features_arr, returns_idx_start, expense_ratio_idx, assets_start_idx):
     # feature 0 is five years ago, feature 1 is 3 years ago, feature 2 is one year ago.
     # feature 5 to 8 is assets (stocks, bonds, cash, others)
-    # features = np.ndarray([FEATURES_NUMBER, ACTIONS_NUMBER])
-    feaures_arr[0, :] = state_values[:, 0] / 5 * 4
-    feaures_arr[1, :] = state_values[:, 1] / 3 * 4
-    feaures_arr[2, :] = state_values[:, 2] / 4
-    feaures_arr[3, :] = state_values[:, 3]
-    feaures_arr[4, :] = state_values[:, 4]
+    features_arr[0, :] = state_values[:, returns_idx_start] / 5 * 4
+    features_arr[1, :] = state_values[:, returns_idx_start + 1] / 3 * 4
+    features_arr[2, :] = state_values[:, returns_idx_start + 2] / 4
+    features_arr[3, :] = state_values[:, returns_idx_start + 3]
+    features_arr[4, :] = state_values[:, expense_ratio_idx]
 
     def combined_assets_score(assets_relative_arr):
         return 0.8 * assets_relative_arr[0] + 0.15 * assets_relative_arr[1] + 0.05 * assets_relative_arr[2]
 
+    assets_idx_st = assets_start_idx
+    assets_idx_end = assets_start_idx + 4
     for i in range(0, ACTIONS_NUMBER):
-        fund_asset_score = combined_assets_score(state_values[i, 5:9])
-        feaures_arr[5, i] = fund_asset_score
-    return feaures_arr
+        fund_asset_score = combined_assets_score(state_values[i, assets_idx_st:assets_idx_end])
+        features_arr[5, i] = fund_asset_score
+    return features_arr
 
 
 class Estimator:
@@ -36,15 +38,11 @@ class Estimator:
             self._w = np.ones([FEATURES_NUMBER])
         else:
             self._w = starting_weights
-        # self._w[1] = 2
-        # self._w[2] = 3
-        # self._w[3] = 5
-        # self._w *= 100
         self._alpha = alpha
         self._gamma = gamma
         self._update_counter = 1
         if pickle_file_dir is None:
-            self._file_dir = r'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo\approximate_q_learning_weights'
+            self._file_dir = pathlib.Path('../../approximate_q_learning_weights/')
         else:
             self._file_dir = pickle_file_dir
 
@@ -58,7 +56,12 @@ class Estimator:
     @staticmethod
     def featurize_state(state_values):
         features = np.zeros(shape=[FEATURES_NUMBER, ACTIONS_NUMBER])
-        features = fill_features(state_values, features)
+        return_idx = FEATURES_IDX['fund_total_last_5_years_returns']
+        expense_ratio_idx = FEATURES_IDX['fund_quarterly_expense_ratio']
+        assets_idx = FEATURES_IDX['asset_stocks']
+
+        features = fill_features(state_values=state_values, features_arr=features, returns_idx_start=return_idx,
+                                 expense_ratio_idx=expense_ratio_idx, assets_start_idx=assets_idx)
         return features
 
     def approximate_state(self, features, action_num):
@@ -82,8 +85,8 @@ class Estimator:
 
     def update(self, state, action, reward, next_state):
         state_features = self.featurize_state(state)[:, action]
-        reward_standarize = reward * 100
-        target = reward_standarize + self._gamma * self.get_state_max(next_state)
+        reward_standardized = reward * 100
+        target = reward_standardized + self._gamma * self.get_state_max(next_state)
         prediction = self.get_q_value(state, action)
         delta_w = self._alpha * (target - prediction) * state_features
         self._w += delta_w

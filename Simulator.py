@@ -1,8 +1,11 @@
+import pathlib
+
 import pandas as pd
+
 from Printer import *
 from gym_simulator.envs.custom_env import CustomEnv
-from investors_types.HumanHeuristicsInvestors import *
 from investors_types.HumanInvestor import HumanInvestor
+from investors_types.HumanHeuristicsInvestors import *
 from investors_types.PseudoAgents import *
 from investors_types.RLInvestor import RLApproximateQInvestor
 
@@ -36,7 +39,7 @@ class Simulator:
 
 if __name__ == '__main__':
     rl_investor_args = {
-        'existing_weights': r'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo\approximate_q_learning_weights\agent_v1_e1000000.pkl'
+        'existing_weights': pathlib.Path.cwd() / 'approximate_q_learning_weights' / 'agent_debugging_end.pkl'
     }
     funds_df = pd.read_csv('funds_after_processing.csv').set_index('fund_symbol')
     funds_names = funds_df.index.unique().tolist()

@@ -1,9 +1,15 @@
 import numpy as np
-import pandas as pd
 from typing import Dict
 
 
 def get_state_features_to_idx() -> Dict:
+    """
+    The list of features (columns in csv names) is how we represent a state in our simulator.
+
+    Important Note! DO NOT edit the order of 'fund_total_last_5_years_returns' to 'fund_last_quarter_returns'
+    and 'asset_stocks' to 'asset_others'. In q-learning with approximate value function, for running it with numba to
+    fast things up, we assume they appear in the order in which they are now.
+    """
     state_features_list = [
         'fund_total_last_5_years_returns',
         'fund_total_last_3_years_returns',
@@ -27,13 +33,13 @@ def get_state_features_to_idx() -> Dict:
         # this is in comment to prevent data leakage
         # 'fund_returns',
     ]
-    features_to_idx = {item:idx for idx, item in enumerate(state_features_list)}
+    features_to_idx = {item: idx for idx, item in enumerate(state_features_list)}
     return features_to_idx
 
 
 def get_funds_param_by_quarter(funds, param_name, quarter_idx):
     if quarter_idx == 43:
-        return (0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+        return 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
     else:
         funds_params_by_quarter = [0] * 10
         for i, fund in enumerate(funds):

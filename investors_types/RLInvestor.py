@@ -34,7 +34,6 @@ class RLApproximateQInvestor(Investor):
             self._estimator.load_existing_weights(file_dir=existing_weights)
 
     def choose_fund(self, state):
-        # TODO: check if the order of the actions in tthe Qtable matches the order of the funds in self._funds
         action = self._estimator.get_state_argmax(state)
         return action
 
