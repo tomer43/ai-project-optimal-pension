@@ -40,6 +40,27 @@ class RLApproximateQInvestor(Investor):
     def get_inner_estimator(self):
         return self._estimator
 
+
+# ---------------------------------------------------------------------------------
+class RLInvestor(Investor):
+    def __init__(self, initial_money, **kwargs):
+        super().__init__(initial_money)
+        # if q_table is None:
+            # self._q_table = QTable(pickle.load(open(kwargs['q_table'], "rb")))
+        self._q_table = kwargs['q_table']
+        # else:
+        #     self._q_table = q_table
+        # self._q_table = TrainerRL(max_episodes=100).train() # Final result too big- check how many random choices were there
+        # self._q_table = QTable(pickle.load(open("Q-Table.pkl", "rb")))
+
+    def choose_fund(self, state):      # TODO: check if the order of the actions in tthe Qtable matches the order of the funds in self._funds
+        hashed_state = state.tobytes().__hash__()
+        action = self._q_table.get_state_argmax(hashed_state)
+        # # print(f'RLInvestor action: {action}')
+        # next_fund = funds[action]
+        return action
+# ---------------------------------------------------------------------------------
+
 # Before changing to features as states
 # import numpy as np
 # from numpy import loadtxt
@@ -63,4 +84,3 @@ class RLApproximateQInvestor(Investor):
 #         next_fund = temp_investor.choose_fund(funds, quarter)
 #         del temp_investor
 #         return next_fund
-

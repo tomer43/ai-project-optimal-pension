@@ -3,11 +3,14 @@ import pandas as pd
 from tqdm import tqdm
 import time
 from datetime import datetime
+import pickle
 
 from Simulator import Simulator
 from investors_types.HumanHeuristicsInvestors import *
 from investors_types.PseudoAgents import *
+from investors_types.RLInvestor import RLInvestor
 from investors_types.RLInvestor import RLApproximateQInvestor
+from gym_simulator.envs.QTable import QTable
 
 
 INITIAL_MONEY = 100000
@@ -44,13 +47,17 @@ def run_tests(n, investor_type, investor_kwargs=None):
 
 
 if __name__ == '__main__':
-    pass
+    # pass
 
     # Heuristic Agents
     # run_tests(n=1000, investor_type=LowestFeeInvestor)
 
     # RL Agents
     rl_investor_args = {
-        'existing_weights': pathlib.Path.cwd() / 'approximate_q_learning_weights' / 'agent_debugging_end.pkl'
+        'q_table': QTable(pickle.load(open('Q-Table.pkl', "rb")))
     }
-    run_tests(n=1000, investor_type=RLApproximateQInvestor, investor_kwargs=rl_investor_args)
+    run_tests(n=25000, investor_type=RLInvestor, investor_kwargs=rl_investor_args)
+    # rl_investor_args = {
+    #     'existing_weights': pathlib.Path.cwd() / 'approximate_q_learning_weights' / 'final_weights.pkl'
+    # }
+    # run_tests(n=1000, investor_type=RLApproximateQInvestor, investor_kwargs=rl_investor_args)
