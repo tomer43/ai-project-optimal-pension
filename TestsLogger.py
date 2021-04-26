@@ -8,8 +8,11 @@ import pickle
 from Simulator import Simulator
 from investors_types.HumanHeuristicsInvestors import *
 from investors_types.PseudoAgents import *
-from investors_types.RLInvestor import RLInvestor
-from investors_types.RLInvestor import RLApproximateQInvestor
+
+from investors_types.RLInvestor import RLQInvestor, RLApproximateQInvestor
+
+# from investors_types.RLInvestor import RLQInvestor
+# from investors_types.RLInvestor import RLApproximateQInvestor
 from gym_simulator.envs.QTable import QTable
 
 
@@ -34,7 +37,7 @@ def run_tests(n, investor_type, investor_kwargs=None):
     df = pd.read_csv('funds_after_processing.csv').set_index('fund_symbol')
     results = []
     funds_names = df.index.unique().tolist()
-    for _ in tqdm(range(n), desc="\tProgress"):
+    for _ in tqdm(range(n), desc="\tTesting Progress"):
         sim = Simulator(funds_csv=df, investor=investor_type, funds_list_names=funds_names,
                         investor_kwargs=investor_kwargs)
         result = sim.run_simulator()
@@ -56,7 +59,8 @@ if __name__ == '__main__':
     rl_investor_args = {
         'q_table': QTable(pickle.load(open('Q-Table.pkl', "rb")))
     }
-    run_tests(n=25000, investor_type=RLInvestor, investor_kwargs=rl_investor_args)
+    run_tests(n=25000, investor_type=RLQInvestor, investor_kwargs=rl_investor_args)
+
     # rl_investor_args = {
     #     'existing_weights': pathlib.Path.cwd() / 'approximate_q_learning_weights' / 'final_weights.pkl'
     # }

@@ -1,0 +1,4000 @@
+
+Episode 0 finished after 42 time steps with total reward = 59344.104566.
+
+
+Episode 1 finished after 42 time steps with total reward = 85061.974276.
+
+
+Episode 2 finished after 42 time steps with total reward = 66156.732448.
+
+
+Episode 3 finished after 42 time steps with total reward = 48217.013003.
+
+
+Episode 4 finished after 42 time steps with total reward = 181578.438148.
+
+
+Episode 5 finished after 42 time steps with total reward = 170957.846856.
+
+
+Episode 6 finished after 42 time steps with total reward = 70791.896386.
+
+
+Episode 7 finished after 42 time steps with total reward = 116419.069201.
+
+
+Episode 8 finished after 42 time steps with total reward = 209743.812608.
+
+
+Episode 9 finished after 42 time steps with total reward = 285909.768824.
+
+
+Episode 10 finished after 42 time steps with total reward = 179201.242776.
+
+
+Episode 11 finished after 42 time steps with total reward = 63702.664048.
+
+
+Episode 12 finished after 42 time steps with total reward = 89667.123942.
+
+
+Episode 13 finished after 42 time steps with total reward = 51465.914030.
+
+
+Episode 14 finished after 42 time steps with total reward = 58252.467730.
+
+
+Episode 15 finished after 42 time steps with total reward = 57565.364522.
+
+
+Episode 16 finished after 42 time steps with total reward = 188209.467256.
+
+
+Episode 17 finished after 42 time steps with total reward = 131312.037290.
+
+
+Episode 18 finished after 42 time steps with total reward = 198393.426289.
+
+
+Episode 19 finished after 42 time steps with total reward = 242419.564369.
+
+
+Episode 20 finished after 42 time steps with total reward = 89134.156322.
+
+
+Episode 21 finished after 42 time steps with total reward = 151175.472615.
+
+
+Episode 22 finished after 42 time steps with total reward = 135089.095150.
+
+
+Episode 23 finished after 42 time steps with total reward = 288400.450487.
+
+
+Episode 24 finished after 42 time steps with total reward = 148102.852820.
+
+
+Episode 25 finished after 42 time steps with total reward = 73100.092277.
+
+
+Episode 26 finished after 42 time steps with total reward = 133201.671070.
+
+
+Episode 27 finished after 42 time steps with total reward = 44446.130307.
+
+
+Episode 28 finished after 42 time steps with total reward = 105856.167131.
+
+
+Episode 29 finished after 42 time steps with total reward = 225275.975279.
+
+
+Episode 30 finished after 42 time steps with total reward = 187801.547688.
+
+
+Episode 31 finished after 42 time steps with total reward = 50796.903317.
+
+
+Episode 32 finished after 42 time steps with total reward = 67370.075275.
+
+
+Episode 33 finished after 42 time steps with total reward = 147595.279644.
+
+
+Episode 34 finished after 42 time steps with total reward = 90316.653487.
+
+
+Episode 35 finished after 42 time steps with total reward = 63087.540778.
+
+
+Episode 36 finished after 42 time steps with total reward = 127182.143980.
+
+
+Episode 37 finished after 42 time steps with total reward = 236839.992305.
+
+
+Episode 38 finished after 42 time steps with total reward = 43295.258138.
+
+
+Episode 39 finished after 42 time steps with total reward = 80914.797029.
+
+
+Episode 40 finished after 42 time steps with total reward = 36461.703672.
+
+
+Episode 41 finished after 42 time steps with total reward = 87169.292025.
+
+
+Episode 42 finished after 42 time steps with total reward = 142360.994128.
+
+
+Episode 43 finished after 42 time steps with total reward = 117434.535822.
+
+
+Episode 44 finished after 42 time steps with total reward = 179052.046262.
+
+
+Episode 45 finished after 42 time steps with total reward = 34629.309954.
+
+
+Episode 46 finished after 42 time steps with total reward = 49921.193891.
+
+
+Episode 47 finished after 42 time steps with total reward = 133219.961693.
+
+
+Episode 48 finished after 42 time steps with total reward = 64579.695720.
+
+
+Episode 49 finished after 42 time steps with total reward = 161369.243552.
+
+
+Episode 50 finished after 42 time steps with total reward = 112100.319320.
+
+
+Episode 51 finished after 42 time steps with total reward = 164191.488458.
+
+
+Episode 52 finished after 42 time steps with total reward = 144023.477489.
+
+
+Episode 53 finished after 42 time steps with total reward = 78390.911333.
+
+
+Episode 54 finished after 42 time steps with total reward = 121667.233703.
+
+
+Episode 55 finished after 42 time steps with total reward = 33741.721111.
+
+
+Episode 56 finished after 42 time steps with total reward = 216639.139057.
+
+
+Episode 57 finished after 42 time steps with total reward = 106780.453349.
+
+
+Episode 58 finished after 42 time steps with total reward = 258601.235127.
+
+
+Episode 59 finished after 42 time steps with total reward = 151971.007631.
+
+
+Episode 60 finished after 42 time steps with total reward = 70907.299049.
+
+
+Episode 61 finished after 42 time steps with total reward = 148056.575467.
+
+
+Episode 62 finished after 42 time steps with total reward = 179505.830398.
+
+
+Episode 63 finished after 42 time steps with total reward = 123103.808197.
+
+
+Episode 64 finished after 42 time steps with total reward = 65147.901173.
+
+
+Episode 65 finished after 42 time steps with total reward = 32817.437143.
+
+
+Episode 66 finished after 42 time steps with total reward = 33073.411689.
+
+
+Episode 67 finished after 42 time steps with total reward = 195156.050010.
+
+
+Episode 68 finished after 42 time steps with total reward = 204550.154882.
+
+
+Episode 69 finished after 42 time steps with total reward = 5715.392856.
+
+
+Episode 70 finished after 42 time steps with total reward = 89143.987937.
+
+
+Episode 71 finished after 42 time steps with total reward = 82082.730862.
+
+
+Episode 72 finished after 42 time steps with total reward = 137051.924053.
+
+
+Episode 73 finished after 42 time steps with total reward = 154862.066911.
+
+
+Episode 74 finished after 42 time steps with total reward = 193311.535652.
+
+
+Episode 75 finished after 42 time steps with total reward = 19790.752504.
+
+
+Episode 76 finished after 42 time steps with total reward = 102311.764212.
+
+
+Episode 77 finished after 42 time steps with total reward = 87237.062995.
+
+
+Episode 78 finished after 42 time steps with total reward = 30761.438866.
+
+
+Episode 79 finished after 42 time steps with total reward = 207876.048985.
+
+
+Episode 80 finished after 42 time steps with total reward = 86410.895740.
+
+
+Episode 81 finished after 42 time steps with total reward = 165612.035505.
+
+
+Episode 82 finished after 42 time steps with total reward = 46834.327277.
+
+
+Episode 83 finished after 42 time steps with total reward = 69671.287524.
+
+
+Episode 84 finished after 42 time steps with total reward = 128524.221302.
+
+
+Episode 85 finished after 42 time steps with total reward = 100221.285005.
+
+
+Episode 86 finished after 42 time steps with total reward = 200609.959830.
+
+
+Episode 87 finished after 42 time steps with total reward = 193758.324346.
+
+
+Episode 88 finished after 42 time steps with total reward = 84828.945143.
+
+
+Episode 89 finished after 42 time steps with total reward = 209557.600572.
+
+
+Episode 90 finished after 42 time steps with total reward = 116435.613057.
+
+
+Episode 91 finished after 42 time steps with total reward = 82727.095380.
+
+
+Episode 92 finished after 42 time steps with total reward = 100922.787135.
+
+
+Episode 93 finished after 42 time steps with total reward = 140769.797995.
+
+
+Episode 94 finished after 42 time steps with total reward = 84769.536767.
+
+
+Episode 95 finished after 42 time steps with total reward = 83015.017986.
+
+
+Episode 96 finished after 42 time steps with total reward = 71413.044898.
+
+
+Episode 97 finished after 42 time steps with total reward = 87493.815207.
+
+
+Episode 98 finished after 42 time steps with total reward = 56458.086326.
+
+
+Episode 99 finished after 42 time steps with total reward = 144222.600455.
+
+
+Episode 100 finished after 42 time steps with total reward = 283640.672342.
+
+
+Episode 101 finished after 42 time steps with total reward = 46193.672959.
+
+
+Episode 102 finished after 42 time steps with total reward = 97495.098717.
+
+
+Episode 103 finished after 42 time steps with total reward = 102451.976855.
+
+
+Episode 104 finished after 42 time steps with total reward = 34916.951612.
+
+
+Episode 105 finished after 42 time steps with total reward = 137010.962173.
+
+
+Episode 106 finished after 42 time steps with total reward = 144576.182903.
+
+
+Episode 107 finished after 42 time steps with total reward = 119844.305457.
+
+
+Episode 108 finished after 42 time steps with total reward = 197347.652416.
+
+
+Episode 109 finished after 42 time steps with total reward = 27673.820729.
+
+
+Episode 110 finished after 42 time steps with total reward = 90748.766076.
+
+
+Episode 111 finished after 42 time steps with total reward = 218197.548543.
+
+
+Episode 112 finished after 42 time steps with total reward = 72265.275601.
+
+
+Episode 113 finished after 42 time steps with total reward = 102015.259504.
+
+
+Episode 114 finished after 42 time steps with total reward = 183822.218263.
+
+
+Episode 115 finished after 42 time steps with total reward = 128140.656248.
+
+
+Episode 116 finished after 42 time steps with total reward = 161355.363131.
+
+
+Episode 117 finished after 42 time steps with total reward = 94776.595277.
+
+
+Episode 118 finished after 42 time steps with total reward = 166435.220533.
+
+
+Episode 119 finished after 42 time steps with total reward = 256027.669973.
+
+
+Episode 120 finished after 42 time steps with total reward = 188018.415503.
+
+
+Episode 121 finished after 42 time steps with total reward = 121509.199751.
+
+
+Episode 122 finished after 42 time steps with total reward = 193389.428157.
+
+
+Episode 123 finished after 42 time steps with total reward = -2086.364925.
+
+
+Episode 124 finished after 42 time steps with total reward = 59154.447639.
+
+
+Episode 125 finished after 42 time steps with total reward = 166305.644639.
+
+
+Episode 126 finished after 42 time steps with total reward = 25098.974294.
+
+
+Episode 127 finished after 42 time steps with total reward = 65696.154297.
+
+
+Episode 128 finished after 42 time steps with total reward = 116030.204554.
+
+
+Episode 129 finished after 42 time steps with total reward = 189685.536617.
+
+
+Episode 130 finished after 42 time steps with total reward = 158846.850448.
+
+
+Episode 131 finished after 42 time steps with total reward = 128595.224825.
+
+
+Episode 132 finished after 42 time steps with total reward = 39255.432970.
+
+
+Episode 133 finished after 42 time steps with total reward = 124367.807795.
+
+
+Episode 134 finished after 42 time steps with total reward = 114081.091582.
+
+
+Episode 135 finished after 42 time steps with total reward = 172282.870816.
+
+
+Episode 136 finished after 42 time steps with total reward = 98056.018515.
+
+
+Episode 137 finished after 42 time steps with total reward = 137260.543967.
+
+
+Episode 138 finished after 42 time steps with total reward = 212055.325265.
+
+
+Episode 139 finished after 42 time steps with total reward = 107526.208658.
+
+
+Episode 140 finished after 42 time steps with total reward = 107160.366480.
+
+
+Episode 141 finished after 42 time steps with total reward = 30569.564755.
+
+
+Episode 142 finished after 42 time steps with total reward = 108478.614248.
+
+
+Episode 143 finished after 42 time steps with total reward = 184310.829622.
+
+
+Episode 144 finished after 42 time steps with total reward = 191537.469009.
+
+
+Episode 145 finished after 42 time steps with total reward = 56792.502288.
+
+
+Episode 146 finished after 42 time steps with total reward = 243374.831493.
+
+
+Episode 147 finished after 42 time steps with total reward = 134077.825511.
+
+
+Episode 148 finished after 42 time steps with total reward = 155332.311757.
+
+
+Episode 149 finished after 42 time steps with total reward = 275645.074632.
+
+
+Episode 150 finished after 42 time steps with total reward = 162060.131169.
+
+
+Episode 151 finished after 42 time steps with total reward = 224810.420248.
+
+
+Episode 152 finished after 42 time steps with total reward = 20441.645864.
+
+
+Episode 153 finished after 42 time steps with total reward = 17533.856823.
+
+
+Episode 154 finished after 42 time steps with total reward = 161111.900834.
+
+
+Episode 155 finished after 42 time steps with total reward = 84136.893406.
+
+
+Episode 156 finished after 42 time steps with total reward = 206320.609138.
+
+
+Episode 157 finished after 42 time steps with total reward = 71225.777617.
+
+
+Episode 158 finished after 42 time steps with total reward = 198055.099978.
+
+
+Episode 159 finished after 42 time steps with total reward = 161573.392131.
+
+
+Episode 160 finished after 42 time steps with total reward = 137297.604719.
+
+
+Episode 161 finished after 42 time steps with total reward = 162600.999264.
+
+
+Episode 162 finished after 42 time steps with total reward = 238431.488935.
+
+
+Episode 163 finished after 42 time steps with total reward = 111681.473263.
+
+
+Episode 164 finished after 42 time steps with total reward = 173165.257563.
+
+
+Episode 165 finished after 42 time steps with total reward = 207251.121466.
+
+
+Episode 166 finished after 42 time steps with total reward = 145540.109317.
+
+
+Episode 167 finished after 42 time steps with total reward = 43017.540734.
+
+
+Episode 168 finished after 42 time steps with total reward = 198871.529030.
+
+
+Episode 169 finished after 42 time steps with total reward = 79082.438793.
+
+
+Episode 170 finished after 42 time steps with total reward = 120779.034859.
+
+
+Episode 171 finished after 42 time steps with total reward = 141262.325713.
+
+
+Episode 172 finished after 42 time steps with total reward = 90925.107122.
+
+
+Episode 173 finished after 42 time steps with total reward = 151604.921305.
+
+
+Episode 174 finished after 42 time steps with total reward = 74620.019989.
+
+
+Episode 175 finished after 42 time steps with total reward = 164629.071753.
+
+
+Episode 176 finished after 42 time steps with total reward = 107214.242141.
+
+
+Episode 177 finished after 42 time steps with total reward = 127241.019886.
+
+
+Episode 178 finished after 42 time steps with total reward = 204234.396267.
+
+
+Episode 179 finished after 42 time steps with total reward = 97481.777433.
+
+
+Episode 180 finished after 42 time steps with total reward = 36639.503885.
+
+
+Episode 181 finished after 42 time steps with total reward = 186682.698410.
+
+
+Episode 182 finished after 42 time steps with total reward = 87576.271275.
+
+
+Episode 183 finished after 42 time steps with total reward = 136950.458521.
+
+
+Episode 184 finished after 42 time steps with total reward = 75433.022733.
+
+
+Episode 185 finished after 42 time steps with total reward = 165512.544389.
+
+
+Episode 186 finished after 42 time steps with total reward = 246568.579055.
+
+
+Episode 187 finished after 42 time steps with total reward = 183725.797557.
+
+
+Episode 188 finished after 42 time steps with total reward = 183371.477052.
+
+
+Episode 189 finished after 42 time steps with total reward = 133209.686465.
+
+
+Episode 190 finished after 42 time steps with total reward = 130498.949509.
+
+
+Episode 191 finished after 42 time steps with total reward = 151277.110756.
+
+
+Episode 192 finished after 42 time steps with total reward = 224746.872291.
+
+
+Episode 193 finished after 42 time steps with total reward = 176751.253563.
+
+
+Episode 194 finished after 42 time steps with total reward = 246473.014315.
+
+
+Episode 195 finished after 42 time steps with total reward = 76913.758649.
+
+
+Episode 196 finished after 42 time steps with total reward = 28515.566223.
+
+
+Episode 197 finished after 42 time steps with total reward = 105811.108225.
+
+
+Episode 198 finished after 42 time steps with total reward = 67112.566900.
+
+
+Episode 199 finished after 42 time steps with total reward = 176314.145579.
+
+
+Episode 200 finished after 42 time steps with total reward = 108215.124378.
+
+
+Episode 201 finished after 42 time steps with total reward = 103073.281954.
+
+
+Episode 202 finished after 42 time steps with total reward = 173305.490309.
+
+
+Episode 203 finished after 42 time steps with total reward = 146911.805406.
+
+
+Episode 204 finished after 42 time steps with total reward = 140924.594755.
+
+
+Episode 205 finished after 42 time steps with total reward = 201917.944445.
+
+
+Episode 206 finished after 42 time steps with total reward = 137717.864418.
+
+
+Episode 207 finished after 42 time steps with total reward = 49121.334361.
+
+
+Episode 208 finished after 42 time steps with total reward = 85829.633889.
+
+
+Episode 209 finished after 42 time steps with total reward = 32207.794285.
+
+
+Episode 210 finished after 42 time steps with total reward = 165486.074029.
+
+
+Episode 211 finished after 42 time steps with total reward = 23778.414488.
+
+
+Episode 212 finished after 42 time steps with total reward = 14382.756286.
+
+
+Episode 213 finished after 42 time steps with total reward = 216537.200766.
+
+
+Episode 214 finished after 42 time steps with total reward = 120167.577503.
+
+
+Episode 215 finished after 42 time steps with total reward = 146262.300956.
+
+
+Episode 216 finished after 42 time steps with total reward = 103210.492598.
+
+
+Episode 217 finished after 42 time steps with total reward = 49291.421780.
+
+
+Episode 218 finished after 42 time steps with total reward = 150204.135456.
+
+
+Episode 219 finished after 42 time steps with total reward = 130285.161296.
+
+
+Episode 220 finished after 42 time steps with total reward = 87843.961312.
+
+
+Episode 221 finished after 42 time steps with total reward = 103586.170262.
+
+
+Episode 222 finished after 42 time steps with total reward = 107859.796207.
+
+
+Episode 223 finished after 42 time steps with total reward = 82684.839720.
+
+
+Episode 224 finished after 42 time steps with total reward = 146371.609657.
+
+
+Episode 225 finished after 42 time steps with total reward = 89324.022096.
+
+
+Episode 226 finished after 42 time steps with total reward = 114035.266285.
+
+
+Episode 227 finished after 42 time steps with total reward = 118937.986610.
+
+
+Episode 228 finished after 42 time steps with total reward = 167170.248360.
+
+
+Episode 229 finished after 42 time steps with total reward = 103102.509527.
+
+
+Episode 230 finished after 42 time steps with total reward = 88422.457877.
+
+
+Episode 231 finished after 42 time steps with total reward = 109732.598866.
+
+
+Episode 232 finished after 42 time steps with total reward = 103019.583169.
+
+
+Episode 233 finished after 42 time steps with total reward = 183741.535937.
+
+
+Episode 234 finished after 42 time steps with total reward = 93398.032391.
+
+
+Episode 235 finished after 42 time steps with total reward = 80417.294317.
+
+
+Episode 236 finished after 42 time steps with total reward = 108018.429296.
+
+
+Episode 237 finished after 42 time steps with total reward = 199571.639429.
+
+
+Episode 238 finished after 42 time steps with total reward = 116501.167072.
+
+
+Episode 239 finished after 42 time steps with total reward = 241991.237487.
+
+
+Episode 240 finished after 42 time steps with total reward = 124300.099852.
+
+
+Episode 241 finished after 42 time steps with total reward = 63863.280437.
+
+
+Episode 242 finished after 42 time steps with total reward = 28638.007692.
+
+
+Episode 243 finished after 42 time steps with total reward = 186740.426724.
+
+
+Episode 244 finished after 42 time steps with total reward = 101515.863666.
+
+
+Episode 245 finished after 42 time steps with total reward = 88226.929880.
+
+
+Episode 246 finished after 42 time steps with total reward = 75559.329332.
+
+
+Episode 247 finished after 42 time steps with total reward = 94889.342985.
+
+
+Episode 248 finished after 42 time steps with total reward = 153472.401711.
+
+
+Episode 249 finished after 42 time steps with total reward = 222411.841282.
+
+
+Episode 250 finished after 42 time steps with total reward = 164670.311279.
+
+
+Episode 251 finished after 42 time steps with total reward = 176724.452603.
+
+
+Episode 252 finished after 42 time steps with total reward = 313731.050535.
+
+
+Episode 253 finished after 42 time steps with total reward = 131049.406226.
+
+
+Episode 254 finished after 42 time steps with total reward = 118070.415247.
+
+
+Episode 255 finished after 42 time steps with total reward = 126785.048833.
+
+
+Episode 256 finished after 42 time steps with total reward = 38048.119840.
+
+
+Episode 257 finished after 42 time steps with total reward = 68577.150465.
+
+
+Episode 258 finished after 42 time steps with total reward = 79774.440594.
+
+
+Episode 259 finished after 42 time steps with total reward = 78943.937936.
+
+
+Episode 260 finished after 42 time steps with total reward = 195156.469291.
+
+
+Episode 261 finished after 42 time steps with total reward = 105831.877586.
+
+
+Episode 262 finished after 42 time steps with total reward = 69182.118749.
+
+
+Episode 263 finished after 42 time steps with total reward = 156399.700256.
+
+
+Episode 264 finished after 42 time steps with total reward = 56450.379434.
+
+
+Episode 265 finished after 42 time steps with total reward = 143122.672168.
+
+
+Episode 266 finished after 42 time steps with total reward = 188106.020714.
+
+
+Episode 267 finished after 42 time steps with total reward = 78852.479291.
+
+
+Episode 268 finished after 42 time steps with total reward = 125449.698517.
+
+
+Episode 269 finished after 42 time steps with total reward = 117515.248734.
+
+
+Episode 270 finished after 42 time steps with total reward = 90245.489650.
+
+
+Episode 271 finished after 42 time steps with total reward = 20607.500006.
+
+
+Episode 272 finished after 42 time steps with total reward = -20096.323072.
+
+
+Episode 273 finished after 42 time steps with total reward = 139462.773811.
+
+
+Episode 274 finished after 42 time steps with total reward = 47648.989454.
+
+
+Episode 275 finished after 42 time steps with total reward = 132731.975997.
+
+
+Episode 276 finished after 42 time steps with total reward = 77912.366643.
+
+
+Episode 277 finished after 42 time steps with total reward = 86401.315008.
+
+
+Episode 278 finished after 42 time steps with total reward = 101160.361886.
+
+
+Episode 279 finished after 42 time steps with total reward = 99949.460280.
+
+
+Episode 280 finished after 42 time steps with total reward = 178504.376533.
+
+
+Episode 281 finished after 42 time steps with total reward = 76650.331677.
+
+
+Episode 282 finished after 42 time steps with total reward = 57149.397121.
+
+
+Episode 283 finished after 42 time steps with total reward = 43541.417223.
+
+
+Episode 284 finished after 42 time steps with total reward = 266209.178158.
+
+
+Episode 285 finished after 42 time steps with total reward = 125586.649434.
+
+
+Episode 286 finished after 42 time steps with total reward = 120186.003574.
+
+
+Episode 287 finished after 42 time steps with total reward = 244200.516472.
+
+
+Episode 288 finished after 42 time steps with total reward = 109873.854884.
+
+
+Episode 289 finished after 42 time steps with total reward = 115740.766117.
+
+
+Episode 290 finished after 42 time steps with total reward = 108287.555751.
+
+
+Episode 291 finished after 42 time steps with total reward = 180898.686917.
+
+
+Episode 292 finished after 42 time steps with total reward = 130197.393202.
+
+
+Episode 293 finished after 42 time steps with total reward = 139115.806276.
+
+
+Episode 294 finished after 42 time steps with total reward = 91354.064391.
+
+
+Episode 295 finished after 42 time steps with total reward = 97409.612452.
+
+
+Episode 296 finished after 42 time steps with total reward = 179870.227340.
+
+
+Episode 297 finished after 42 time steps with total reward = 280540.076711.
+
+
+Episode 298 finished after 42 time steps with total reward = 142705.813782.
+
+
+Episode 299 finished after 42 time steps with total reward = 56587.952566.
+
+
+Episode 300 finished after 42 time steps with total reward = 219356.859911.
+
+
+Episode 301 finished after 42 time steps with total reward = 44885.525148.
+
+
+Episode 302 finished after 42 time steps with total reward = 142174.449866.
+
+
+Episode 303 finished after 42 time steps with total reward = 364713.938482.
+
+
+Episode 304 finished after 42 time steps with total reward = 80769.610370.
+
+
+Episode 305 finished after 42 time steps with total reward = 63897.252968.
+
+
+Episode 306 finished after 42 time steps with total reward = 160995.612903.
+
+
+Episode 307 finished after 42 time steps with total reward = 118168.284010.
+
+
+Episode 308 finished after 42 time steps with total reward = 150634.709797.
+
+
+Episode 309 finished after 42 time steps with total reward = 155931.261253.
+
+
+Episode 310 finished after 42 time steps with total reward = 126282.822475.
+
+
+Episode 311 finished after 42 time steps with total reward = 125688.521038.
+
+
+Episode 312 finished after 42 time steps with total reward = 193975.485803.
+
+
+Episode 313 finished after 42 time steps with total reward = 66892.147788.
+
+
+Episode 314 finished after 42 time steps with total reward = 168296.046688.
+
+
+Episode 315 finished after 42 time steps with total reward = 201107.854124.
+
+
+Episode 316 finished after 42 time steps with total reward = 122067.752427.
+
+
+Episode 317 finished after 42 time steps with total reward = 78644.963697.
+
+
+Episode 318 finished after 42 time steps with total reward = 83220.839696.
+
+
+Episode 319 finished after 42 time steps with total reward = 133537.257874.
+
+
+Episode 320 finished after 42 time steps with total reward = 62066.029967.
+
+
+Episode 321 finished after 42 time steps with total reward = 237114.253047.
+
+
+Episode 322 finished after 42 time steps with total reward = 97589.323209.
+
+
+Episode 323 finished after 42 time steps with total reward = 107710.575159.
+
+
+Episode 324 finished after 42 time steps with total reward = 186948.076265.
+
+
+Episode 325 finished after 42 time steps with total reward = 39786.837836.
+
+
+Episode 326 finished after 42 time steps with total reward = 165667.291480.
+
+
+Episode 327 finished after 42 time steps with total reward = 74612.698729.
+
+
+Episode 328 finished after 42 time steps with total reward = 242348.174372.
+
+
+Episode 329 finished after 42 time steps with total reward = 105467.085418.
+
+
+Episode 330 finished after 42 time steps with total reward = 140603.920862.
+
+
+Episode 331 finished after 42 time steps with total reward = 115800.699361.
+
+
+Episode 332 finished after 42 time steps with total reward = 121477.594610.
+
+
+Episode 333 finished after 42 time steps with total reward = 157405.485045.
+
+
+Episode 334 finished after 42 time steps with total reward = 99289.160337.
+
+
+Episode 335 finished after 42 time steps with total reward = 130922.627883.
+
+
+Episode 336 finished after 42 time steps with total reward = 130023.118338.
+
+
+Episode 337 finished after 42 time steps with total reward = 141354.978658.
+
+
+Episode 338 finished after 42 time steps with total reward = 119435.078939.
+
+
+Episode 339 finished after 42 time steps with total reward = 142880.782445.
+
+
+Episode 340 finished after 42 time steps with total reward = 133506.537975.
+
+
+Episode 341 finished after 42 time steps with total reward = 104365.564848.
+
+
+Episode 342 finished after 42 time steps with total reward = 79949.515668.
+
+
+Episode 343 finished after 42 time steps with total reward = 303313.167094.
+
+
+Episode 344 finished after 42 time steps with total reward = 6634.470245.
+
+
+Episode 345 finished after 42 time steps with total reward = 102257.361991.
+
+
+Episode 346 finished after 42 time steps with total reward = 135223.248338.
+
+
+Episode 347 finished after 42 time steps with total reward = 43977.994346.
+
+
+Episode 348 finished after 42 time steps with total reward = 44305.855477.
+
+
+Episode 349 finished after 42 time steps with total reward = 115874.115361.
+
+
+Episode 350 finished after 42 time steps with total reward = 27678.164367.
+
+
+Episode 351 finished after 42 time steps with total reward = 158645.193467.
+
+
+Episode 352 finished after 42 time steps with total reward = 121376.666301.
+
+
+Episode 353 finished after 42 time steps with total reward = 153368.720656.
+
+
+Episode 354 finished after 42 time steps with total reward = 106277.747363.
+
+
+Episode 355 finished after 42 time steps with total reward = 216647.603083.
+
+
+Episode 356 finished after 42 time steps with total reward = 56883.199437.
+
+
+Episode 357 finished after 42 time steps with total reward = 97188.913706.
+
+
+Episode 358 finished after 42 time steps with total reward = 96226.667148.
+
+
+Episode 359 finished after 42 time steps with total reward = 189636.669643.
+
+
+Episode 360 finished after 42 time steps with total reward = 124375.852839.
+
+
+Episode 361 finished after 42 time steps with total reward = 105183.217413.
+
+
+Episode 362 finished after 42 time steps with total reward = 36664.317924.
+
+
+Episode 363 finished after 42 time steps with total reward = 158113.565138.
+
+
+Episode 364 finished after 42 time steps with total reward = 77649.579768.
+
+
+Episode 365 finished after 42 time steps with total reward = 67340.736341.
+
+
+Episode 366 finished after 42 time steps with total reward = 57816.492854.
+
+
+Episode 367 finished after 42 time steps with total reward = 126382.185866.
+
+
+Episode 368 finished after 42 time steps with total reward = 44443.062000.
+
+
+Episode 369 finished after 42 time steps with total reward = 101224.717494.
+
+
+Episode 370 finished after 42 time steps with total reward = 60052.419070.
+
+
+Episode 371 finished after 42 time steps with total reward = 104727.678106.
+
+
+Episode 372 finished after 42 time steps with total reward = 79127.182938.
+
+
+Episode 373 finished after 42 time steps with total reward = 148711.413480.
+
+
+Episode 374 finished after 42 time steps with total reward = 155738.697737.
+
+
+Episode 375 finished after 42 time steps with total reward = 140465.156612.
+
+
+Episode 376 finished after 42 time steps with total reward = 98289.225151.
+
+
+Episode 377 finished after 42 time steps with total reward = 141563.887721.
+
+
+Episode 378 finished after 42 time steps with total reward = 134308.462220.
+
+
+Episode 379 finished after 42 time steps with total reward = 58492.385148.
+
+
+Episode 380 finished after 42 time steps with total reward = 116862.089426.
+
+
+Episode 381 finished after 42 time steps with total reward = 67127.968150.
+
+
+Episode 382 finished after 42 time steps with total reward = 100484.692935.
+
+
+Episode 383 finished after 42 time steps with total reward = 99661.952390.
+
+
+Episode 384 finished after 42 time steps with total reward = 239677.670841.
+
+
+Episode 385 finished after 42 time steps with total reward = 33934.456510.
+
+
+Episode 386 finished after 42 time steps with total reward = 205596.816009.
+
+
+Episode 387 finished after 42 time steps with total reward = 145005.942194.
+
+
+Episode 388 finished after 42 time steps with total reward = 132699.200150.
+
+
+Episode 389 finished after 42 time steps with total reward = 58380.380255.
+
+
+Episode 390 finished after 42 time steps with total reward = 72714.469180.
+
+
+Episode 391 finished after 42 time steps with total reward = 165005.706143.
+
+
+Episode 392 finished after 42 time steps with total reward = 138976.053714.
+
+
+Episode 393 finished after 42 time steps with total reward = 65879.960983.
+
+
+Episode 394 finished after 42 time steps with total reward = 104107.249315.
+
+
+Episode 395 finished after 42 time steps with total reward = 139983.749591.
+
+
+Episode 396 finished after 42 time steps with total reward = 186611.120864.
+
+
+Episode 397 finished after 42 time steps with total reward = 155593.666616.
+
+
+Episode 398 finished after 42 time steps with total reward = 66320.553061.
+
+
+Episode 399 finished after 42 time steps with total reward = 101198.916851.
+
+
+Episode 400 finished after 42 time steps with total reward = 173465.372730.
+
+
+Episode 401 finished after 42 time steps with total reward = 274762.763167.
+
+
+Episode 402 finished after 42 time steps with total reward = 292876.005537.
+
+
+Episode 403 finished after 42 time steps with total reward = 103950.921212.
+
+
+Episode 404 finished after 42 time steps with total reward = 141433.461854.
+
+
+Episode 405 finished after 42 time steps with total reward = 76945.441474.
+
+
+Episode 406 finished after 42 time steps with total reward = 64815.599118.
+
+
+Episode 407 finished after 42 time steps with total reward = 45660.411877.
+
+
+Episode 408 finished after 42 time steps with total reward = 122623.775200.
+
+
+Episode 409 finished after 42 time steps with total reward = 142802.788953.
+
+
+Episode 410 finished after 42 time steps with total reward = 155765.265617.
+
+
+Episode 411 finished after 42 time steps with total reward = 149098.148742.
+
+
+Episode 412 finished after 42 time steps with total reward = 123965.381228.
+
+
+Episode 413 finished after 42 time steps with total reward = 96796.761399.
+
+
+Episode 414 finished after 42 time steps with total reward = 98207.315048.
+
+
+Episode 415 finished after 42 time steps with total reward = 66871.650419.
+
+
+Episode 416 finished after 42 time steps with total reward = 88123.102382.
+
+
+Episode 417 finished after 42 time steps with total reward = 75906.479714.
+
+
+Episode 418 finished after 42 time steps with total reward = 171377.271697.
+
+
+Episode 419 finished after 42 time steps with total reward = 26611.407409.
+
+
+Episode 420 finished after 42 time steps with total reward = 112801.266764.
+
+
+Episode 421 finished after 42 time steps with total reward = 135557.782283.
+
+
+Episode 422 finished after 42 time steps with total reward = 212692.885709.
+
+
+Episode 423 finished after 42 time steps with total reward = 124070.471540.
+
+
+Episode 424 finished after 42 time steps with total reward = 112898.962426.
+
+
+Episode 425 finished after 42 time steps with total reward = 189069.194694.
+
+
+Episode 426 finished after 42 time steps with total reward = 173450.747153.
+
+
+Episode 427 finished after 42 time steps with total reward = 45835.593958.
+
+
+Episode 428 finished after 42 time steps with total reward = 50884.369977.
+
+
+Episode 429 finished after 42 time steps with total reward = 58384.331408.
+
+
+Episode 430 finished after 42 time steps with total reward = 84788.013702.
+
+
+Episode 431 finished after 42 time steps with total reward = 108559.722956.
+
+
+Episode 432 finished after 42 time steps with total reward = 259252.885527.
+
+
+Episode 433 finished after 42 time steps with total reward = 139530.876249.
+
+
+Episode 434 finished after 42 time steps with total reward = 46750.612416.
+
+
+Episode 435 finished after 42 time steps with total reward = 146092.168744.
+
+
+Episode 436 finished after 42 time steps with total reward = 180253.868020.
+
+
+Episode 437 finished after 42 time steps with total reward = 63987.612584.
+
+
+Episode 438 finished after 42 time steps with total reward = 130448.714188.
+
+
+Episode 439 finished after 42 time steps with total reward = 131718.626082.
+
+
+Episode 440 finished after 42 time steps with total reward = 91452.284821.
+
+
+Episode 441 finished after 42 time steps with total reward = 87253.126380.
+
+
+Episode 442 finished after 42 time steps with total reward = 245923.452918.
+
+
+Episode 443 finished after 42 time steps with total reward = 120644.339229.
+
+
+Episode 444 finished after 42 time steps with total reward = 162771.957339.
+
+
+Episode 445 finished after 42 time steps with total reward = 170379.037407.
+
+
+Episode 446 finished after 42 time steps with total reward = 84761.738243.
+
+
+Episode 447 finished after 42 time steps with total reward = 158680.911225.
+
+
+Episode 448 finished after 42 time steps with total reward = 235358.065978.
+
+
+Episode 449 finished after 42 time steps with total reward = 192459.495169.
+
+
+Episode 450 finished after 42 time steps with total reward = 21036.413547.
+
+
+Episode 451 finished after 42 time steps with total reward = 94742.989112.
+
+
+Episode 452 finished after 42 time steps with total reward = 84521.907814.
+
+
+Episode 453 finished after 42 time steps with total reward = 209539.184509.
+
+
+Episode 454 finished after 42 time steps with total reward = 114488.153913.
+
+
+Episode 455 finished after 42 time steps with total reward = 125500.548553.
+
+
+Episode 456 finished after 42 time steps with total reward = 168665.587279.
+
+
+Episode 457 finished after 42 time steps with total reward = 150338.247334.
+
+
+Episode 458 finished after 42 time steps with total reward = 14891.766634.
+
+
+Episode 459 finished after 42 time steps with total reward = 115335.830763.
+
+
+Episode 460 finished after 42 time steps with total reward = 193762.979634.
+
+
+Episode 461 finished after 42 time steps with total reward = 144315.507517.
+
+
+Episode 462 finished after 42 time steps with total reward = 74702.792304.
+
+
+Episode 463 finished after 42 time steps with total reward = 149614.788611.
+
+
+Episode 464 finished after 42 time steps with total reward = 175994.494953.
+
+
+Episode 465 finished after 42 time steps with total reward = 186135.301043.
+
+
+Episode 466 finished after 42 time steps with total reward = 77082.246799.
+
+
+Episode 467 finished after 42 time steps with total reward = 170582.344674.
+
+
+Episode 468 finished after 42 time steps with total reward = 161340.653688.
+
+
+Episode 469 finished after 42 time steps with total reward = 172566.228409.
+
+
+Episode 470 finished after 42 time steps with total reward = 62227.050713.
+
+
+Episode 471 finished after 42 time steps with total reward = 143684.936175.
+
+
+Episode 472 finished after 42 time steps with total reward = 264809.333862.
+
+
+Episode 473 finished after 42 time steps with total reward = 26726.148357.
+
+
+Episode 474 finished after 42 time steps with total reward = 70667.120227.
+
+
+Episode 475 finished after 42 time steps with total reward = 37520.512146.
+
+
+Episode 476 finished after 42 time steps with total reward = 188602.712018.
+
+
+Episode 477 finished after 42 time steps with total reward = 155043.417146.
+
+
+Episode 478 finished after 42 time steps with total reward = 188632.465222.
+
+
+Episode 479 finished after 42 time steps with total reward = 209975.773671.
+
+
+Episode 480 finished after 42 time steps with total reward = 76237.163751.
+
+
+Episode 481 finished after 42 time steps with total reward = 61293.297049.
+
+
+Episode 482 finished after 42 time steps with total reward = 91266.692083.
+
+
+Episode 483 finished after 42 time steps with total reward = 175899.710499.
+
+
+Episode 484 finished after 42 time steps with total reward = 22556.847491.
+
+
+Episode 485 finished after 42 time steps with total reward = 136971.641032.
+
+
+Episode 486 finished after 42 time steps with total reward = 313387.666778.
+
+
+Episode 487 finished after 42 time steps with total reward = 93249.915397.
+
+
+Episode 488 finished after 42 time steps with total reward = 65983.160071.
+
+
+Episode 489 finished after 42 time steps with total reward = 135766.726681.
+
+
+Episode 490 finished after 42 time steps with total reward = 133283.986040.
+
+
+Episode 491 finished after 42 time steps with total reward = 74597.628286.
+
+
+Episode 492 finished after 42 time steps with total reward = 149186.791823.
+
+
+Episode 493 finished after 42 time steps with total reward = 180125.298543.
+
+
+Episode 494 finished after 42 time steps with total reward = 400163.320071.
+
+
+Episode 495 finished after 42 time steps with total reward = 189149.299381.
+
+
+Episode 496 finished after 42 time steps with total reward = 167501.285425.
+
+
+Episode 497 finished after 42 time steps with total reward = 64337.077198.
+
+
+Episode 498 finished after 42 time steps with total reward = 113057.856405.
+
+
+Episode 499 finished after 42 time steps with total reward = 287908.095011.
+
+
+Episode 500 finished after 42 time steps with total reward = 103515.065500.
+
+
+Episode 501 finished after 42 time steps with total reward = 98102.322571.
+
+
+Episode 502 finished after 42 time steps with total reward = 192653.282119.
+
+
+Episode 503 finished after 42 time steps with total reward = 35005.720217.
+
+
+Episode 504 finished after 42 time steps with total reward = 162084.702487.
+
+
+Episode 505 finished after 42 time steps with total reward = 119873.926512.
+
+
+Episode 506 finished after 42 time steps with total reward = 117532.563704.
+
+
+Episode 507 finished after 42 time steps with total reward = 114693.123732.
+
+
+Episode 508 finished after 42 time steps with total reward = 152997.387663.
+
+
+Episode 509 finished after 42 time steps with total reward = 106820.451462.
+
+
+Episode 510 finished after 42 time steps with total reward = 178008.541438.
+
+
+Episode 511 finished after 42 time steps with total reward = 259574.956161.
+
+
+Episode 512 finished after 42 time steps with total reward = 186190.130114.
+
+
+Episode 513 finished after 42 time steps with total reward = 97087.062767.
+
+
+Episode 514 finished after 42 time steps with total reward = 100590.520391.
+
+
+Episode 515 finished after 42 time steps with total reward = 191101.533920.
+
+
+Episode 516 finished after 42 time steps with total reward = 154635.839304.
+
+
+Episode 517 finished after 42 time steps with total reward = 160308.523346.
+
+
+Episode 518 finished after 42 time steps with total reward = 122265.031751.
+
+
+Episode 519 finished after 42 time steps with total reward = 204757.574307.
+
+
+Episode 520 finished after 42 time steps with total reward = 182910.841026.
+
+
+Episode 521 finished after 42 time steps with total reward = 180067.368006.
+
+
+Episode 522 finished after 42 time steps with total reward = 177488.025949.
+
+
+Episode 523 finished after 42 time steps with total reward = 59252.157428.
+
+
+Episode 524 finished after 42 time steps with total reward = 210039.926491.
+
+
+Episode 525 finished after 42 time steps with total reward = 90544.412172.
+
+
+Episode 526 finished after 42 time steps with total reward = 41686.870730.
+
+
+Episode 527 finished after 42 time steps with total reward = 157606.356611.
+
+
+Episode 528 finished after 42 time steps with total reward = 237955.730216.
+
+
+Episode 529 finished after 42 time steps with total reward = 153745.338739.
+
+
+Episode 530 finished after 42 time steps with total reward = 156708.938896.
+
+
+Episode 531 finished after 42 time steps with total reward = 123111.288988.
+
+
+Episode 532 finished after 42 time steps with total reward = 115792.655051.
+
+
+Episode 533 finished after 42 time steps with total reward = 109361.799903.
+
+
+Episode 534 finished after 42 time steps with total reward = 4013.137430.
+
+
+Episode 535 finished after 42 time steps with total reward = 82406.748808.
+
+
+Episode 536 finished after 42 time steps with total reward = 32113.696520.
+
+
+Episode 537 finished after 42 time steps with total reward = 86233.426597.
+
+
+Episode 538 finished after 42 time steps with total reward = 117498.844923.
+
+
+Episode 539 finished after 42 time steps with total reward = 99715.344611.
+
+
+Episode 540 finished after 42 time steps with total reward = 92950.358537.
+
+
+Episode 541 finished after 42 time steps with total reward = 120511.709861.
+
+
+Episode 542 finished after 42 time steps with total reward = 170970.526819.
+
+
+Episode 543 finished after 42 time steps with total reward = 284629.990261.
+
+
+Episode 544 finished after 42 time steps with total reward = 111358.307889.
+
+
+Episode 545 finished after 42 time steps with total reward = 198215.819021.
+
+
+Episode 546 finished after 42 time steps with total reward = 159579.804874.
+
+
+Episode 547 finished after 42 time steps with total reward = 81577.665298.
+
+
+Episode 548 finished after 42 time steps with total reward = 179155.147224.
+
+
+Episode 549 finished after 42 time steps with total reward = 9237.258899.
+
+
+Episode 550 finished after 42 time steps with total reward = 130602.604139.
+
+
+Episode 551 finished after 42 time steps with total reward = 52579.696732.
+
+
+Episode 552 finished after 42 time steps with total reward = 108353.735860.
+
+
+Episode 553 finished after 42 time steps with total reward = 141773.905850.
+
+
+Episode 554 finished after 42 time steps with total reward = 128457.969640.
+
+
+Episode 555 finished after 42 time steps with total reward = 109966.643540.
+
+
+Episode 556 finished after 42 time steps with total reward = 148895.109917.
+
+
+Episode 557 finished after 42 time steps with total reward = 195522.311010.
+
+
+Episode 558 finished after 42 time steps with total reward = 52142.289759.
+
+
+Episode 559 finished after 42 time steps with total reward = 53834.177854.
+
+
+Episode 560 finished after 42 time steps with total reward = 120431.610038.
+
+
+Episode 561 finished after 42 time steps with total reward = 130666.688615.
+
+
+Episode 562 finished after 42 time steps with total reward = 52122.260137.
+
+
+Episode 563 finished after 42 time steps with total reward = 209619.385343.
+
+
+Episode 564 finished after 42 time steps with total reward = 306844.514097.
+
+
+Episode 565 finished after 42 time steps with total reward = 212808.202983.
+
+
+Episode 566 finished after 42 time steps with total reward = 162839.430178.
+
+
+Episode 567 finished after 42 time steps with total reward = 84586.808479.
+
+
+Episode 568 finished after 42 time steps with total reward = 20812.653081.
+
+
+Episode 569 finished after 42 time steps with total reward = 68348.860297.
+
+
+Episode 570 finished after 42 time steps with total reward = 79293.925411.
+
+
+Episode 571 finished after 42 time steps with total reward = 125626.065176.
+
+
+Episode 572 finished after 42 time steps with total reward = 94431.546911.
+
+
+Episode 573 finished after 42 time steps with total reward = 232056.582525.
+
+
+Episode 574 finished after 42 time steps with total reward = 44941.438581.
+
+
+Episode 575 finished after 42 time steps with total reward = 70675.482604.
+
+
+Episode 576 finished after 42 time steps with total reward = -365.569514.
+
+
+Episode 577 finished after 42 time steps with total reward = 177464.185717.
+
+
+Episode 578 finished after 42 time steps with total reward = 176960.983276.
+
+
+Episode 579 finished after 42 time steps with total reward = 192200.283112.
+
+
+Episode 580 finished after 42 time steps with total reward = 123621.651184.
+
+
+Episode 581 finished after 42 time steps with total reward = 96258.172108.
+
+
+Episode 582 finished after 42 time steps with total reward = 60733.555468.
+
+
+Episode 583 finished after 42 time steps with total reward = 60041.885619.
+
+
+Episode 584 finished after 42 time steps with total reward = 139321.477322.
+
+
+Episode 585 finished after 42 time steps with total reward = 190246.206340.
+
+
+Episode 586 finished after 42 time steps with total reward = 100181.794303.
+
+
+Episode 587 finished after 42 time steps with total reward = 143256.381356.
+
+
+Episode 588 finished after 42 time steps with total reward = 100885.749013.
+
+
+Episode 589 finished after 42 time steps with total reward = 89198.335870.
+
+
+Episode 590 finished after 42 time steps with total reward = 138606.970562.
+
+
+Episode 591 finished after 42 time steps with total reward = 133751.533936.
+
+
+Episode 592 finished after 42 time steps with total reward = 118963.734218.
+
+
+Episode 593 finished after 42 time steps with total reward = 127086.211438.
+
+
+Episode 594 finished after 42 time steps with total reward = 170460.095664.
+
+
+Episode 595 finished after 42 time steps with total reward = 151328.228358.
+
+
+Episode 596 finished after 42 time steps with total reward = 121636.899618.
+
+
+Episode 597 finished after 42 time steps with total reward = 71713.623314.
+
+
+Episode 598 finished after 42 time steps with total reward = 30111.707476.
+
+
+Episode 599 finished after 42 time steps with total reward = 180487.205716.
+
+
+Episode 600 finished after 42 time steps with total reward = 172655.099823.
+
+
+Episode 601 finished after 42 time steps with total reward = 135270.264718.
+
+
+Episode 602 finished after 42 time steps with total reward = 87264.553736.
+
+
+Episode 603 finished after 42 time steps with total reward = 36332.745441.
+
+
+Episode 604 finished after 42 time steps with total reward = 87920.824295.
+
+
+Episode 605 finished after 42 time steps with total reward = 144598.333556.
+
+
+Episode 606 finished after 42 time steps with total reward = 257957.977806.
+
+
+Episode 607 finished after 42 time steps with total reward = 35227.898035.
+
+
+Episode 608 finished after 42 time steps with total reward = 42111.013204.
+
+
+Episode 609 finished after 42 time steps with total reward = 164137.935719.
+
+
+Episode 610 finished after 42 time steps with total reward = 130754.028294.
+
+
+Episode 611 finished after 42 time steps with total reward = 187493.464353.
+
+
+Episode 612 finished after 42 time steps with total reward = 147877.292627.
+
+
+Episode 613 finished after 42 time steps with total reward = 192224.562469.
+
+
+Episode 614 finished after 42 time steps with total reward = 95913.561875.
+
+
+Episode 615 finished after 42 time steps with total reward = 45691.440096.
+
+
+Episode 616 finished after 42 time steps with total reward = 47712.110414.
+
+
+Episode 617 finished after 42 time steps with total reward = 124110.748307.
+
+
+Episode 618 finished after 42 time steps with total reward = 132020.338625.
+
+
+Episode 619 finished after 42 time steps with total reward = 53243.573649.
+
+
+Episode 620 finished after 42 time steps with total reward = 72011.769898.
+
+
+Episode 621 finished after 42 time steps with total reward = 57507.638730.
+
+
+Episode 622 finished after 42 time steps with total reward = 90873.310043.
+
+
+Episode 623 finished after 42 time steps with total reward = 75661.017909.
+
+
+Episode 624 finished after 42 time steps with total reward = 104196.929598.
+
+
+Episode 625 finished after 42 time steps with total reward = 6123.359431.
+
+
+Episode 626 finished after 42 time steps with total reward = 84948.713953.
+
+
+Episode 627 finished after 42 time steps with total reward = 212954.619919.
+
+
+Episode 628 finished after 42 time steps with total reward = 167266.001841.
+
+
+Episode 629 finished after 42 time steps with total reward = 88035.529732.
+
+
+Episode 630 finished after 42 time steps with total reward = 95626.147770.
+
+
+Episode 631 finished after 42 time steps with total reward = 169605.161637.
+
+
+Episode 632 finished after 42 time steps with total reward = 153588.148539.
+
+
+Episode 633 finished after 42 time steps with total reward = 94714.778499.
+
+
+Episode 634 finished after 42 time steps with total reward = 96549.034835.
+
+
+Episode 635 finished after 42 time steps with total reward = 127805.064953.
+
+
+Episode 636 finished after 42 time steps with total reward = 95670.599968.
+
+
+Episode 637 finished after 42 time steps with total reward = 170231.301044.
+
+
+Episode 638 finished after 42 time steps with total reward = 34375.619699.
+
+
+Episode 639 finished after 42 time steps with total reward = 143667.286040.
+
+
+Episode 640 finished after 42 time steps with total reward = 64903.881648.
+
+
+Episode 641 finished after 42 time steps with total reward = 250922.528895.
+
+
+Episode 642 finished after 42 time steps with total reward = 218032.924957.
+
+
+Episode 643 finished after 42 time steps with total reward = 226953.106671.
+
+
+Episode 644 finished after 42 time steps with total reward = 160674.601678.
+
+
+Episode 645 finished after 42 time steps with total reward = 129853.632234.
+
+
+Episode 646 finished after 42 time steps with total reward = 192962.585527.
+
+
+Episode 647 finished after 42 time steps with total reward = 230616.405960.
+
+
+Episode 648 finished after 42 time steps with total reward = 182597.280479.
+
+
+Episode 649 finished after 42 time steps with total reward = 146790.257833.
+
+
+Episode 650 finished after 42 time steps with total reward = 126435.466753.
+
+
+Episode 651 finished after 42 time steps with total reward = 114875.102574.
+
+
+Episode 652 finished after 42 time steps with total reward = 155590.007356.
+
+
+Episode 653 finished after 42 time steps with total reward = 145495.763536.
+
+
+Episode 654 finished after 42 time steps with total reward = 66799.294727.
+
+
+Episode 655 finished after 42 time steps with total reward = 172628.482704.
+
+
+Episode 656 finished after 42 time steps with total reward = 160074.153456.
+
+
+Episode 657 finished after 42 time steps with total reward = 124964.233413.
+
+
+Episode 658 finished after 42 time steps with total reward = 111845.845064.
+
+
+Episode 659 finished after 42 time steps with total reward = 181968.052217.
+
+
+Episode 660 finished after 42 time steps with total reward = 103831.717013.
+
+
+Episode 661 finished after 42 time steps with total reward = 43296.587402.
+
+
+Episode 662 finished after 42 time steps with total reward = 292264.679771.
+
+
+Episode 663 finished after 42 time steps with total reward = 128220.388056.
+
+
+Episode 664 finished after 42 time steps with total reward = 85875.908434.
+
+
+Episode 665 finished after 42 time steps with total reward = 47452.823526.
+
+
+Episode 666 finished after 42 time steps with total reward = 53769.529871.
+
+
+Episode 667 finished after 42 time steps with total reward = 103948.626142.
+
+
+Episode 668 finished after 42 time steps with total reward = 184031.030557.
+
+
+Episode 669 finished after 42 time steps with total reward = 191519.439291.
+
+
+Episode 670 finished after 42 time steps with total reward = 212509.408132.
+
+
+Episode 671 finished after 42 time steps with total reward = 50901.245962.
+
+
+Episode 672 finished after 42 time steps with total reward = 89757.919566.
+
+
+Episode 673 finished after 42 time steps with total reward = 98880.324423.
+
+
+Episode 674 finished after 42 time steps with total reward = 205900.505955.
+
+
+Episode 675 finished after 42 time steps with total reward = 141503.423434.
+
+
+Episode 676 finished after 42 time steps with total reward = 28795.501448.
+
+
+Episode 677 finished after 42 time steps with total reward = 215918.374968.
+
+
+Episode 678 finished after 42 time steps with total reward = 242346.526209.
+
+
+Episode 679 finished after 42 time steps with total reward = 84385.531149.
+
+
+Episode 680 finished after 42 time steps with total reward = 72686.436785.
+
+
+Episode 681 finished after 42 time steps with total reward = 174349.772830.
+
+
+Episode 682 finished after 42 time steps with total reward = 66629.346639.
+
+
+Episode 683 finished after 42 time steps with total reward = 172799.411783.
+
+
+Episode 684 finished after 42 time steps with total reward = 88535.912072.
+
+
+Episode 685 finished after 42 time steps with total reward = 104049.544493.
+
+
+Episode 686 finished after 42 time steps with total reward = 159753.436979.
+
+
+Episode 687 finished after 42 time steps with total reward = 69640.483592.
+
+
+Episode 688 finished after 42 time steps with total reward = 210184.095990.
+
+
+Episode 689 finished after 42 time steps with total reward = 28983.710085.
+
+
+Episode 690 finished after 42 time steps with total reward = 81450.542180.
+
+
+Episode 691 finished after 42 time steps with total reward = 84271.200112.
+
+
+Episode 692 finished after 42 time steps with total reward = 66619.655807.
+
+
+Episode 693 finished after 42 time steps with total reward = 171564.210032.
+
+
+Episode 694 finished after 42 time steps with total reward = 131663.151080.
+
+
+Episode 695 finished after 42 time steps with total reward = 116528.072005.
+
+
+Episode 696 finished after 42 time steps with total reward = 148214.333442.
+
+
+Episode 697 finished after 42 time steps with total reward = 169286.205089.
+
+
+Episode 698 finished after 42 time steps with total reward = 115633.203290.
+
+
+Episode 699 finished after 42 time steps with total reward = 183513.987917.
+
+
+Episode 700 finished after 42 time steps with total reward = 81070.754278.
+
+
+Episode 701 finished after 42 time steps with total reward = 102028.613677.
+
+
+Episode 702 finished after 42 time steps with total reward = 174624.148014.
+
+
+Episode 703 finished after 42 time steps with total reward = 54463.907765.
+
+
+Episode 704 finished after 42 time steps with total reward = 85101.686520.
+
+
+Episode 705 finished after 42 time steps with total reward = 90581.809654.
+
+
+Episode 706 finished after 42 time steps with total reward = 68245.936881.
+
+
+Episode 707 finished after 42 time steps with total reward = 38123.557392.
+
+
+Episode 708 finished after 42 time steps with total reward = 118054.807766.
+
+
+Episode 709 finished after 42 time steps with total reward = 72621.569426.
+
+
+Episode 710 finished after 42 time steps with total reward = 110018.132236.
+
+
+Episode 711 finished after 42 time steps with total reward = 101618.015976.
+
+
+Episode 712 finished after 42 time steps with total reward = 108365.752049.
+
+
+Episode 713 finished after 42 time steps with total reward = 12322.189331.
+
+
+Episode 714 finished after 42 time steps with total reward = 204899.275879.
+
+
+Episode 715 finished after 42 time steps with total reward = 88760.280264.
+
+
+Episode 716 finished after 42 time steps with total reward = 108578.614166.
+
+
+Episode 717 finished after 42 time steps with total reward = 57854.900897.
+
+
+Episode 718 finished after 42 time steps with total reward = 170944.229069.
+
+
+Episode 719 finished after 42 time steps with total reward = 247003.829391.
+
+
+Episode 720 finished after 42 time steps with total reward = 32584.273381.
+
+
+Episode 721 finished after 42 time steps with total reward = 166895.240146.
+
+
+Episode 722 finished after 42 time steps with total reward = 121300.042876.
+
+
+Episode 723 finished after 42 time steps with total reward = 99961.486256.
+
+
+Episode 724 finished after 42 time steps with total reward = 121882.633216.
+
+
+Episode 725 finished after 42 time steps with total reward = 65747.296615.
+
+
+Episode 726 finished after 42 time steps with total reward = 109176.536462.
+
+
+Episode 727 finished after 42 time steps with total reward = 136113.191009.
+
+
+Episode 728 finished after 42 time steps with total reward = 143758.029807.
+
+
+Episode 729 finished after 42 time steps with total reward = 151069.759377.
+
+
+Episode 730 finished after 42 time steps with total reward = 57310.794189.
+
+
+Episode 731 finished after 42 time steps with total reward = 120692.914866.
+
+
+Episode 732 finished after 42 time steps with total reward = 97048.330169.
+
+
+Episode 733 finished after 42 time steps with total reward = 45319.530433.
+
+
+Episode 734 finished after 42 time steps with total reward = 111019.416022.
+
+
+Episode 735 finished after 42 time steps with total reward = 310478.182710.
+
+
+Episode 736 finished after 42 time steps with total reward = 73492.014023.
+
+
+Episode 737 finished after 42 time steps with total reward = 208701.134806.
+
+
+Episode 738 finished after 42 time steps with total reward = 109468.963854.
+
+
+Episode 739 finished after 42 time steps with total reward = 49504.996423.
+
+
+Episode 740 finished after 42 time steps with total reward = 160877.183605.
+
+
+Episode 741 finished after 42 time steps with total reward = 191569.336575.
+
+
+Episode 742 finished after 42 time steps with total reward = 128369.496306.
+
+
+Episode 743 finished after 42 time steps with total reward = 113013.452474.
+
+
+Episode 744 finished after 42 time steps with total reward = 147710.011973.
+
+
+Episode 745 finished after 42 time steps with total reward = 113152.324685.
+
+
+Episode 746 finished after 42 time steps with total reward = 196445.801822.
+
+
+Episode 747 finished after 42 time steps with total reward = 81531.942337.
+
+
+Episode 748 finished after 42 time steps with total reward = 116722.915354.
+
+
+Episode 749 finished after 42 time steps with total reward = 80799.071636.
+
+
+Episode 750 finished after 42 time steps with total reward = 71873.480886.
+
+
+Episode 751 finished after 42 time steps with total reward = 132097.409796.
+
+
+Episode 752 finished after 42 time steps with total reward = 137895.176346.
+
+
+Episode 753 finished after 42 time steps with total reward = 69289.526173.
+
+
+Episode 754 finished after 42 time steps with total reward = 80118.275056.
+
+
+Episode 755 finished after 42 time steps with total reward = 91258.544799.
+
+
+Episode 756 finished after 42 time steps with total reward = 73375.274880.
+
+
+Episode 757 finished after 42 time steps with total reward = 135178.238630.
+
+
+Episode 758 finished after 42 time steps with total reward = 39946.402043.
+
+
+Episode 759 finished after 42 time steps with total reward = 128200.127679.
+
+
+Episode 760 finished after 42 time steps with total reward = 87237.305989.
+
+
+Episode 761 finished after 42 time steps with total reward = 135611.944175.
+
+
+Episode 762 finished after 42 time steps with total reward = 137692.518956.
+
+
+Episode 763 finished after 42 time steps with total reward = 165260.718620.
+
+
+Episode 764 finished after 42 time steps with total reward = 133882.783599.
+
+
+Episode 765 finished after 42 time steps with total reward = 92007.930997.
+
+
+Episode 766 finished after 42 time steps with total reward = 52370.090179.
+
+
+Episode 767 finished after 42 time steps with total reward = 68533.883091.
+
+
+Episode 768 finished after 42 time steps with total reward = 67173.540126.
+
+
+Episode 769 finished after 42 time steps with total reward = 139442.494019.
+
+
+Episode 770 finished after 42 time steps with total reward = 90984.945289.
+
+
+Episode 771 finished after 42 time steps with total reward = 194226.996941.
+
+
+Episode 772 finished after 42 time steps with total reward = 143510.941643.
+
+
+Episode 773 finished after 42 time steps with total reward = 151176.073020.
+
+
+Episode 774 finished after 42 time steps with total reward = 120139.231791.
+
+
+Episode 775 finished after 42 time steps with total reward = 62648.313578.
+
+
+Episode 776 finished after 42 time steps with total reward = 357864.217776.
+
+
+Episode 777 finished after 42 time steps with total reward = 270136.947390.
+
+
+Episode 778 finished after 42 time steps with total reward = 165891.628322.
+
+
+Episode 779 finished after 42 time steps with total reward = 203272.956641.
+
+
+Episode 780 finished after 42 time steps with total reward = 162199.290046.
+
+
+Episode 781 finished after 42 time steps with total reward = 86642.187176.
+
+
+Episode 782 finished after 42 time steps with total reward = 74512.007099.
+
+
+Episode 783 finished after 42 time steps with total reward = 58182.221172.
+
+
+Episode 784 finished after 42 time steps with total reward = 64237.839564.
+
+
+Episode 785 finished after 42 time steps with total reward = 123674.753558.
+
+
+Episode 786 finished after 42 time steps with total reward = 80612.102857.
+
+
+Episode 787 finished after 42 time steps with total reward = 139439.279502.
+
+
+Episode 788 finished after 42 time steps with total reward = 147274.667577.
+
+
+Episode 789 finished after 42 time steps with total reward = 135174.753704.
+
+
+Episode 790 finished after 42 time steps with total reward = 75716.985103.
+
+
+Episode 791 finished after 42 time steps with total reward = 131683.606392.
+
+
+Episode 792 finished after 42 time steps with total reward = 84308.872370.
+
+
+Episode 793 finished after 42 time steps with total reward = 145718.934088.
+
+
+Episode 794 finished after 42 time steps with total reward = 141120.987839.
+
+
+Episode 795 finished after 42 time steps with total reward = 68479.188337.
+
+
+Episode 796 finished after 42 time steps with total reward = 111139.994055.
+
+
+Episode 797 finished after 42 time steps with total reward = 178599.295931.
+
+
+Episode 798 finished after 42 time steps with total reward = 5766.543260.
+
+
+Episode 799 finished after 42 time steps with total reward = 66793.159775.
+
+
+Episode 800 finished after 42 time steps with total reward = 196215.612512.
+
+
+Episode 801 finished after 42 time steps with total reward = 119159.260935.
+
+
+Episode 802 finished after 42 time steps with total reward = 122098.619277.
+
+
+Episode 803 finished after 42 time steps with total reward = 175560.349057.
+
+
+Episode 804 finished after 42 time steps with total reward = 50482.427023.
+
+
+Episode 805 finished after 42 time steps with total reward = 56540.608973.
+
+
+Episode 806 finished after 42 time steps with total reward = 123729.106166.
+
+
+Episode 807 finished after 42 time steps with total reward = 35996.625850.
+
+
+Episode 808 finished after 42 time steps with total reward = 200028.654136.
+
+
+Episode 809 finished after 42 time steps with total reward = 78389.716853.
+
+
+Episode 810 finished after 42 time steps with total reward = 159575.310730.
+
+
+Episode 811 finished after 42 time steps with total reward = 67973.390724.
+
+
+Episode 812 finished after 42 time steps with total reward = 130107.169034.
+
+
+Episode 813 finished after 42 time steps with total reward = 160097.844752.
+
+
+Episode 814 finished after 42 time steps with total reward = 148139.386764.
+
+
+Episode 815 finished after 42 time steps with total reward = 106767.464594.
+
+
+Episode 816 finished after 42 time steps with total reward = 198740.155379.
+
+
+Episode 817 finished after 42 time steps with total reward = 63516.294930.
+
+
+Episode 818 finished after 42 time steps with total reward = 181684.253494.
+
+
+Episode 819 finished after 42 time steps with total reward = 89230.228603.
+
+
+Episode 820 finished after 42 time steps with total reward = 116783.597381.
+
+
+Episode 821 finished after 42 time steps with total reward = 252429.112169.
+
+
+Episode 822 finished after 42 time steps with total reward = 90810.093042.
+
+
+Episode 823 finished after 42 time steps with total reward = 158360.826680.
+
+
+Episode 824 finished after 42 time steps with total reward = 58928.654458.
+
+
+Episode 825 finished after 42 time steps with total reward = 201700.975324.
+
+
+Episode 826 finished after 42 time steps with total reward = 232590.371339.
+
+
+Episode 827 finished after 42 time steps with total reward = 48029.772801.
+
+
+Episode 828 finished after 42 time steps with total reward = 116620.089498.
+
+
+Episode 829 finished after 42 time steps with total reward = 49988.512516.
+
+
+Episode 830 finished after 42 time steps with total reward = 101083.101215.
+
+
+Episode 831 finished after 42 time steps with total reward = 80976.577626.
+
+
+Episode 832 finished after 42 time steps with total reward = 160944.897937.
+
+
+Episode 833 finished after 42 time steps with total reward = 310835.220469.
+
+
+Episode 834 finished after 42 time steps with total reward = 96082.714327.
+
+
+Episode 835 finished after 42 time steps with total reward = 141256.730115.
+
+
+Episode 836 finished after 42 time steps with total reward = 167301.249781.
+
+
+Episode 837 finished after 42 time steps with total reward = 147086.677443.
+
+
+Episode 838 finished after 42 time steps with total reward = 115929.850599.
+
+
+Episode 839 finished after 42 time steps with total reward = 156081.367698.
+
+
+Episode 840 finished after 42 time steps with total reward = 30332.833588.
+
+
+Episode 841 finished after 42 time steps with total reward = 52695.709191.
+
+
+Episode 842 finished after 42 time steps with total reward = 75899.146687.
+
+
+Episode 843 finished after 42 time steps with total reward = 54655.572952.
+
+
+Episode 844 finished after 42 time steps with total reward = 120666.438061.
+
+
+Episode 845 finished after 42 time steps with total reward = 77271.034221.
+
+
+Episode 846 finished after 42 time steps with total reward = 53705.326286.
+
+
+Episode 847 finished after 42 time steps with total reward = 199614.257147.
+
+
+Episode 848 finished after 42 time steps with total reward = 177769.208656.
+
+
+Episode 849 finished after 42 time steps with total reward = 173669.906150.
+
+
+Episode 850 finished after 42 time steps with total reward = 87433.015127.
+
+
+Episode 851 finished after 42 time steps with total reward = 69787.984201.
+
+
+Episode 852 finished after 42 time steps with total reward = 89194.977144.
+
+
+Episode 853 finished after 42 time steps with total reward = 91048.975335.
+
+
+Episode 854 finished after 42 time steps with total reward = 195679.108654.
+
+
+Episode 855 finished after 42 time steps with total reward = 185683.328431.
+
+
+Episode 856 finished after 42 time steps with total reward = 277151.689147.
+
+
+Episode 857 finished after 42 time steps with total reward = 83800.056051.
+
+
+Episode 858 finished after 42 time steps with total reward = 87627.258030.
+
+
+Episode 859 finished after 42 time steps with total reward = 398448.360894.
+
+
+Episode 860 finished after 42 time steps with total reward = 68221.993408.
+
+
+Episode 861 finished after 42 time steps with total reward = 124686.648815.
+
+
+Episode 862 finished after 42 time steps with total reward = 43182.188800.
+
+
+Episode 863 finished after 42 time steps with total reward = 10813.642020.
+
+
+Episode 864 finished after 42 time steps with total reward = 117954.787929.
+
+
+Episode 865 finished after 42 time steps with total reward = 110123.983072.
+
+
+Episode 866 finished after 42 time steps with total reward = 102011.795204.
+
+
+Episode 867 finished after 42 time steps with total reward = 298009.873866.
+
+
+Episode 868 finished after 42 time steps with total reward = 92001.840633.
+
+
+Episode 869 finished after 42 time steps with total reward = 97146.484032.
+
+
+Episode 870 finished after 42 time steps with total reward = 146377.359957.
+
+
+Episode 871 finished after 42 time steps with total reward = 128992.553873.
+
+
+Episode 872 finished after 42 time steps with total reward = 178627.021564.
+
+
+Episode 873 finished after 42 time steps with total reward = 90958.152128.
+
+
+Episode 874 finished after 42 time steps with total reward = 60536.451649.
+
+
+Episode 875 finished after 42 time steps with total reward = 72730.387743.
+
+
+Episode 876 finished after 42 time steps with total reward = 59765.314683.
+
+
+Episode 877 finished after 42 time steps with total reward = 170849.043233.
+
+
+Episode 878 finished after 42 time steps with total reward = 156548.939466.
+
+
+Episode 879 finished after 42 time steps with total reward = 63548.557839.
+
+
+Episode 880 finished after 42 time steps with total reward = 181600.813336.
+
+
+Episode 881 finished after 42 time steps with total reward = 154975.781784.
+
+
+Episode 882 finished after 42 time steps with total reward = 135007.464129.
+
+
+Episode 883 finished after 42 time steps with total reward = 66200.597281.
+
+
+Episode 884 finished after 42 time steps with total reward = 82045.816440.
+
+
+Episode 885 finished after 42 time steps with total reward = 61285.904979.
+
+
+Episode 886 finished after 42 time steps with total reward = 73451.336995.
+
+
+Episode 887 finished after 42 time steps with total reward = 102295.462106.
+
+
+Episode 888 finished after 42 time steps with total reward = 196198.149557.
+
+
+Episode 889 finished after 42 time steps with total reward = 129481.673063.
+
+
+Episode 890 finished after 42 time steps with total reward = 108006.181648.
+
+
+Episode 891 finished after 42 time steps with total reward = 184541.436441.
+
+
+Episode 892 finished after 42 time steps with total reward = 6653.616434.
+
+
+Episode 893 finished after 42 time steps with total reward = 123111.402330.
+
+
+Episode 894 finished after 42 time steps with total reward = 123026.457471.
+
+
+Episode 895 finished after 42 time steps with total reward = 135931.275116.
+
+
+Episode 896 finished after 42 time steps with total reward = 137091.113619.
+
+
+Episode 897 finished after 42 time steps with total reward = 89145.126181.
+
+
+Episode 898 finished after 42 time steps with total reward = 104028.197178.
+
+
+Episode 899 finished after 42 time steps with total reward = 146948.373427.
+
+
+Episode 900 finished after 42 time steps with total reward = 136917.839749.
+
+
+Episode 901 finished after 42 time steps with total reward = 136301.283557.
+
+
+Episode 902 finished after 42 time steps with total reward = 77294.315485.
+
+
+Episode 903 finished after 42 time steps with total reward = 75878.210597.
+
+
+Episode 904 finished after 42 time steps with total reward = 170610.474141.
+
+
+Episode 905 finished after 42 time steps with total reward = 133491.825743.
+
+
+Episode 906 finished after 42 time steps with total reward = 126132.348779.
+
+
+Episode 907 finished after 42 time steps with total reward = 149232.138566.
+
+
+Episode 908 finished after 42 time steps with total reward = 226002.992009.
+
+
+Episode 909 finished after 42 time steps with total reward = 193936.456861.
+
+
+Episode 910 finished after 42 time steps with total reward = 14402.117976.
+
+
+Episode 911 finished after 42 time steps with total reward = 177455.869320.
+
+
+Episode 912 finished after 42 time steps with total reward = 85139.138308.
+
+
+Episode 913 finished after 42 time steps with total reward = 232375.772867.
+
+
+Episode 914 finished after 42 time steps with total reward = 49347.049191.
+
+
+Episode 915 finished after 42 time steps with total reward = 29972.175812.
+
+
+Episode 916 finished after 42 time steps with total reward = 30797.599603.
+
+
+Episode 917 finished after 42 time steps with total reward = 142225.139373.
+
+
+Episode 918 finished after 42 time steps with total reward = 171613.524077.
+
+
+Episode 919 finished after 42 time steps with total reward = 85158.310602.
+
+
+Episode 920 finished after 42 time steps with total reward = 179629.858717.
+
+
+Episode 921 finished after 42 time steps with total reward = 151618.388115.
+
+
+Episode 922 finished after 42 time steps with total reward = 140914.512325.
+
+
+Episode 923 finished after 42 time steps with total reward = 196626.204045.
+
+
+Episode 924 finished after 42 time steps with total reward = 59496.491204.
+
+
+Episode 925 finished after 42 time steps with total reward = 95053.127679.
+
+
+Episode 926 finished after 42 time steps with total reward = 121793.294481.
+
+
+Episode 927 finished after 42 time steps with total reward = 140265.918149.
+
+
+Episode 928 finished after 42 time steps with total reward = 201500.994334.
+
+
+Episode 929 finished after 42 time steps with total reward = 55555.047293.
+
+
+Episode 930 finished after 42 time steps with total reward = 22854.282709.
+
+
+Episode 931 finished after 42 time steps with total reward = 187189.510667.
+
+
+Episode 932 finished after 42 time steps with total reward = 146086.083168.
+
+
+Episode 933 finished after 42 time steps with total reward = 151085.847286.
+
+
+Episode 934 finished after 42 time steps with total reward = 161675.986808.
+
+
+Episode 935 finished after 42 time steps with total reward = 212497.306588.
+
+
+Episode 936 finished after 42 time steps with total reward = 197296.206563.
+
+
+Episode 937 finished after 42 time steps with total reward = 146748.796346.
+
+
+Episode 938 finished after 42 time steps with total reward = 110552.223873.
+
+
+Episode 939 finished after 42 time steps with total reward = 121712.613360.
+
+
+Episode 940 finished after 42 time steps with total reward = 149295.174373.
+
+
+Episode 941 finished after 42 time steps with total reward = 109394.828314.
+
+
+Episode 942 finished after 42 time steps with total reward = 152828.012895.
+
+
+Episode 943 finished after 42 time steps with total reward = 254459.461500.
+
+
+Episode 944 finished after 42 time steps with total reward = 242958.661286.
+
+
+Episode 945 finished after 42 time steps with total reward = 33779.104892.
+
+
+Episode 946 finished after 42 time steps with total reward = -7406.055123.
+
+
+Episode 947 finished after 42 time steps with total reward = 251944.436248.
+
+
+Episode 948 finished after 42 time steps with total reward = 75458.253081.
+
+
+Episode 949 finished after 42 time steps with total reward = 176889.943208.
+
+
+Episode 950 finished after 42 time steps with total reward = 137565.640881.
+
+
+Episode 951 finished after 42 time steps with total reward = 181874.864668.
+
+
+Episode 952 finished after 42 time steps with total reward = 194236.598208.
+
+
+Episode 953 finished after 42 time steps with total reward = 111964.308078.
+
+
+Episode 954 finished after 42 time steps with total reward = 118030.856305.
+
+
+Episode 955 finished after 42 time steps with total reward = 124758.224860.
+
+
+Episode 956 finished after 42 time steps with total reward = 92692.111884.
+
+
+Episode 957 finished after 42 time steps with total reward = 31131.703661.
+
+
+Episode 958 finished after 42 time steps with total reward = 92814.788892.
+
+
+Episode 959 finished after 42 time steps with total reward = 92214.026730.
+
+
+Episode 960 finished after 42 time steps with total reward = 91625.285401.
+
+
+Episode 961 finished after 42 time steps with total reward = 123410.856112.
+
+
+Episode 962 finished after 42 time steps with total reward = 177673.466735.
+
+
+Episode 963 finished after 42 time steps with total reward = 214342.336138.
+
+
+Episode 964 finished after 42 time steps with total reward = 87932.806801.
+
+
+Episode 965 finished after 42 time steps with total reward = 66130.670927.
+
+
+Episode 966 finished after 42 time steps with total reward = 55844.605344.
+
+
+Episode 967 finished after 42 time steps with total reward = 131577.372843.
+
+
+Episode 968 finished after 42 time steps with total reward = 104253.694128.
+
+
+Episode 969 finished after 42 time steps with total reward = 85068.524903.
+
+
+Episode 970 finished after 42 time steps with total reward = 72162.222376.
+
+
+Episode 971 finished after 42 time steps with total reward = 89563.965253.
+
+
+Episode 972 finished after 42 time steps with total reward = 193174.420150.
+
+
+Episode 973 finished after 42 time steps with total reward = 86933.379456.
+
+
+Episode 974 finished after 42 time steps with total reward = 158684.003454.
+
+
+Episode 975 finished after 42 time steps with total reward = 151763.848214.
+
+
+Episode 976 finished after 42 time steps with total reward = 30374.199899.
+
+
+Episode 977 finished after 42 time steps with total reward = 158590.050351.
+
+
+Episode 978 finished after 42 time steps with total reward = 62081.052312.
+
+
+Episode 979 finished after 42 time steps with total reward = 65953.350263.
+
+
+Episode 980 finished after 42 time steps with total reward = 135729.836661.
+
+
+Episode 981 finished after 42 time steps with total reward = 68863.203524.
+
+
+Episode 982 finished after 42 time steps with total reward = 87131.003363.
+
+
+Episode 983 finished after 42 time steps with total reward = 175947.420290.
+
+
+Episode 984 finished after 42 time steps with total reward = 189358.032006.
+
+
+Episode 985 finished after 42 time steps with total reward = 105907.606367.
+
+
+Episode 986 finished after 42 time steps with total reward = 48642.215889.
+
+
+Episode 987 finished after 42 time steps with total reward = 33871.429169.
+
+
+Episode 988 finished after 42 time steps with total reward = 99378.280937.
+
+
+Episode 989 finished after 42 time steps with total reward = 41358.793848.
+
+
+Episode 990 finished after 42 time steps with total reward = 136182.275522.
+
+
+Episode 991 finished after 42 time steps with total reward = 243975.736904.
+
+
+Episode 992 finished after 42 time steps with total reward = 98506.904884.
+
+
+Episode 993 finished after 42 time steps with total reward = 70964.651433.
+
+
+Episode 994 finished after 42 time steps with total reward = 97064.339202.
+
+
+Episode 995 finished after 42 time steps with total reward = 164980.368367.
+
+
+Episode 996 finished after 42 time steps with total reward = 122531.276347.
+
+
+Episode 997 finished after 42 time steps with total reward = 19972.750692.
+
+
+Episode 998 finished after 42 time steps with total reward = 80631.221435.
+
+
+Episode 999 finished after 42 time steps with total reward = 139564.843289.
+
+1: 59344.10456617747
+2: 85061.97427604097
+3: 66156.73244838236
+4: 48217.01300274709
+5: 181578.43814810866
+6: 170957.8468560736
+7: 70791.8963862476
+8: 116419.06920117963
+9: 209743.8126078673
+10: 285909.76882438466
+11: 179201.24277645384
+12: 63702.6640480021
+13: 89667.1239421322
+14: 51465.914029939915
+15: 58252.46773012483
+16: 57565.36452195153
+17: 188209.46725572203
+18: 131312.03729019675
+19: 198393.42628940142
+20: 242419.5643687435
+21: 89134.15632246091
+22: 151175.47261538578
+23: 135089.0951495259
+24: 288400.4504867684
+25: 148102.85281983722
+26: 73100.09227685462
+27: 133201.67107017772
+28: 44446.13030666436
+29: 105856.16713080226
+30: 225275.97527925955
+31: 187801.5476880867
+32: 50796.90331676148
+33: 67370.07527512193
+34: 147595.27964420963
+35: 90316.65348706342
+36: 63087.54077846403
+37: 127182.14397986903
+38: 236839.99230534927
+39: 43295.258137993194
+40: 80914.7970292838
+41: 36461.70367217151
+42: 87169.29202509622
+43: 142360.99412784647
+44: 117434.53582240667
+45: 179052.04626201757
+46: 34629.30995368355
+47: 49921.193890879425
+48: 133219.9616933714
+49: 64579.69571990118
+50: 161369.24355234674
+51: 112100.3193201125
+52: 164191.48845776054
+53: 144023.4774894829
+54: 78390.91133295829
+55: 121667.23370260588
+56: 33741.72111121248
+57: 216639.1390574827
+58: 106780.45334912188
+59: 258601.2351267477
+60: 151971.00763125854
+61: 70907.29904919956
+62: 148056.57546700363
+63: 179505.83039827872
+64: 123103.80819709174
+65: 65147.901173472055
+66: 32817.437142557814
+67: 33073.41168874642
+68: 195156.0500103479
+69: 204550.15488226712
+70: 5715.39285603365
+71: 89143.9879366458
+72: 82082.73086240789
+73: 137051.92405325326
+74: 154862.066911496
+75: 193311.53565187298
+76: 19790.75250370441
+77: 102311.76421161502
+78: 87237.06299548916
+79: 30761.43886638939
+80: 207876.0489852738
+81: 86410.89573954497
+82: 165612.0355046175
+83: 46834.32727718688
+84: 69671.28752411844
+85: 128524.22130185738
+86: 100221.28500512158
+87: 200609.95983000216
+88: 193758.32434570097
+89: 84828.94514336358
+90: 209557.60057167726
+91: 116435.61305695589
+92: 82727.09538003328
+93: 100922.78713503844
+94: 140769.79799532087
+95: 84769.53676694474
+96: 83015.01798557185
+97: 71413.04489786821
+98: 87493.8152072845
+99: 56458.086325868586
+100: 144222.60045544643
+101: 283640.67234248866
+102: 46193.672958964686
+103: 97495.09871705863
+104: 102451.9768548196
+105: 34916.95161219555
+106: 137010.96217310536
+107: 144576.18290255545
+108: 119844.30545705743
+109: 197347.65241596563
+110: 27673.82072949894
+111: 90748.76607611234
+112: 218197.54854259803
+113: 72265.27560107331
+114: 102015.25950444667
+115: 183822.2182630549
+116: 128140.65624814041
+117: 161355.3631305188
+118: 94776.59527745508
+119: 166435.22053324693
+120: 256027.66997339233
+121: 188018.4155032977
+122: 121509.19975103848
+123: 193389.42815717746
+124: -2086.3649249518203
+125: 59154.447639379854
+126: 166305.6446390953
+127: 25098.9742943421
+128: 65696.15429747116
+129: 116030.20455360686
+130: 189685.53661656776
+131: 158846.85044752678
+132: 128595.22482510048
+133: 39255.43296964612
+134: 124367.80779503615
+135: 114081.09158156216
+136: 172282.87081553834
+137: 98056.01851503967
+138: 137260.54396744093
+139: 212055.32526547706
+140: 107526.20865838733
+141: 107160.36648027619
+142: 30569.56475528887
+143: 108478.61424838795
+144: 184310.82962206035
+145: 191537.46900874906
+146: 56792.50228848081
+147: 243374.83149307268
+148: 134077.82551141107
+149: 155332.311757276
+150: 275645.07463224005
+151: 162060.13116935556
+152: 224810.42024756153
+153: 20441.645864364677
+154: 17533.85682265417
+155: 161111.90083430076
+156: 84136.89340566428
+157: 206320.60913772054
+158: 71225.77761745141
+159: 198055.09997847182
+160: 161573.3921309473
+161: 137297.6047193219
+162: 162600.99926366413
+163: 238431.48893531412
+164: 111681.47326311181
+165: 173165.25756329484
+166: 207251.121466138
+167: 145540.10931705544
+168: 43017.540733744536
+169: 198871.5290301569
+170: 79082.43879330045
+171: 120779.03485882623
+172: 141262.32571262238
+173: 90925.10712242106
+174: 151604.92130465157
+175: 74620.01998853832
+176: 164629.0717529329
+177: 107214.24214112514
+178: 127241.01988604054
+179: 204234.39626694808
+180: 97481.77743306803
+181: 36639.50388461494
+182: 186682.6984100056
+183: 87576.2712754859
+184: 136950.45852096454
+185: 75433.02273277217
+186: 165512.54438881273
+187: 246568.5790553338
+188: 183725.79755711125
+189: 183371.47705212818
+190: 133209.68646517486
+191: 130498.94950850189
+192: 151277.11075570347
+193: 224746.8722911763
+194: 176751.25356279302
+195: 246473.0143146873
+196: 76913.75864933792
+197: 28515.5662234662
+198: 105811.10822455859
+199: 67112.56689982372
+200: 176314.14557925542
+201: 108215.12437820996
+202: 103073.28195442352
+203: 173305.49030876398
+204: 146911.80540577444
+205: 140924.59475501924
+206: 201917.94444475084
+207: 137717.86441792652
+208: 49121.33436082688
+209: 85829.63388947729
+210: 32207.794285428827
+211: 165486.07402924146
+212: 23778.4144875488
+213: 14382.7562856625
+214: 216537.20076632762
+215: 120167.57750342286
+216: 146262.30095630296
+217: 103210.49259785691
+218: 49291.421780378296
+219: 150204.13545592048
+220: 130285.16129637547
+221: 87843.9613122498
+222: 103586.17026206956
+223: 107859.7962069188
+224: 82684.83971968651
+225: 146371.60965728524
+226: 89324.02209552049
+227: 114035.2662846196
+228: 118937.98660961466
+229: 167170.24835984578
+230: 103102.5095266437
+231: 88422.4578767255
+232: 109732.59886638031
+233: 103019.5831692165
+234: 183741.53593668423
+235: 93398.03239126535
+236: 80417.29431739592
+237: 108018.42929630107
+238: 199571.6394292392
+239: 116501.1670716379
+240: 241991.23748729832
+241: 124300.09985162498
+242: 63863.28043666517
+243: 28638.007691695195
+244: 186740.4267244527
+245: 101515.86366577368
+246: 88226.92988034591
+247: 75559.32933247462
+248: 94889.34298456932
+249: 153472.40171134114
+250: 222411.84128201683
+251: 164670.31127868313
+252: 176724.4526029717
+253: 313731.0505354442
+254: 131049.40622581303
+255: 118070.41524733364
+256: 126785.04883318639
+257: 38048.11983953719
+258: 68577.15046538718
+259: 79774.4405939978
+260: 78943.93793556074
+261: 195156.46929072385
+262: 105831.87758570752
+263: 69182.11874915179
+264: 156399.70025630496
+265: 56450.37943368635
+266: 143122.67216848428
+267: 188106.0207142876
+268: 78852.47929141347
+269: 125449.6985169664
+270: 117515.2487341747
+271: 90245.48965016028
+272: 20607.50000588059
+273: -20096.323072433443
+274: 139462.7738106576
+275: 47648.98945443067
+276: 132731.975996988
+277: 77912.36664294248
+278: 86401.31500809998
+279: 101160.36188584534
+280: 99949.460280248
+281: 178504.37653330708
+282: 76650.33167669698
+283: 57149.39712051363
+284: 43541.41722280084
+285: 266209.17815779615
+286: 125586.64943350022
+287: 120186.00357419215
+288: 244200.5164715802
+289: 109873.85488426778
+290: 115740.76611742983
+291: 108287.55575148581
+292: 180898.686916816
+293: 130197.3932016548
+294: 139115.80627560808
+295: 91354.06439131699
+296: 97409.61245210006
+297: 179870.22733983852
+298: 280540.07671100635
+299: 142705.81378160708
+300: 56587.952565747924
+301: 219356.85991073947
+302: 44885.525148316345
+303: 142174.44986625903
+304: 364713.9384817704
+305: 80769.61037001334
+306: 63897.252967754845
+307: 160995.6129029985
+308: 118168.2840100659
+309: 150634.709797268
+310: 155931.26125269063
+311: 126282.8224749339
+312: 125688.52103752864
+313: 193975.48580284446
+314: 66892.14778805434
+315: 168296.04668819933
+316: 201107.8541237181
+317: 122067.75242664534
+318: 78644.963696786
+319: 83220.83969583092
+320: 133537.25787387512
+321: 62066.02996719157
+322: 237114.25304677314
+323: 97589.32320929156
+324: 107710.57515885992
+325: 186948.07626510412
+326: 39786.83783597083
+327: 165667.29148031346
+328: 74612.69872907884
+329: 242348.17437199637
+330: 105467.08541822282
+331: 140603.92086168926
+332: 115800.69936149419
+333: 121477.59460977677
+334: 157405.4850453048
+335: 99289.16033705696
+336: 130922.62788250699
+337: 130023.11833818897
+338: 141354.9786578576
+339: 119435.07893915288
+340: 142880.7824450079
+341: 133506.53797493383
+342: 104365.56484783295
+343: 79949.51566792821
+344: 303313.16709365806
+345: 6634.470244762546
+346: 102257.36199052856
+347: 135223.24833752876
+348: 43977.99434592051
+349: 44305.85547716779
+350: 115874.11536080082
+351: 27678.16436692349
+352: 158645.19346746604
+353: 121376.6663014185
+354: 153368.72065612717
+355: 106277.74736326895
+356: 216647.60308271286
+357: 56883.19943667072
+358: 97188.91370586632
+359: 96226.66714771255
+360: 189636.66964340827
+361: 124375.85283944759
+362: 105183.21741333831
+363: 36664.317924452684
+364: 158113.56513806476
+365: 77649.57976817011
+366: 67340.73634077248
+367: 57816.49285392562
+368: 126382.18586585051
+369: 44443.06199996834
+370: 101224.71749445153
+371: 60052.419070087315
+372: 104727.67810570385
+373: 79127.18293817158
+374: 148711.41348008113
+375: 155738.6977369171
+376: 140465.15661151137
+377: 98289.22515132159
+378: 141563.88772096
+379: 134308.4622198538
+380: 58492.385147583875
+381: 116862.08942559874
+382: 67127.96815035891
+383: 100484.69293530833
+384: 99661.95238973192
+385: 239677.67084102804
+386: 33934.456509624724
+387: 205596.81600906805
+388: 145005.94219442175
+389: 132699.20015036006
+390: 58380.380255263415
+391: 72714.46918001739
+392: 165005.70614267752
+393: 138976.05371368173
+394: 65879.96098275002
+395: 104107.24931535765
+396: 139983.74959132317
+397: 186611.12086376286
+398: 155593.66661579668
+399: 66320.55306081165
+400: 101198.9168506847
+401: 173465.37272960588
+402: 274762.7631670982
+403: 292876.0055368317
+404: 103950.92121199216
+405: 141433.46185416344
+406: 76945.44147371507
+407: 64815.59911810924
+408: 45660.41187723697
+409: 122623.77520041773
+410: 142802.78895299818
+411: 155765.26561727104
+412: 149098.1487417694
+413: 123965.38122759073
+414: 96796.76139903092
+415: 98207.31504800919
+416: 66871.65041876669
+417: 88123.10238213779
+418: 75906.47971355802
+419: 171377.2716968758
+420: 26611.407409216932
+421: 112801.2667641869
+422: 135557.78228344978
+423: 212692.88570882374
+424: 124070.47153959714
+425: 112898.96242646762
+426: 189069.1946938772
+427: 173450.74715294264
+428: 45835.59395817309
+429: 50884.369977430586
+430: 58384.331407854625
+431: 84788.01370228967
+432: 108559.72295572274
+433: 259252.88552746776
+434: 139530.87624853238
+435: 46750.61241624586
+436: 146092.16874395363
+437: 180253.8680197138
+438: 63987.61258376058
+439: 130448.71418775417
+440: 131718.6260823907
+441: 91452.28482134081
+442: 87253.12638017087
+443: 245923.45291770535
+444: 120644.33922859604
+445: 162771.95733872632
+446: 170379.03740674513
+447: 84761.73824281339
+448: 158680.9112245469
+449: 235358.0659778574
+450: 192459.49516934587
+451: 21036.413546988595
+452: 94742.98911178068
+453: 84521.90781407157
+454: 209539.18450949056
+455: 114488.15391288168
+456: 125500.5485530486
+457: 168665.58727872255
+458: 150338.24733398904
+459: 14891.766634010695
+460: 115335.83076323944
+461: 193762.9796335579
+462: 144315.50751705864
+463: 74702.79230440818
+464: 149614.78861109403
+465: 175994.49495257915
+466: 186135.30104270985
+467: 77082.24679903698
+468: 170582.34467395785
+469: 161340.65368754443
+470: 172566.2284089547
+471: 62227.050713227305
+472: 143684.9361748659
+473: 264809.33386170265
+474: 26726.14835745
+475: 70667.12022699806
+476: 37520.5121460791
+477: 188602.7120176528
+478: 155043.41714563992
+479: 188632.46522215224
+480: 209975.7736708544
+481: 76237.1637512077
+482: 61293.29704891422
+483: 91266.69208324602
+484: 175899.71049877285
+485: 22556.847490905086
+486: 136971.6410324614
+487: 313387.6667775398
+488: 93249.91539681188
+489: 65983.16007061183
+490: 135766.7266812415
+491: 133283.9860397873
+492: 74597.62828576303
+493: 149186.79182335842
+494: 180125.29854255507
+495: 400163.32007099205
+496: 189149.29938090313
+497: 167501.28542490117
+498: 64337.07719791771
+499: 113057.8564050475
+500: 287908.0950105363
+501: 103515.06549983085
+502: 98102.3225706447
+503: 192653.28211911587
+504: 35005.720216988644
+505: 162084.70248654726
+506: 119873.92651150146
+507: 117532.56370365826
+508: 114693.12373206025
+509: 152997.38766303807
+510: 106820.4514620865
+511: 178008.5414375033
+512: 259574.95616066596
+513: 186190.1301144624
+514: 97087.06276700753
+515: 100590.52039119025
+516: 191101.5339196066
+517: 154635.83930374205
+518: 160308.52334636505
+519: 122265.03175112151
+520: 204757.57430703234
+521: 182910.8410262179
+522: 180067.3680055543
+523: 177488.02594890475
+524: 59252.15742782416
+525: 210039.92649064935
+526: 90544.41217241297
+527: 41686.870730027294
+528: 157606.35661080715
+529: 237955.73021614
+530: 153745.3387389516
+531: 156708.93889610225
+532: 123111.28898832042
+533: 115792.65505139291
+534: 109361.79990250501
+535: 4013.137430025643
+536: 82406.74880752753
+537: 32113.69651970835
+538: 86233.42659686698
+539: 117498.84492331525
+540: 99715.34461132134
+541: 92950.35853748774
+542: 120511.7098613288
+543: 170970.52681901836
+544: 284629.99026054057
+545: 111358.30788866771
+546: 198215.81902070262
+547: 159579.80487406306
+548: 81577.66529788458
+549: 179155.14722396614
+550: 9237.25889868912
+551: 130602.60413900547
+552: 52579.696731884644
+553: 108353.73585975639
+554: 141773.90585041253
+555: 128457.96963976332
+556: 109966.64353969393
+557: 148895.1099165878
+558: 195522.3110104272
+559: 52142.289758793486
+560: 53834.177853514295
+561: 120431.61003820298
+562: 130666.68861502595
+563: 52122.260136961035
+564: 209619.3853429536
+565: 306844.51409707597
+566: 212808.20298342028
+567: 162839.43017767422
+568: 84586.80847861251
+569: 20812.653080672142
+570: 68348.86029701604
+571: 79293.9254105133
+572: 125626.06517596653
+573: 94431.54691103657
+574: 232056.58252477023
+575: 44941.43858098501
+576: 70675.48260445238
+577: -365.56951389543246
+578: 177464.18571729533
+579: 176960.98327574774
+580: 192200.2831120481
+581: 123621.65118374716
+582: 96258.17210805696
+583: 60733.555468232575
+584: 60041.88561890522
+585: 139321.47732242473
+586: 190246.2063398328
+587: 100181.79430303365
+588: 143256.38135561635
+589: 100885.74901323681
+590: 89198.33586969777
+591: 138606.97056204826
+592: 133751.53393614086
+593: 118963.7342176974
+594: 127086.21143831243
+595: 170460.09566387464
+596: 151328.2283583835
+597: 121636.8996177541
+598: 71713.62331399918
+599: 30111.707475532385
+600: 180487.20571594452
+601: 172655.09982320084
+602: 135270.26471791585
+603: 87264.55373646496
+604: 36332.74544065303
+605: 87920.8242948592
+606: 144598.3335558884
+607: 257957.97780627618
+608: 35227.898035042366
+609: 42111.01320406
+610: 164137.93571873568
+611: 130754.02829403465
+612: 187493.46435285633
+613: 147877.2926267874
+614: 192224.5624694603
+615: 95913.56187483229
+616: 45691.4400956679
+617: 47712.11041402968
+618: 124110.74830711004
+619: 132020.3386250351
+620: 53243.573649023514
+621: 72011.76989766024
+622: 57507.63872970399
+623: 90873.31004348115
+624: 75661.01790879713
+625: 104196.92959820633
+626: 6123.359430996163
+627: 84948.71395278367
+628: 212954.61991859105
+629: 167266.00184093753
+630: 88035.52973183792
+631: 95626.14777026392
+632: 169605.1616373225
+633: 153588.14853902615
+634: 94714.77849855329
+635: 96549.03483532989
+636: 127805.06495251122
+637: 95670.59996821298
+638: 170231.3010435303
+639: 34375.619699303
+640: 143667.28603982204
+641: 64903.881648411654
+642: 250922.52889453818
+643: 218032.924956612
+644: 226953.10667138483
+645: 160674.60167810053
+646: 129853.63223437371
+647: 192962.58552690403
+648: 230616.405959779
+649: 182597.28047868825
+650: 146790.25783271415
+651: 126435.46675273924
+652: 114875.10257433381
+653: 155590.00735637822
+654: 145495.7635358627
+655: 66799.29472660448
+656: 172628.48270435288
+657: 160074.15345645128
+658: 124964.2334126728
+659: 111845.84506408565
+660: 181968.05221668276
+661: 103831.71701312411
+662: 43296.587402215315
+663: 292264.679771162
+664: 128220.38805617488
+665: 85875.90843421695
+666: 47452.823526146036
+667: 53769.529871075414
+668: 103948.62614184865
+669: 184031.0305567169
+670: 191519.4392911237
+671: 212509.408132484
+672: 50901.245962034474
+673: 89757.91956551647
+674: 98880.32442326576
+675: 205900.50595510867
+676: 141503.42343402884
+677: 28795.501448484472
+678: 215918.3749675759
+679: 242346.5262091286
+680: 84385.53114860001
+681: 72686.43678513443
+682: 174349.77282980632
+683: 66629.34663882831
+684: 172799.4117826777
+685: 88535.91207170277
+686: 104049.54449300986
+687: 159753.4369792788
+688: 69640.48359170163
+689: 210184.0959898511
+690: 28983.710084813007
+691: 81450.54218046242
+692: 84271.20011202345
+693: 66619.65580731755
+694: 171564.2100318488
+695: 131663.15108026634
+696: 116528.07200520692
+697: 148214.3334416381
+698: 169286.20508871583
+699: 115633.20329020219
+700: 183513.9879172754
+701: 81070.75427757716
+702: 102028.6136768118
+703: 174624.14801352052
+704: 54463.90776544335
+705: 85101.68652043722
+706: 90581.80965406986
+707: 68245.93688148932
+708: 38123.55739221047
+709: 118054.80776636946
+710: 72621.56942602812
+711: 110018.13223616668
+712: 101618.01597628527
+713: 108365.75204940356
+714: 12322.18933061145
+715: 204899.27587914834
+716: 88760.28026409048
+717: 108578.61416611617
+718: 57854.900897083746
+719: 170944.22906942602
+720: 247003.8293913523
+721: 32584.27338149154
+722: 166895.24014613155
+723: 121300.04287617613
+724: 99961.48625578667
+725: 121882.63321608794
+726: 65747.29661506606
+727: 109176.53646249729
+728: 136113.19100868847
+729: 143758.02980693418
+730: 151069.75937687812
+731: 57310.794189111795
+732: 120692.91486564002
+733: 97048.33016944019
+734: 45319.53043273723
+735: 111019.41602221466
+736: 310478.1827102975
+737: 73492.01402329592
+738: 208701.13480634196
+739: 109468.96385445914
+740: 49504.99642344806
+741: 160877.1836048698
+742: 191569.3365746672
+743: 128369.49630580735
+744: 113013.45247387548
+745: 147710.01197266922
+746: 113152.32468535402
+747: 196445.80182232836
+748: 81531.94233725622
+749: 116722.915354419
+750: 80799.07163609692
+751: 71873.48088602597
+752: 132097.40979609263
+753: 137895.17634560462
+754: 69289.52617291905
+755: 80118.27505644545
+756: 91258.54479933958
+757: 73375.27487966034
+758: 135178.23863007402
+759: 39946.40204326698
+760: 128200.12767929304
+761: 87237.30598876363
+762: 135611.94417518034
+763: 137692.51895648555
+764: 165260.7186204985
+765: 133882.78359934004
+766: 92007.93099714207
+767: 52370.0901789387
+768: 68533.88309138984
+769: 67173.54012566668
+770: 139442.49401851435
+771: 90984.94528904493
+772: 194226.99694067048
+773: 143510.94164301388
+774: 151176.07302045947
+775: 120139.2317908708
+776: 62648.3135780904
+777: 357864.21777599497
+778: 270136.94739008526
+779: 165891.6283217253
+780: 203272.95664093026
+781: 162199.29004636809
+782: 86642.18717619745
+783: 74512.00709859899
+784: 58182.22117190424
+785: 64237.83956364682
+786: 123674.75355754874
+787: 80612.10285722889
+788: 139439.27950173183
+789: 147274.66757700907
+790: 135174.75370419218
+791: 75716.98510286017
+792: 131683.6063916047
+793: 84308.87236959237
+794: 145718.93408790074
+795: 141120.9878391557
+796: 68479.188337061
+797: 111139.99405469614
+798: 178599.295931453
+799: 5766.543259911123
+800: 66793.15977531474
+801: 196215.61251152656
+802: 119159.26093540524
+803: 122098.61927673747
+804: 175560.3490574204
+805: 50482.427022634365
+806: 56540.60897331609
+807: 123729.10616563933
+808: 35996.62585006171
+809: 200028.65413621726
+810: 78389.71685324819
+811: 159575.31072957435
+812: 67973.3907242784
+813: 130107.16903372019
+814: 160097.84475191074
+815: 148139.3867641057
+816: 106767.46459394452
+817: 198740.15537863754
+818: 63516.29492968356
+819: 181684.2534938029
+820: 89230.22860250986
+821: 116783.5973809303
+822: 252429.11216922244
+823: 90810.09304206382
+824: 158360.8266803844
+825: 58928.65445823103
+826: 201700.97532396019
+827: 232590.37133872684
+828: 48029.7728005964
+829: 116620.08949809661
+830: 49988.512515930575
+831: 101083.1012146711
+832: 80976.5776263875
+833: 160944.8979366291
+834: 310835.22046909423
+835: 96082.71432652575
+836: 141256.73011453782
+837: 167301.24978127034
+838: 147086.67744342663
+839: 115929.85059933219
+840: 156081.36769770866
+841: 30332.833588223133
+842: 52695.70919107186
+843: 75899.14668702515
+844: 54655.572951605136
+845: 120666.43806076847
+846: 77271.03422050658
+847: 53705.32628554912
+848: 199614.25714675192
+849: 177769.2086558126
+850: 173669.9061499589
+851: 87433.0151274759
+852: 69787.98420119745
+853: 89194.97714369808
+854: 91048.97533528323
+855: 195679.10865427577
+856: 185683.32843121956
+857: 277151.6891468323
+858: 83800.05605111946
+859: 87627.25802958716
+860: 398448.3608935261
+861: 68221.9934078929
+862: 124686.64881522304
+863: 43182.18879976359
+864: 10813.64201951577
+865: 117954.78792867958
+866: 110123.98307179802
+867: 102011.79520435093
+868: 298009.8738661847
+869: 92001.84063308159
+870: 97146.48403198365
+871: 146377.3599572832
+872: 128992.55387257904
+873: 178627.02156382008
+874: 90958.15212819993
+875: 60536.451649194234
+876: 72730.38774298839
+877: 59765.31468292567
+878: 170849.04323265614
+879: 156548.93946568802
+880: 63548.55783875857
+881: 181600.8133363427
+882: 154975.7817840998
+883: 135007.46412948702
+884: 66200.59728084132
+885: 82045.81643967784
+886: 61285.904978959064
+887: 73451.3369945471
+888: 102295.46210647412
+889: 196198.14955735917
+890: 129481.67306317092
+891: 108006.18164753536
+892: 184541.4364411428
+893: 6653.616434170603
+894: 123111.40232965577
+895: 123026.45747099121
+896: 135931.27511645068
+897: 137091.1136190151
+898: 89145.12618104077
+899: 104028.19717806543
+900: 146948.37342687827
+901: 136917.83974891927
+902: 136301.28355690412
+903: 77294.31548465951
+904: 75878.21059651376
+905: 170610.47414127667
+906: 133491.82574280415
+907: 126132.34877902016
+908: 149232.13856559678
+909: 226002.9920088587
+910: 193936.456860853
+911: 14402.117976086709
+912: 177455.86932014953
+913: 85139.1383077742
+914: 232375.7728674275
+915: 49347.04919120317
+916: 29972.175811901412
+917: 30797.599603461553
+918: 142225.13937297612
+919: 171613.5240774899
+920: 85158.31060207533
+921: 179629.85871728678
+922: 151618.38811523953
+923: 140914.5123252066
+924: 196626.20404534205
+925: 59496.49120404295
+926: 95053.12767852066
+927: 121793.29448054789
+928: 140265.91814933842
+929: 201500.99433408707
+930: 55555.047292869625
+931: 22854.2827085053
+932: 187189.5106672637
+933: 146086.08316826963
+934: 151085.84728631648
+935: 161675.9868078124
+936: 212497.3065876197
+937: 197296.20656291768
+938: 146748.79634614047
+939: 110552.22387272783
+940: 121712.61336002607
+941: 149295.17437272615
+942: 109394.82831414597
+943: 152828.01289498058
+944: 254459.46149954415
+945: 242958.66128574486
+946: 33779.10489192259
+947: -7406.055123276776
+948: 251944.43624815444
+949: 75458.25308105367
+950: 176889.94320821436
+951: 137565.64088054723
+952: 181874.8646677233
+953: 194236.59820830252
+954: 111964.308077931
+955: 118030.85630453145
+956: 124758.22486030258
+957: 92692.11188364628
+958: 31131.703661280684
+959: 92814.7888924554
+960: 92214.02672955606
+961: 91625.28540088935
+962: 123410.85611239937
+963: 177673.46673461708
+964: 214342.33613793517
+965: 87932.80680143394
+966: 66130.67092651493
+967: 55844.605344044656
+968: 131577.3728428593
+969: 104253.6941283425
+970: 85068.52490287522
+971: 72162.22237648195
+972: 89563.96525338586
+973: 193174.4201495828
+974: 86933.37945568861
+975: 158684.00345402944
+976: 151763.8482142306
+977: 30374.19989910652
+978: 158590.05035120907
+979: 62081.05231233197
+980: 65953.35026307986
+981: 135729.83666080318
+982: 68863.203523543
+983: 87131.00336324197
+984: 175947.42029020796
+985: 189358.03200559213
+986: 105907.60636696866
+987: 48642.21588873639
+988: 33871.429168500705
+989: 99378.28093738583
+990: 41358.79384817509
+991: 136182.27552244213
+992: 243975.73690440605
+993: 98506.9048842128
+994: 70964.65143306393
+995: 97064.33920236793
+996: 164980.36836697906
+997: 122531.27634680498
+998: 19972.750691933208
+999: 80631.2214352767
+1000: 139564.84328902836

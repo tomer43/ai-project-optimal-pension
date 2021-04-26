@@ -7,8 +7,13 @@ from gym_simulator.envs.custom_env import CustomEnv
 from investors_types.HumanInvestor import HumanInvestor
 from investors_types.HumanHeuristicsInvestors import *
 from investors_types.PseudoAgents import *
-from investors_types.RLInvestor import RLInvestor
-from investors_types.RLInvestor import RLApproximateQInvestor
+
+from investors_types.RLInvestor import RLQInvestor, RLApproximateQInvestor
+# from investors_types.RLInvestor import RLQInvestor
+# from investors_types.RLInvestor import RLApproximateQInvestor
+
+from gym_simulator.envs.QTable import QTable
+import pickle
 
 
 class Simulator:
@@ -40,12 +45,12 @@ class Simulator:
 
 if __name__ == '__main__':
     rl_investor_args = {
-        'q_table': 'Q-Table.pkl'
+        'q_table': QTable(pickle.load(open('Q-Table.pkl', "rb")))
     }
     funds_df = pd.read_csv('funds_after_processing.csv').set_index('fund_symbol')
     funds_names = funds_df.index.unique().tolist()
 
-    sim = Simulator(funds_csv=funds_df, funds_list_names=funds_names, investor=RLInvestor,
+    sim = Simulator(funds_csv=funds_df, funds_list_names=funds_names, investor=RLQInvestor,
                     investor_kwargs=rl_investor_args)
 
     results_line = sim.run_simulator()

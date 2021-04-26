@@ -77,11 +77,11 @@ class State:
         return self._state_parameters
 
 
-    def hash(self):
-        return self._state_parameters.tobytes()
-
-    def __hash__(self):
-        return self._state_parameters.tobytes()
+    # def hash(self):
+    #     return self._state_parameters.tobytes()
+    #
+    # def __hash__(self):
+    #     return self._state_parameters.tobytes()
 
 
     @staticmethod

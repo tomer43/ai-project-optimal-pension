@@ -43,7 +43,7 @@ def hash_state(state):
     return state.tobytes().__hash__()
 
 
-class TrainerRL:
+class TrainerQLearning:
     def __init__(self, funds_csv, funds_names_list, max_episodes, max_try=1000, epsilon=1, epsilon_decay=0.999, learning_rate=0.1,
                  gamma=0.6, q_table=None):
         # self._env = CustomEnv()
@@ -207,7 +207,7 @@ if __name__ == '__main__':
     # How to run training for Q-learning
     funds_df = pd.read_csv('../../funds_after_processing.csv').set_index('fund_symbol')
     funds_names = funds_df.index.unique().tolist()
-    trainer = TrainerRL(funds_df, funds_names, max_episodes=450000)
+    trainer = TrainerQLearning(funds_df, funds_names, max_episodes=1000)
     trainer.train()
 
 

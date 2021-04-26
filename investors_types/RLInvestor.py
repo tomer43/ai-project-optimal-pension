@@ -42,11 +42,13 @@ class RLApproximateQInvestor(Investor):
 
 
 # ---------------------------------------------------------------------------------
-class RLInvestor(Investor):
+class RLQInvestor(Investor):
     def __init__(self, initial_money, **kwargs):
         super().__init__(initial_money)
         # if q_table is None:
             # self._q_table = QTable(pickle.load(open(kwargs['q_table'], "rb")))
+        if 'q_table' not in kwargs.keys():
+            raise ValueError("Missing Q table")
         self._q_table = kwargs['q_table']
         # else:
         #     self._q_table = q_table
