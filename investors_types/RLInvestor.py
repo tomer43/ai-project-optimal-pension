@@ -4,7 +4,7 @@ import pickle
 from gym_simulator.envs.QTable import QTable
 from numpy import loadtxt
 from investors_types.HumanHeuristicsInvestors import *
-from gym_simulator.envs.FunctionApproximation import Estimator
+from RL_Trainer.FunctionApproximation import Estimator
 
 
 class RLQInvestor(Investor):

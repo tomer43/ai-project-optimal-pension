@@ -11,7 +11,7 @@ from investors_types.PseudoAgents import *
 
 from investors_types.RLInvestor import RLQInvestor, RLApproximateQInvestor
 
-from gym_simulator.envs.QTable import QTable
+from RL_Trainer.QTable import QTable
 
 
 # INITIAL_MONEY = 100000

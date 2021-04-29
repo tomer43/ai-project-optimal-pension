@@ -1,5 +1,5 @@
 import random
-from gym_simulator.envs.State import get_state_features_to_idx
+from our_simulator.State import get_state_features_to_idx
 
 class Investor:
     def __init__(self, initial_money, **kwargs):
