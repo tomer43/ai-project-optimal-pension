@@ -7,7 +7,7 @@ import pathlib
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from gym_simulator.envs.custom_env import CustomEnv
+from gym_simulator.envs.CustomEnv import CustomEnv
 from gym_simulator.envs.FunctionApproximation import Estimator
 
 from investors_types.Investor import Investor

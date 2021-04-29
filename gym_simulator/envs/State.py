@@ -54,10 +54,6 @@ def get_state(funds, turn):
     return state_parameters
 
 
-# def get_hashed_state(funds, turn):
-#     return get_state(funds, turn).tobytes()
-
-
 class State:
     def __init__(self, funds, turn):
         state_info = ['fund_total_last_5_years_returns',
@@ -75,14 +71,6 @@ class State:
 
     def get_state(self):
         return self._state_parameters
-
-
-    # def hash(self):
-    #     return self._state_parameters.tobytes()
-    #
-    # def __hash__(self):
-    #     return self._state_parameters.tobytes()
-
 
     @staticmethod
     def get_state_with_no_object_creation(funds, turn):

@@ -1,13 +1,13 @@
 import numpy as np
-import pandas as pd
 import random
 import pickle
 
+
 class QTable:
-    def __init__(self, dict=None):
-        if dict is None:
-            dict = {}
-        self._q_table = dict
+    def __init__(self, dictionary=None):
+        if dictionary is None:
+            dictionary = {}
+        self._q_table = dictionary
 
     def get_q_table(self):
         return self._q_table
@@ -39,23 +39,7 @@ class QTable:
         self._q_table[state][action] = (1 - learning_rate) * q_value + learning_rate * (reward + gamma * best_q)
 
     def export_to_pickle(self):
-        file = open("E:\\Tomers Backup\\AI_project\\Q-Table.pkl", "wb")
-        # file = open("..\\..\\Q-Table.pkl", "wb")
+        # file = open("E:\\Tomers Backup\\AI_project\\Q-Table.pkl", "wb")
+        file = open("..\\..\\Q-Table.pkl", "wb")
         pickle.dump(self._q_table, file, protocol=4)
         file.close()
-
-        # df = pd.DataFrame.from_dict(self._q_table, orient='index', dtype=None, columns=None)
-        # df.to_csv(r'QTABLE.csv')
-
-        # import csv
-        # csv_columns = ['features', 'fund_0', 'fund_1', 'fund_2', 'fund_3', 'fund_4', 'fund_5', 'fund_6', 'fund_7', 'fund_8', 'fund_9']
-        # dict_data = self._q_table
-        # csv_file = "Q_TABLE.csv"
-        # try:
-        #     with open(csv_file, 'w') as csvfile:
-        #         writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
-        #         writer.writeheader()
-        #         for data in dict_data:
-        #             writer.writerow(dict_data)
-        # except IOError:
-        #     print("I/O error")
