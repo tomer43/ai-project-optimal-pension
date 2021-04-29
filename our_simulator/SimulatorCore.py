@@ -3,7 +3,7 @@
 
 import random
 
-from Fund import Fund
+from our_simulator.Fund import Fund
 from our_simulator.State import get_state
 
 cached_funds = {}
@@ -62,19 +62,12 @@ class SimulatorCore:
         return funds_in_this_run
 
     def action(self, action):
-        # investor_type = actions[action]
-        # self.set_investor(investor_type, self._investor.get_money())
-        # self._current_fund = self._investor.choose_fund(self._funds, self._turn)
         fund = self._funds[action]
         self._current_fund = fund
         self._investor.update_money(fund, self._turn)
-        # print(f"{self._turn}: {self._investor.get_previous_money()} --{action}--> {self._investor.get_money()}")
         self._turn += 1
 
     def observe(self):
-        # s = State(self._funds, self._turn)
-        # return s.get_state()
-        # return State.get_state_with_no_object_creation(self._funds, self._turn)
         return get_state(self._funds, self._turn)
 
     def evaluate(self):
@@ -85,6 +78,3 @@ class SimulatorCore:
             return True
         else:
             return False
-
-    def view(self):
-        pass

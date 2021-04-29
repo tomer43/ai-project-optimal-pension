@@ -4,10 +4,8 @@ import pickle
 
 
 class QTable:
-    def __init__(self, dictionary=None):
-        if dictionary is None:
-            dictionary = {}
-        self._q_table = dictionary
+    def __init__(self, full_q_table=None):
+        self._q_table = full_q_table if full_q_table is not None else {}
 
     def get_q_table(self):
         return self._q_table
@@ -39,7 +37,6 @@ class QTable:
         self._q_table[state][action] = (1 - learning_rate) * q_value + learning_rate * (reward + gamma * best_q)
 
     def export_to_pickle(self):
-        # file = open("E:\\Tomers Backup\\AI_project\\Q-Table.pkl", "wb")
         file = open("../Q-Table.pkl", "wb")
         pickle.dump(self._q_table, file, protocol=4)
         file.close()

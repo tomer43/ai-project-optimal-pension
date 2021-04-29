@@ -1,5 +1,3 @@
-# import gym
-
 from our_simulator.SimulatorCore import SimulatorCore
 from investors_types.Investor import Investor
 
@@ -8,7 +6,6 @@ INITIAL_MONEY = 100000
 DEBUG_MODE = False
 
 
-# class CustomEnv(gym.Env):
 class CustomEnv:
     def __init__(self, funds_csv, funds_names, investor=Investor, investor_kwargs=None):
         if investor_kwargs is None:
@@ -33,20 +30,8 @@ class CustomEnv:
         done = self._pygame.is_done()
         return obs, reward, done, {}
 
-    # def render(self, mode='human'):
-    #     pass
-    #
-    # def close(self):
-    #     pass
-    #
-    # def seed(self, seed=None):
-    #     pass
-
     def investor_action(self, state):
         return self._investor.choose_fund(state)
-
-    # def get_funds_in_this_run(self):
-    #     return self._pygame.get_funds_symbol()
 
     def get_funds_symbols_in_this_run(self):
         return [fund.get_symbol() for fund in self._pygame.get_funds()]

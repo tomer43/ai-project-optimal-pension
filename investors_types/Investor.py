@@ -1,6 +1,7 @@
 import random
 from our_simulator.State import get_state_features_to_idx
 
+
 class Investor:
     def __init__(self, initial_money, **kwargs):
         self._initial_money = initial_money
@@ -26,8 +27,6 @@ class Investor:
         self._previous_money = self._current_money
         rate = 1 + fund.get_returns()[quarter] / 100.0 - fund.get_admin_fees()[quarter] / 100.0
         self._current_money *= rate
-        # print(f"{quarter}: {type(self).__name__}: {self._previous_money} --> {self._current_money}")
-        # print(f"{quarter}: {self._previous_money} ---{fund.get_symbol()}---> {self._current_money}")
 
     def reset_money(self):
         self._previous_money = self._initial_money

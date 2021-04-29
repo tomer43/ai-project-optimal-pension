@@ -1,16 +1,14 @@
 import random
-from tqdm import tqdm
 import sys
 import pathlib
 
 import pandas as pd
 import matplotlib.pyplot as plt
+from tqdm import tqdm
 
 from our_simulator.CustomEnv import CustomEnv
-
 from investors_types.Investor import Investor
 from investors_types.RLInvestor import RLApproximateQInvestor
-
 from RL_Trainer.QTable import QTable
 
 
@@ -21,17 +19,12 @@ def print_episodes_results(sums):
         i += 1
 
 
-def plot_unsmoothed_graph(episodes, sums):
-    plt.xticks(episodes)
-    plt.plot(episodes, sums)
-    plt.show()
-
-
 def plot_smoothed_graph(episodes, sums, max_episodes):
     df = pd.DataFrame({'Episode': episodes, 'Unsmoothed_sum': sums})
     df['Final Sum'] = df['Unsmoothed_sum'].rolling(max_episodes // 100).mean()
     fig = df.plot.line(x='Episode', y='Final Sum').get_figure()
     fig.savefig('..\\..\\learning curve.jpg')
+    # todo: tomer check
     # plt.show()
     # df.plot.line(x='Episode', y='Final Sum')
     # plt.show()
@@ -42,9 +35,8 @@ def hash_state(state):
 
 
 class TrainerQLearning:
-    def __init__(self, funds_csv, funds_names_list, max_episodes, max_try=1000, epsilon=1, epsilon_decay=0.999, learning_rate=0.1,
-                 gamma=0.6, q_table=None):
-        # self._env = CustomEnv()
+    def __init__(self, funds_csv, funds_names_list, max_episodes, max_try=1000, epsilon=1, epsilon_decay=0.999,
+                 learning_rate=0.1, gamma=0.6, q_table=None):
         self._env = CustomEnv(funds_csv=funds_csv, funds_names=funds_names_list, investor=Investor)
         self._max_episodes = max_episodes
         self._max_try = max_try
@@ -52,18 +44,13 @@ class TrainerQLearning:
         self._epsilon_decay = epsilon_decay
         self._learning_rate = learning_rate
         self._gamma = gamma
-        if q_table is None:
-            self._q_table = QTable()
-        else:
-            self._q_table = q_table
+        self._q_table = q_table if q_table is not None else QTable()
 
     def train(self):
-        # global epsilon, epsilon_decay
         sys.stdout = open('../our_simulator/envs/training_results.txt', 'w')
         episodes, sums = [], []
 
         for episode in tqdm(range(self._max_episodes), desc="\tTraining Progress"):
-        # for episode in range(self._max_episodes):
 
             # Init environment
             state = self._env.reset()
@@ -74,10 +61,8 @@ class TrainerQLearning:
 
                 # In the beginning, do random action to learn
                 if random.uniform(0, 1) < self._epsilon:
-                    # action = random.randint(0, 9)
-                    action = random.randint(0, 10 - 1)
+                    action = random.randint(0, 9)
                 else:
-                    # action = self._q_table.get_state_argmax(state.tobytes().__hash__())
                     action = self._q_table.get_state_argmax(hash_state(state))
 
                 # Do action and get result
@@ -85,22 +70,21 @@ class TrainerQLearning:
                 total_reward += reward
 
                 # Get correspond q value from state, action pair
-                # q_value = self._q_table.get_q_value(state.tobytes().__hash__(), action)
                 q_value = self._q_table.get_q_value(hash_state(state), action)
 
-                # best_q = self._q_table.get_state_max(next_state.tobytes().__hash__())
                 best_q = self._q_table.get_state_max(hash_state(next_state))
 
                 # Q(state, action) <- (1 - a)Q(state, action) + a(reward + rmaxQ(next state, all actions))
-                # self._q_table.update(state.tobytes().__hash__(), action, self._learning_rate, q_value, reward, self._gamma, best_q)
-                self._q_table.update(hash_state(state), action, self._learning_rate, q_value, reward, self._gamma, best_q)
+                self._q_table.update(hash_state(state), action, self._learning_rate, q_value, reward, self._gamma,
+                                     best_q)
 
                 # Set up for the next iteration
                 state = next_state
 
                 # When episode is done, print reward
                 if done or t >= self._max_try - 1:
-                    print("\nEpisode %d finished after %i time steps with total reward = %f." % (episode, t, total_reward))
+                    print("\nEpisode %d finished after %i time steps with total reward = %f." % (episode, t,
+                                                                                                 total_reward))
                     print()
                     episodes.append(episode)
                     sums.append(total_reward)
@@ -119,7 +103,6 @@ class TrainerQLearning:
 
 
 class TrainerApproximateRL:
-    #TODO: maybe delete irrelevant arguments from constructor
     def __init__(self, funds_csv, funds_names_list, max_episodes, max_try=1000, learning_constant=10,
                  gamma=0.6, weights_to_start_dir=None):
         rl_kwargs = {}
@@ -138,22 +121,12 @@ class TrainerApproximateRL:
         self._max_try = max_try
 
         self._estimator = self._env.get_investor().get_inner_estimator()
-        # if weights_to_start_dir is None:
-        #     trainer_starting_weights=None
-        # else:
-        #     with open(weights_to_start_dir, 'rb') as f:
-        #         trainer_starting_weights = pickle.load(f)
-        #
-        # self._estimator = Estimator(alpha=1 / learning_constant, gamma=gamma, starting_weights=trainer_starting_weights,
-        #                             pickle_file_dir=r'C:\Technion\Semester G\Project in Artificial Intelligence 236502\repo\approximate_q_learning_weights')
 
     def train(self):
-        # global epsilon, epsilon_decay
-        # sys.stdout = open('training_results.txt', 'w')
         episodes, sums = [], []
 
         for episode in tqdm(range(self._max_episodes), desc="\tProgress"):
-
+            # todo: Roi Update comments along code
             # Init environment
             state = self._env.reset()
             total_reward = 100000
@@ -194,11 +167,7 @@ class TrainerApproximateRL:
 
         # plotting RL algorithm learning curve
         plot_smoothed_graph(episodes, sums, self._max_episodes)
-        # return self._q_table
         return None
-
-
-
 
 
 if __name__ == '__main__':
@@ -207,7 +176,6 @@ if __name__ == '__main__':
     funds_names = funds_df.index.unique().tolist()
     trainer = TrainerQLearning(funds_df, funds_names, max_episodes=1000)
     trainer.train()
-
 
     # How to run training for Approximate Q-learning
     # funds_df = pd.read_csv('../../funds_after_processing.csv').set_index('fund_symbol')
@@ -219,28 +187,3 @@ if __name__ == '__main__':
     # trainer = TrainerApproximateRL(funds_csv=funds_df, funds_names_list=funds_names, max_episodes=60000,
     #                                learning_constant=100000, gamma=0, weights_to_start_dir=starting_weights)
     # trainer.train()
-
-
-
-
-
-
-
-
-# # env = gym.make("Pysim-v0")
-#     env = CustomEnv()
-#     sys.stdout = open('main_results.txt', 'w')
-#
-#     # MAX_EPISODES = 9999
-#     MAX_EPISODES = 250000
-#     MAX_TRY = 1000
-#     epsilon = 1
-#     epsilon_decay = 0.999
-#     learning_rate = 0.1
-#     gamma = 0.6
-#     q_table = QTable()
-#     episodes, sums = simulate()  # line semi-added by me: I added only left values
-#
-#     # plotting RL algorithm learning curve
-#     # plot_unsmoothed_graph(episodes, sums)
-#     plot_smoothed_graph(episodes, sums)
