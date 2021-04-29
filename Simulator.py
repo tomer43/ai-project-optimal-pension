@@ -7,7 +7,13 @@ from gym_simulator.envs.custom_env import CustomEnv
 from investors_types.HumanInvestor import HumanInvestor
 from investors_types.HumanHeuristicsInvestors import *
 from investors_types.PseudoAgents import *
-from investors_types.RLInvestor import RLApproximateQInvestor
+
+from investors_types.RLInvestor import RLQInvestor, RLApproximateQInvestor
+# from investors_types.RLInvestor import RLQInvestor
+# from investors_types.RLInvestor import RLApproximateQInvestor
+
+from gym_simulator.envs.QTable import QTable
+import pickle
 
 
 class Simulator:
@@ -39,12 +45,12 @@ class Simulator:
 
 if __name__ == '__main__':
     rl_investor_args = {
-        'existing_weights': pathlib.Path.cwd() / 'approximate_q_learning_weights' / 'agent_debugging_end.pkl'
+        'q_table': QTable(pickle.load(open('Q-Table.pkl', "rb")))
     }
     funds_df = pd.read_csv('funds_after_processing.csv').set_index('fund_symbol')
     funds_names = funds_df.index.unique().tolist()
 
-    sim = Simulator(funds_csv=funds_df, funds_list_names=funds_names, investor=RLApproximateQInvestor,
+    sim = Simulator(funds_csv=funds_df, funds_list_names=funds_names, investor=RLQInvestor,
                     investor_kwargs=rl_investor_args)
 
     results_line = sim.run_simulator()
@@ -52,3 +58,18 @@ if __name__ == '__main__':
     # todo: make sure approx q learning works correctly after refactoring
     Printer.print_results_path(results_line)
     Printer.print_final_results(sim.get_investor())
+
+    # rl_investor_args = {
+    #     'existing_weights': pathlib.Path.cwd() / 'approximate_q_learning_weights' / 'final_weights.pkl'
+    # }
+    # funds_df = pd.read_csv('funds_after_processing.csv').set_index('fund_symbol')
+    # funds_names = funds_df.index.unique().tolist()
+    #
+    # sim = Simulator(funds_csv=funds_df, funds_list_names=funds_names, investor=RLApproximateQInvestor,
+    #                 investor_kwargs=rl_investor_args)
+    #
+    # results_line = sim.run_simulator()
+    # # todo: add rl q learning trainer
+    # # todo: make sure approx q learning works correctly after refactoring
+    # Printer.print_results_path(results_line)
+    # Printer.print_final_results(sim.get_investor())
