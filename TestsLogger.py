@@ -1,20 +1,16 @@
 import pathlib
-import pandas as pd
-from tqdm import tqdm
 import time
 from datetime import datetime
 import pickle
 
+import pandas as pd
+from tqdm import tqdm
+
 from Simulator import Simulator
 from investors_types.HumanHeuristicsInvestors import *
 from investors_types.PseudoAgents import *
-
 from investors_types.RLInvestor import RLQInvestor, RLApproximateQInvestor
-
-from gym_simulator.envs.QTable import QTable
-
-
-# INITIAL_MONEY = 100000
+from RL_Trainer.QTable import QTable
 
 
 def get_columns_names():
@@ -48,36 +44,16 @@ def run_tests(n, investor_type, investor_kwargs=None):
 
 
 def run_tests_by_investor(n, investor_type):
+    investor_args = {}
     if investor_type == RLQInvestor:
-        rl_investor_args = {
-            'q_table': QTable(pickle.load(open('Q-Table.pkl', "rb")))
-        }
-        run_tests(n, investor_type=investor_type, investor_kwargs=rl_investor_args)
-    else:
-        if investor_type == RLApproximateQInvestor:
-            rl_investor_args = {
-                'existing_weights': pathlib.Path.cwd() / 'approximate_q_learning_weights' / 'final_weights.pkl'
-            }
-            run_tests(n, investor_type=investor_type, investor_kwargs=rl_investor_args)
-        else:
-            run_tests(n, investor_type=investor_type)
+        # Expecting to get an existing trained agent - run this after running TrainerQLearning
+        investor_args['q_table'] = QTable(pickle.load(open('Q-Table.pkl', 'rb')))
+    elif investor_type == RLApproximateQInvestor:
+        # Expecting to get an existing trained agent - run this after running TrainerApproximateRL
+        investor_args['existing_weights'] = pathlib.Path.cwd() / 'approximate_q_learning_weights' / 'final_weights.pkl'
 
+    run_tests(n, investor_type=investor_type, investor_kwargs=investor_args)
 
 
 if __name__ == '__main__':
     run_tests_by_investor(n=100, investor_type=RLQInvestor)
-
-
-    # # Heuristic Agents
-    # # run_tests(n=1000, investor_type=LowestFeeInvestor)
-    #
-    # # RL Agents
-    # rl_investor_args = {
-    #     'q_table': QTable(pickle.load(open('Q-Table.pkl', "rb")))
-    # }
-    # run_tests(n=25000, investor_type=RLQInvestor, investor_kwargs=rl_investor_args)
-    #
-    # # rl_investor_args = {
-    # #     'existing_weights': pathlib.Path.cwd() / 'approximate_q_learning_weights' / 'final_weights.pkl'
-    # # }
-    # # run_tests(n=1000, investor_type=RLApproximateQInvestor, investor_kwargs=rl_investor_args)
