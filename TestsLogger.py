@@ -7,6 +7,8 @@ import pandas as pd
 from tqdm import tqdm
 
 from Simulator import Simulator
+from investors_types.HumanHeuristicsInvestors import *
+from investors_types.PseudoAgents import *
 from investors_types.RLInvestor import RLQInvestor, RLApproximateQInvestor
 from RL_Trainer.QTable import QTable
 

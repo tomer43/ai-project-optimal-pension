@@ -4,6 +4,7 @@ from our_simulator.Printer import *
 from our_simulator.CustomEnv import CustomEnv
 
 from investors_types.HumanHeuristicsInvestors import *
+from investors_types.PseudoAgents import *
 from investors_types.RLInvestor import RLQInvestor, RLApproximateQInvestor
 from RL_Trainer.QTable import QTable
 import pickle

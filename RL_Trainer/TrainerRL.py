@@ -23,7 +23,7 @@ def plot_smoothed_graph(episodes, sums, max_episodes):
     df = pd.DataFrame({'Episode': episodes, 'Unsmoothed_sum': sums})
     df['Final Sum'] = df['Unsmoothed_sum'].rolling(max_episodes // 100).mean()
     fig = df.plot.line(x='Episode', y='Final Sum').get_figure()
-    fig.savefig('..\\..\\learning curve.jpg')
+    fig.savefig('..\\learning curve.jpg')
     # todo: tomer check
     # plt.show()
     # df.plot.line(x='Episode', y='Final Sum')
@@ -47,7 +47,7 @@ class TrainerQLearning:
         self._q_table = q_table if q_table is not None else QTable()
 
     def train(self):
-        sys.stdout = open('../our_simulator/envs/training_results.txt', 'w')
+        sys.stdout = open('training_results.txt', 'w')
         episodes, sums = [], []
 
         for episode in tqdm(range(self._max_episodes), desc="\tTraining Progress"):
@@ -173,16 +173,18 @@ if __name__ == '__main__':
     # How to run training for Q-learning
     funds_df = pd.read_csv('../funds_after_processing.csv').set_index('fund_symbol')
     funds_names = funds_df.index.unique().tolist()
-    trainer = TrainerQLearning(funds_df, funds_names, max_episodes=1000)
-    trainer.train()
+    training_episodes = 30000
 
-    # How to run training for Approximate Q-learning
-    # funds_df = pd.read_csv('../../funds_after_processing.csv').set_index('fund_symbol')
-    # funds_names = funds_df.index.unique().tolist()
-    #
-    # # starting_weights = pathlib.Path('../../approximate_q_learning_weights/agent_debugging_mid.pkl')
-    # starting_weights = None
-    #
-    # trainer = TrainerApproximateRL(funds_csv=funds_df, funds_names_list=funds_names, max_episodes=60000,
-    #                                learning_constant=100000, gamma=0, weights_to_start_dir=starting_weights)
+    # To train Q-Learning Agent
+    # trainer = TrainerQLearning(funds_df, funds_names, max_episodes=training_episodes)
     # trainer.train()
+
+    # To train Approximate Q-Learning Agent
+    # To start training from scratch, send "starting_weights" = None.
+    # To continue existing training, send weights pickle directory to "starting_weights"
+    starting_weights = pathlib.Path('../approximate_q_learning_weights/final_weights_2.pkl')
+    # starting_weights = None
+
+    trainer = TrainerApproximateRL(funds_csv=funds_df, funds_names_list=funds_names, max_episodes=training_episodes,
+                                   learning_constant=100000, gamma=0, weights_to_start_dir=starting_weights)
+    trainer.train()
