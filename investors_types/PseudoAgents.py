@@ -1,6 +1,8 @@
-from investors_types.Investor import Investor
-import numpy as np
 import random
+
+import numpy as np
+
+from investors_types.Investor import Investor
 
 
 class BestInvestor(Investor):

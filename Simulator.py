@@ -14,10 +14,10 @@ def run_simulator_by_investor(investor_type):
     funds_names = funds_df.index.unique().tolist()
     investor_args = {}
     if investor_type == RLQInvestor:
-        # After running TrainerQLearning
+        # Expecting to get an existing trained agent - run this after running TrainerQLearning
         investor_args['q_table'] = QTable(pickle.load(open('Q-Table.pkl', "rb")))
     elif investor_type == RLApproximateQInvestor:
-        # After running TrainerApproximateRL
+        # Expecting to get an existing trained agent - run this after running TrainerApproximateRL
         investor_args['existing_weights'] = pathlib.Path.cwd() / 'approximate_q_learning_weights' / 'final_weights.pkl'
 
     sim = Simulator(funds_csv=funds_df, funds_list_names=funds_names, investor=investor_type,

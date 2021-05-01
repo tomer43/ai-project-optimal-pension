@@ -126,7 +126,6 @@ class TrainerApproximateRL:
         episodes, sums = [], []
 
         for episode in tqdm(range(self._max_episodes), desc="\tProgress"):
-            # todo: Roi Update comments along code
             # Init environment
             state = self._env.reset()
             total_reward = 100000
@@ -134,15 +133,15 @@ class TrainerApproximateRL:
             # AI tries up to MAX_TRY times
             for t in range(self._max_try):
 
-                # In the beginning, do random action to learn
+                # Choose an action according to best Q(s,a)
                 action = self._estimator.get_state_argmax(state)
 
-                # Do action and get result
+                # Do action, convert reward to be relative gain (instead of absolute money gain)
                 next_state, reward, done, _ = self._env.step(action)
                 relative_reward = reward / total_reward if total_reward > 0 else reward
                 total_reward += reward
 
-                # Q(state, action) <- (1 - a)Q(state, action) + a(reward + rmaxQ(next state, all actions))
+                # update weights according to the new reward received
                 self._estimator.update(state=state, action=action, reward=relative_reward, next_state=next_state)
 
                 # Set up for the next iteration

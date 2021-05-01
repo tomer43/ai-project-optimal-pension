@@ -1,9 +1,10 @@
 import pathlib
-import pandas as pd
-from tqdm import tqdm
 import time
 from datetime import datetime
 import pickle
+
+import pandas as pd
+from tqdm import tqdm
 
 from Simulator import Simulator
 from investors_types.RLInvestor import RLQInvestor, RLApproximateQInvestor
@@ -43,10 +44,10 @@ def run_tests(n, investor_type, investor_kwargs=None):
 def run_tests_by_investor(n, investor_type):
     investor_args = {}
     if investor_type == RLQInvestor:
-        # After running TrainerQLearning
+        # Expecting to get an existing trained agent - run this after running TrainerQLearning
         investor_args['q_table'] = QTable(pickle.load(open('Q-Table.pkl', 'rb')))
     elif investor_type == RLApproximateQInvestor:
-        # After running TrainerApproximateRL
+        # Expecting to get an existing trained agent - run this after running TrainerApproximateRL
         investor_args['existing_weights'] = pathlib.Path.cwd() / 'approximate_q_learning_weights' / 'final_weights.pkl'
 
     run_tests(n, investor_type=investor_type, investor_kwargs=investor_args)
