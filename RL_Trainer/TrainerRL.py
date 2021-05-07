@@ -23,11 +23,7 @@ def plot_smoothed_graph(episodes, sums, max_episodes):
     df = pd.DataFrame({'Episode': episodes, 'Unsmoothed_sum': sums})
     df['Final Sum'] = df['Unsmoothed_sum'].rolling(max_episodes // 100).mean()
     fig = df.plot.line(x='Episode', y='Final Sum').get_figure()
-    fig.savefig('..\\learning curve.jpg')
-    # todo: tomer check
-    # plt.show()
-    # df.plot.line(x='Episode', y='Final Sum')
-    # plt.show()
+    fig.savefig(r'..\\learning curve.jpg')
 
 
 def hash_state(state):

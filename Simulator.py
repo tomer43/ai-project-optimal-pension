@@ -16,7 +16,7 @@ def run_simulator_by_investor(investor_type):
     investor_args = {}
     if investor_type == RLQInvestor:
         # Expecting to get an existing trained agent - run this after running TrainerQLearning
-        investor_args['q_table'] = QTable(pickle.load(open('Q-Table.pkl', "rb")))
+        investor_args['q_table'] = QTable(pickle.load(open(r'./q_learning_q_table/Q-Table.pkl', "rb")))
     elif investor_type == RLApproximateQInvestor:
         # Expecting to get an existing trained agent - run this after running TrainerApproximateRL
         investor_args['existing_weights'] = pathlib.Path.cwd() / 'approximate_q_learning_weights' / 'final_weights.pkl'

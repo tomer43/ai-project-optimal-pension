@@ -37,6 +37,6 @@ class QTable:
         self._q_table[state][action] = (1 - learning_rate) * q_value + learning_rate * (reward + gamma * best_q)
 
     def export_to_pickle(self):
-        file = open("../Q-Table.pkl", "wb")
+        file = open("../q_learning_q_table/Q-Table.pkl", "wb")
         pickle.dump(self._q_table, file, protocol=4)
         file.close()

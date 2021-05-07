@@ -38,7 +38,7 @@ def run_tests(n, investor_type, investor_kwargs=None):
         results.append(result)
     df = pd.DataFrame(results, columns=get_columns_names())
     results_file_name = get_results_file_name(investor_type)
-    df.to_csv(results_file_name)
+    df.to_csv(pathlib.Path.cwd() / 'experiments_results' / results_file_name)
     end_time = time.time()
     print(f'\nFinished after {end_time - start_time} seconds.\nResults can be found in \'{results_file_name}\'')
 
@@ -47,7 +47,7 @@ def run_tests_by_investor(n, investor_type):
     investor_args = {}
     if investor_type == RLQInvestor:
         # Expecting to get an existing trained agent - run this after running TrainerQLearning
-        investor_args['q_table'] = QTable(pickle.load(open('Q-Table.pkl', 'rb')))
+        investor_args['q_table'] = QTable(pickle.load(open('./q_learning_q_table/Q-Table.pkl', 'rb')))
     elif investor_type == RLApproximateQInvestor:
         # Expecting to get an existing trained agent - run this after running TrainerApproximateRL
         investor_args['existing_weights'] = pathlib.Path.cwd() / 'approximate_q_learning_weights' / 'final_weights.pkl'
