@@ -1,16 +1,23 @@
 import pathlib
+import pickle
+
 import pandas as pd
+
 from our_simulator.Printer import *
 from our_simulator.CustomEnv import CustomEnv
-
 from investors_types.HumanHeuristicsInvestors import *
 from investors_types.PseudoAgents import *
 from investors_types.RLInvestor import RLQInvestor, RLApproximateQInvestor
 from RL_Trainer.QTable import QTable
-import pickle
 
 
 def run_simulator_by_investor(investor_type):
+    """
+    Entry point function to run a single simulator and print results. It handles input for different investors,
+    currently relevant only for RL based investors. Then it calls to run_simulator.
+    :param investor_type: (type) a class name, must be an investor type.
+                            Notice this should be type and not an instance.
+    """
     funds_df = pd.read_csv('funds_after_processing.csv').set_index('fund_symbol')
     funds_names = funds_df.index.unique().tolist()
     investor_args = {}
@@ -56,4 +63,8 @@ class Simulator:
 
 
 if __name__ == '__main__':
+    # To run simulator, simply call to run_simulator_by_investor function with an investor_type, see example below.
+    # Results will be printed to screen.
+    # In order to run a RL agent, you should first train separately using "TrainerRL.py" in "RL_Trainer" folder.
+    # Running a pseudo-agent requires uncommenting a line in State.py
     run_simulator_by_investor(investor_type=LowestFeeInvestor)

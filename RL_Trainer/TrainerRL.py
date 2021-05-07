@@ -99,8 +99,8 @@ class TrainerQLearning:
 
 
 class TrainerApproximateRL:
-    def __init__(self, funds_csv, funds_names_list, max_episodes, max_try=1000, learning_constant=10,
-                 gamma=0.6, weights_to_start_dir=None):
+    def __init__(self, funds_csv, funds_names_list, max_episodes, max_try=1000, learning_constant=100000, gamma=0,
+                 weights_to_start_dir=None):
         rl_kwargs = {}
         estimator_args = {
             "alpha": 1 / learning_constant,
@@ -166,21 +166,24 @@ class TrainerApproximateRL:
 
 
 if __name__ == '__main__':
-    # How to run training for Q-learning
+    # Below there are two example how to train different RL based agents.
+    # The results of the training are pickles files, save in designated directories.
+
+    # These parameters are relevant to both agents. You can tune 'training_episodes' as desired.
     funds_df = pd.read_csv('../funds_after_processing.csv').set_index('fund_symbol')
     funds_names = funds_df.index.unique().tolist()
     training_episodes = 30000
 
-    # To train Q-Learning Agent
+    # Training Q-Learning Agent: uncomment these two lines, creating instance of
+    # 'TrainerQLearning' class and call to .train()
     # trainer = TrainerQLearning(funds_df, funds_names, max_episodes=training_episodes)
     # trainer.train()
 
-    # To train Approximate Q-Learning Agent
-    # To start training from scratch, send "starting_weights" = None.
-    # To continue existing training, send weights pickle directory to "starting_weights"
-    starting_weights = pathlib.Path('../approximate_q_learning_weights/final_weights_2.pkl')
+    # Train Q-Learning with Approximate Value Function Agent: choose 'starting_weights' parameter (send a directory
+    # to an existing weights from previous training session, or just send None to start a new session)
+    # and send it to 'TrainerApproximateRL' class. Call to .train() to start the train.
+    # starting_weights = pathlib.Path('../approximate_q_learning_weights/final_weights_2.pkl')
     # starting_weights = None
-
-    trainer = TrainerApproximateRL(funds_csv=funds_df, funds_names_list=funds_names, max_episodes=training_episodes,
-                                   learning_constant=100000, gamma=0, weights_to_start_dir=starting_weights)
-    trainer.train()
+    # trainer = TrainerApproximateRL(funds_csv=funds_df, funds_names_list=funds_names, max_episodes=training_episodes,
+    #                                weights_to_start_dir=starting_weights)
+    # trainer.train()

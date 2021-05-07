@@ -44,6 +44,13 @@ def run_tests(n, investor_type, investor_kwargs=None):
 
 
 def run_tests_by_investor(n, investor_type):
+    """
+    Entry point function to run various tests and export if to a csv. It handles input for different investors,
+    currently relevant only for RL based investors. Then it calls to run_tests which perform the tests and save results.
+    :param n:               (int) number of tests to run
+    :param investor_type:   (type) a class name, must be an investor type.
+                             Notice this should be type and not an instance.
+    """
     investor_args = {}
     if investor_type == RLQInvestor:
         # Expecting to get an existing trained agent - run this after running TrainerQLearning
@@ -56,4 +63,8 @@ def run_tests_by_investor(n, investor_type):
 
 
 if __name__ == '__main__':
+    # To run tests, simply call to run_tests_by_investor function with an investor_type and n (number of tests).
+    # See example below. Results will be saved as a csv file in experiments_results folder.
+    # In order to run a RL agent, you should first train separately using "TrainerRL.py" in "RL_Trainer" folder.
+    # Running a pseudo-agent requires uncommenting a line in State.py
     run_tests_by_investor(n=100, investor_type=RLQInvestor)
