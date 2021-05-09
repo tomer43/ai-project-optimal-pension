@@ -91,7 +91,9 @@ class TrainerQLearning:
                 self._epsilon *= self._epsilon_decay
 
         self._q_table.export_to_pickle()
-        print_episodes_results(sums)
+
+        # For debugging: print results
+        # print_episodes_results(sums)
 
         # plotting RL algorithm learning curve
         plot_smoothed_graph(episodes, sums, self._max_episodes)
@@ -158,7 +160,8 @@ class TrainerApproximateRL:
                     break
 
         self._estimator.export_to_pickle('final_weights.pkl')
-        print_episodes_results(sums)
+        # For debugging: print results
+        # print_episodes_results(sums)
 
         # plotting RL algorithm learning curve
         plot_smoothed_graph(episodes, sums, self._max_episodes)
